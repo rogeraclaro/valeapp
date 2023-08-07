@@ -193,51 +193,189 @@ function load_script_js() {
 	wp_enqueue_script('jquery', get_theme_file_uri('/vendor/jquery/jquery.min.js'), array(), '1.0', true);
 	wp_enqueue_script('bootstrap', get_theme_file_uri('/vendor/bootstrap/bootstrap.bundle.min.js'), array(), '1.0', true);
 	wp_enqueue_script('jquery-easing', get_theme_file_uri('/vendor/js/jquery.easing.min.js'), array(), '1.0', true);
-	// wp_enqueue_script('clipboard', get_theme_file_uri('/vendor/clipboard/clipboard.min.js'), array(), '1.0', true);
+	wp_enqueue_script('clipboard', get_theme_file_uri('/vendor/clipboard/clipboard.min.js'), array(), '1.0', true);
 	wp_enqueue_script('swiper', get_theme_file_uri('/vendor/swiper/swiper.min.js'), array(), '1.0', true);
 	wp_enqueue_script('aos', get_theme_file_uri('/vendor/aos/aos.js'), array(), '1.0', true);
-	// wp_enqueue_script('jquery-plainmodal', get_theme_file_uri('/vendor/jquery/jquery.plainmodal.min.js'), array(), '1.0', true);
-	// wp_enqueue_script('paroller', get_theme_file_uri('/vendor/paroller/jquery.paroller.min.js'), array(), '1.0', true);
+	wp_enqueue_script('jquery-plainmodal', get_theme_file_uri('/vendor/jquery/jquery.plainmodal.min.js'), array(), '1.0', true);
+	wp_enqueue_script('paroller', get_theme_file_uri('/vendor/paroller/jquery.paroller.min.js'), array(), '1.0', true);
 	wp_enqueue_script('isInViewport', get_theme_file_uri('/vendor/js/isInViewport.min.js'), array(), '1.0', true);
-	// wp_enqueue_script('mixpanel', get_theme_file_uri('/js/mixpanel.js'), array(), '1.0', true);
-	// wp_enqueue_script('dynamics', get_theme_file_uri('/js/dynamics.js'), array(), '1.0', true);
-	// wp_enqueue_script('_dynamics', get_theme_file_uri('/js/_dynamics.js'), array(), '1.0', true);
-	// wp_enqueue_script('app-javascript', get_theme_file_uri('/js/app.js'), array(), '1.0', true);
-	// wp_enqueue_script('script', get_theme_file_uri('/js/script.js'), array(), '1.0', true);
+	wp_enqueue_script('mixpanel', get_theme_file_uri('/js/mixpanel.js'), array(), '1.0', true);
+	wp_enqueue_script('dynamics', get_theme_file_uri('/js/dynamics.js'), array(), '1.0', true);
+	wp_enqueue_script('_dynamics', get_theme_file_uri('/js/_dynamics.js'), array(), '1.0', true);
+	wp_enqueue_script('app-javascript', get_theme_file_uri('/js/app.js'), array(), '1.0', true);
+	wp_enqueue_script('script', get_theme_file_uri('/js/script.js'), array(), '1.0', true);
 	wp_enqueue_script('form_ajax', get_theme_file_uri('/js/form_ajax.js'), array(), '1.0', true);
-	wp_localize_script( 'form_ajax', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
-	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ) );
+	wp_localize_script('form_ajax', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
+	wp_enqueue_script('login_ajax', get_theme_file_uri('/js/login_ajax.js'), array(), '1.0', true);
+	wp_localize_script( 'login_ajax', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
+
 }
 
 add_action('wp_ajax_front_providers_save_metaboxes', 'front_providers_save_metaboxes');
 add_action('wp_ajax_nopriv_front_providers_save_metaboxes', 'front_providers_save_metaboxes');
 
-
 function front_providers_save_metaboxes() {
-	parse_str($_POST['datos_formulario'], $data);
-
-	$post_id = wp_insert_post([
+	$temp = $wp_query;
+	$wp_query = null;
+	$wp_query = new WP_Query();
+	$args = [  
 		'post_type' => 'proveedores',
-		'post_status' => 'publish',
-		'post_title' => $data['name']
-	]);
+	];
+	$wp_query->query($args);
 
-	update_post_meta($post_id, 'name', sanitize_text_field($data['name']));
-	update_post_meta($post_id, 'last_name', sanitize_text_field($data['last_name']));
-	update_post_meta($post_id, 'email', sanitize_text_field($data['email']));
-	update_post_meta($post_id, 'password', sanitize_text_field($data['password']));
-	update_post_meta($post_id, 'phone_number', sanitize_text_field($data['phone_number']));
-	update_post_meta($post_id, 'address', sanitize_text_field($data['address']));
-	update_post_meta($post_id, 'cd_postal', sanitize_text_field($data['cd_postal']));
-	update_post_meta($post_id, 'city', sanitize_text_field($data['city']));
-	update_post_meta($post_id, 'country', sanitize_text_field($data['country']));
-	update_post_meta($post_id, 'schedule', sanitize_text_field($data['schedule']));
-	update_post_meta($post_id, 'enterprise', sanitize_text_field($data['enterprise']));
-	update_post_meta($post_id, 'enterprise_name', sanitize_text_field($data['enterprise_name']));
-	update_post_meta($post_id, 'enterprise_logo', sanitize_text_field($data['enterprise_logo']));
-	update_post_meta($post_id, 'profile_photo', sanitize_text_field($data['profile_photo']));
-	update_post_meta($post_id, 'description', sanitize_text_field($data['description']));
-	update_post_meta($post_id, 'membership', sanitize_text_field($data['membership']));
+	parse_str($_POST['form_data'], $data);
 
-	wp_send_json_success();
+	if(!isset($_POST['providers_register_nonce']) || !wp_verify_nonce($_POST['providers_register_nonce'], basename('page-registro-proveedores.php'))) {
+		while($wp_query->have_posts()) {
+			$wp_query->the_post();
+			$post_id = get_the_ID();
+			
+			$stored_email = get_post_meta($post_id, 'email', true);
+			
+			$email_validation = ($stored_email != sanitize_text_field($data['email']));
+			if($email_validation){
+				$post_name = ($data['name']. " " . $data['last_name']);
+				$post_id = wp_insert_post([
+					'post_type' => 'proveedores',
+					'post_status' => 'publish',
+					'post_title' => $post_name
+				]);
+
+				update_post_meta($post_id, 'name', sanitize_text_field($data['name']));
+				update_post_meta($post_id, 'last_name', sanitize_text_field($data['last_name']));
+				update_post_meta($post_id, 'email', sanitize_text_field($data['email']));
+				update_post_meta($post_id, 'password', sanitize_text_field($data['password']));
+				update_post_meta($post_id, 'phone_number', sanitize_text_field($data['phone_number']));
+				update_post_meta($post_id, 'address', sanitize_text_field($data['address']));
+				update_post_meta($post_id, 'cd_postal', sanitize_text_field($data['cd_postal']));
+				update_post_meta($post_id, 'city', sanitize_text_field($data['city']));
+				update_post_meta($post_id, 'country', sanitize_text_field($data['country']));
+				update_post_meta($post_id, 'schedule', sanitize_text_field($data['schedule']));
+				update_post_meta($post_id, 'enterprise', sanitize_text_field($data['enterprise']));
+				update_post_meta($post_id, 'enterprise_name', sanitize_text_field($data['enterprise_name']));
+				update_post_meta($post_id, 'enterprise_logo', sanitize_text_field($data['enterprise_logo']));
+				update_post_meta($post_id, 'profile_photo', sanitize_text_field($data['profile_photo']));
+				update_post_meta($post_id, 'description', sanitize_text_field($data['description']));
+				update_post_meta($post_id, 'membership', sanitize_text_field($data['membership']));
+				wp_send_json_success();
+			} else {
+				wp_send_json_error();
+			}
+		}
+	}
+}
+
+add_action('wp_ajax_login_providers', 'login_providers');
+add_action('wp_ajax_nopriv_login_providers', 'login_providers');
+
+function login_providers() {
+	$temp = $wp_query;
+	$wp_query = null;
+	$wp_query = new WP_Query();
+	$args = [  
+		'post_type' => 'proveedores',
+	];
+	$wp_query->query($args);
+
+	parse_str($_POST['login_data'], $data);
+
+	if ($wp_query->have_posts()) {
+		while($wp_query->have_posts()) {
+			$wp_query->the_post();
+			$post_id = get_the_ID();
+
+			$stored_email = get_post_meta($post_id, 'email', true);
+			$stored_password = get_post_meta($post_id, 'password', true);
+			
+			$pass_validation = ($stored_password === sanitize_text_field($data['password']));
+			$email_validation = ($stored_email === sanitize_text_field($data['email']));
+			if($pass_validation && $email_validation){
+				wp_send_json_success();
+			}
+		}
+	}
+}
+
+add_action('wp_ajax_front_customers_save_metaboxes', 'front_customers_save_metaboxes');
+add_action('wp_ajax_nopriv_front_customers_save_metaboxes', 'front_customers_save_metaboxes');
+
+function front_customers_save_metaboxes() {
+	$temp = $wp_query;
+	$wp_query = null;
+	$wp_query = new WP_Query();
+	$args = [  
+		'post_type' => 'clientes',
+	];
+	$wp_query->query($args);
+
+	parse_str($_POST['form_data'], $data);
+
+	if(!isset($_POST['customers_register_nonce']) || !wp_verify_nonce($_POST['customers_register_nonce'], basename('page-registro-clientes.php'))) {
+		while($wp_query->have_posts()) {
+			$wp_query->the_post();
+			$post_id = get_the_ID();
+
+			$stored_email = get_post_meta($post_id, 'email_customer', true);
+
+			$email_validation = ($stored_email != sanitize_text_field($data['email_customer']));
+			if($email_validation) {
+				$post_name = ($data['name_customer']. " " . $data['last_name_customer']);
+				$post_id = wp_insert_post([
+					'post_type' => 'clientes',
+					'post_status' => 'publish',
+					'post_title' => $post_name
+				]);
+
+				update_post_meta($post_id, 'name_customer', sanitize_text_field($data['name_customer']));
+				update_post_meta($post_id, 'last_name_customer', sanitize_text_field($data['last_name_customer']));
+				update_post_meta($post_id, 'date_customer', sanitize_text_field($data['date_customer']));
+				update_post_meta($post_id, 'email_customer', sanitize_text_field($data['email_customer']));
+				update_post_meta($post_id, 'password_customer', sanitize_text_field($data['password_customer']));
+				update_post_meta($post_id, 'phone_number_customer', sanitize_text_field($data['phone_number_customer']));
+				update_post_meta($post_id, 'address_customer', sanitize_text_field($data['address_customer']));
+				update_post_meta($post_id, 'cd_postal_customer', sanitize_text_field($data['cd_postal_customer']));
+				update_post_meta($post_id, 'city_customer', sanitize_text_field($data['city_customer']));
+				update_post_meta($post_id, 'country_customer', sanitize_text_field($data['country_customer']));
+				update_post_meta($post_id, 'interests_customer', sanitize_text_field($data['interests_customer']));
+				update_post_meta($post_id, 'address_customer', sanitize_text_field($data['address_customer']));
+				update_post_meta($post_id, 'profile_photo_customer', sanitize_text_field($data['profile_photo_customer']));
+				update_post_meta($post_id, 'description_customer', sanitize_text_field($data['description_customer']));
+				wp_send_json_success();
+			}
+			else {
+				wp_send_json_error();
+			}
+		}
+	}
+}
+
+add_action('wp_ajax_login_customers', 'login_customers');
+add_action('wp_ajax_nopriv_login_customers', 'login_customers');
+
+function login_customers() {
+	$temp = $wp_query;
+	$wp_query = null;
+	$wp_query = new WP_Query();
+	$args = [  
+		'post_type' => 'clientes',
+	];
+	$wp_query->query($args);
+
+	parse_str($_POST['login_data'], $data);
+
+	if ($wp_query->have_posts()) {
+		while($wp_query->have_posts()) {
+			$wp_query->the_post();
+			$post_id = get_the_ID();
+
+			$stored_email = get_post_meta($post_id, 'email_customer', true);
+			$stored_password = get_post_meta($post_id, 'password_customer', true);
+			
+			$pass_validation = ($stored_password === sanitize_text_field($data['password_customer']));
+			$email_validation = ($stored_email === sanitize_text_field($data['email_customer']));
+			if($pass_validation && $email_validation){
+				wp_send_json_success();
+			}
+		}
+	}
 }

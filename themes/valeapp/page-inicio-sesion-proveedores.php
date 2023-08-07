@@ -14,8 +14,9 @@
 
 get_header();
 
+
 ?>
-    <form>
+    <form method="POST" id="login-providers" action="/home">
         <table class="form-table">
             <tr>
                 <th class= "row-title">
@@ -43,14 +44,14 @@ get_header();
             </tr>
             <tr>
                 <th class= "row-title">
-                    
                 </th>
                 <td>
-                    <button type="submit" name="save" id="publish" >Enviar</button>
+                    <button type="submit" name="save" id="publish2" >Enviar</button>
                 </td>
             </tr>
         </table>
     </form>
 
 <?php
+
 get_footer();

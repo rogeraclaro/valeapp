@@ -22,6 +22,57 @@ $args = [
 ];
 $wp_query->query($args);
 ?>
+
+<body>
+	<!-- BEGIN GTM -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GT48S6" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- END GTM -->
+
+	<!-- BEGIN MOSCA -->
+	<div class="mosca-superior">
+		<a class="href_mosca event" data-label="exit_mosca" href="">
+			<img class="src_mosca alt_mosca" src="" alt="" />
+		</a>
+	</div>
+	<!-- END MOSCA -->
+
+	<!-- BEGIN LOADER -->
+	<!-- <div class="loader-screen" id="loader">
+		<div class="loader-content">
+			<div class="loader-logo">
+				<img src="img/tefal228-logo.png" alt="Tefal Logo" />
+			</div>
+			<div class="sk-fading-circle">
+				<div class="sk-circle1 sk-circle"></div>
+				<div class="sk-circle2 sk-circle"></div>
+				<div class="sk-circle3 sk-circle"></div>
+				<div class="sk-circle4 sk-circle"></div>
+				<div class="sk-circle5 sk-circle"></div>
+				<div class="sk-circle6 sk-circle"></div>
+				<div class="sk-circle7 sk-circle"></div>
+				<div class="sk-circle8 sk-circle"></div>
+				<div class="sk-circle9 sk-circle"></div>
+				<div class="sk-circle10 sk-circle"></div>
+				<div class="sk-circle11 sk-circle"></div>
+				<div class="sk-circle12 sk-circle"></div>
+			</div>
+		</div>
+	</div> -->
+	<!-- END LOADER -->
+
+	<!-- BEGIN HOME -->
+	<header class="header-blocks pages" id="page1">
+		<nav class="navbar">
+			<span class="navbar-brand">
+			</span>
+		</nav>
+
+	</header>
+	<!-- END HOME -->
+
 	<!-- BEGIN SECTION 2 -->
 	<section class="section2 pages" id="page2">
 		<div class="container">
@@ -1146,5 +1197,14 @@ $wp_query->query($args);
 			</div>
 		</div>
 	</div>
+
+	<!-- BEGIN REDIRECTION POPUP TRACKING -->
+	<section class="redirection-popup">
+		<div class="redirection-popup__content">
+			<span class="redirection-popup__butterfly"></span>
+		</div>
+	</section>
+	<!-- END REDIRECTION POPUP TRACKING -->
+
 <?php
 get_footer();

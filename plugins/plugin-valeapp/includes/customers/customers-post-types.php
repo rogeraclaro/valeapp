@@ -1,59 +1,60 @@
 <?php 
 
-// Register Custom Post Type
-function customers_post_type() {
+if(! defined('ABSPATH')) exit;
 
+function customers_post_type() {
 	$labels = [
-		'name'                  => _x( 'Clientes', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Cliente', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Clientes', 'text_domain' ),
-		'name_admin_bar'        => __( 'Cliente', 'text_domain' ),
-		'archives'              => __( 'Item Archives', 'text_domain' ),
-		'all_items'             => __( 'Todos los Clientes', 'text_domain' ),
-		'add_new_item'          => __( 'Agregar nuevo Cliente', 'text_domain' ),
-		'add_new'               => __( 'Agregar Cliente', 'text_domain' ),
-		'new_item'              => __( 'Nuevo Cliente', 'text_domain' ),
-		'edit_item'             => __( 'Editar Cliente', 'text_domain' ),
-		'view_item'             => __( 'Ver Cliente', 'text_domain' ),
-		'view_items'            => __( 'Ver Clientes', 'text_domain' ),
-		'search_items'          => __( 'Buscar cliente', 'text_domain' ),
-		'not_found'             => __( 'No se encontraron clientes', 'text_domain' ),
-		'not_found_in_trash'    => __( 'No se encontraron clientes en la papelera', 'text_domain' ),
-		'featured_image'        => __( 'Imagen destacada', 'text_domain' ),
-		'set_featured_image'    => __( 'Anhadir imagen destacada', 'text_domain' ),
-		'remove_featured_image' => __( 'Borrar imagen', 'text_domain' ),
-		'use_featured_image'    => __( 'Usar como imagen', 'text_domain' ),
-		'insert_into_item'      => __( 'Insertar en cliente', 'text_domain' ),
-		'uploaded_to_this_item' => __( 'Cargado en este cliente', 'text_domain' ),
-		'items_list'            => __( 'Lista de Clientes', 'text_domain' ),
-		'items_list_navigation' => __( 'Navegacion de CLientes', 'text_domain' ),
-		'filter_items_list'     => __( 'Filtrar Clientes por lista', 'text_domain' ),
+		'name'                  => 'Clientes',
+		'singular_name'         => 'Cliente',
+		'menu_name'             => 'Clientes',
+		'name_admin_bar'        => 'Clientes',
+		'add_new'               => 'Agregar Cliente',
+		'add_new_item'          => 'Agregar nuevo Cliente',
+		'new_item'              => 'Nuevo Cliente',
+		'edit_item'             => 'Editar Cliente',
+		'view_item'             => 'Ver Cliente',
+		'all_items'             => 'Todos los Clientes',
+		'search_items'          => 'Buscar cliente',
+		'parent_item_colon'     => 'Clientes Padre:',
+		'not_found'             => 'No se encontraron clientes',
+		'not_found_in_trash'    => 'No se encontraron clientes en la papelera.',
+		'featured_image'        => 'Imagen destacada',
+		'set_featured_image'    => 'Añadir imagen destacada',
+		'remove_featured_image' => 'Borrar imagen',
+		'use_featured_image'    => 'Usar como imagen',
+		'archives'              => 'Clientes Archivo',
+		'insert_into_item'      => 'Insertar en cliente',
+		'uploaded_to_this_item' => 'Cargado en este cliente',
+		'filter_items_list'     => 'Filtrar Clientes por lista',
+		'items_list_navigation' => 'Navegacion de CLientes',
+		'items_list'            => 'Lista de Clientes',
     ];
 
 	$args = [
-		'label'                 => __( 'Customer', 'text_domain' ),
-		'description'           => __( 'Customers information pages.', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => ['title', 'editor', 'thumbnail', 'comments', 'custom-fields' ],
-		'taxonomies'            => ['category', ' Customer' ],
-		'hierarchical'          => false,
 		'public'                => true,
+		'publicly_queryable'    => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
+		'query_var'				=> true,
+		'rewrite'				=> ['slug' => 'clientes'],
+		'capability_type'       => 'post',
 		'menu_position'         => 7,
         'menu_icon'             => 'dashicons-buddicons-buddypress-logo', 
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
 		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
+		'hierarchical'          => false,
+		'supports'              => ['title', 'editor'],
     ];
 
-	register_post_type( 'customer', $args );
+	register_post_type( 'clientes', $args );
 
 }
-add_action( 'init', 'customers_post_type', 0 );
+add_action( 'init', 'customers_post_type');
 
 //manipular los datos de mi custom post type para mostrarlo en mi pagina
+
+//Funcion para regenerar los slug necesarios
+function customers_rewrite_flush() {
+    customers_post_type();
+    flush_rewrite_rules();
+}

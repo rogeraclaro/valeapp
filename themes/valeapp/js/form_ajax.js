@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
     var data = {
       action: 'front_providers_save_metaboxes',
-      datos_formulario: $(this).serialize(),
+      form_data: $(this).serialize(),
     };
 
     $.post(ajax_object.ajax_url, data, function (response) {
@@ -12,7 +12,25 @@ jQuery(document).ready(function ($) {
         alert('Datos registrados correctamente');
         $(location).attr('href', '/?page_id=100');
       } else {
-        alert('Error al guardar los datos');
+        alert('Error al registrar los datos');
+      }
+    });
+  });
+
+  $('#form_customer').on('submit', function (e) {
+    e.preventDefault();
+
+    var data = {
+      action: 'front_customers_save_metaboxes',
+      form_data: $(this).serialize(),
+    };
+
+    $.post(ajax_object.ajax_url, data, function (response) {
+      if (response.success) {
+        alert('Datos registrados correctamente');
+        $(location).attr('href', '');
+      } else {
+        alert('Error al registrar los datos');
       }
     });
   });

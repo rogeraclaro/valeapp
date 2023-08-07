@@ -16,7 +16,7 @@
 get_header();
 
 ?>
-     <form method="POST" id="form_providers" action="/inicio-sesion-proveedores">
+    <form method="POST" id="form_providers" action="/inicio-sesion-proveedores">
         <table class="form-table">
             <tr>
                 <th class= "row-title">
@@ -171,14 +171,13 @@ get_header();
             </tr>
 
             <tr>
-                <th class= "row-title">
-                    
+                <th class= "row-title">   
                 </th>
                 <td>
+                    <?php wp_nonce_field(basename(__FILE__), 'providers_register_nonce'); ?>
                     <button type="submit" name="save" id="publish" >Enviar</button>
                 </td>
             </tr>
-
         </table>
     </form>
 
