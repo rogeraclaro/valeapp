@@ -5,7 +5,6 @@ function providers_add_metaboxes() {
     add_meta_box('provider_metabox', 'Datos del Proveedor:', 'provider_metaboxes', 'proveedores', 'normal', 'default');
 }
 
-
 add_action('add_meta_boxes', 'providers_add_metaboxes');
 
 function provider_metaboxes($post) {  ?>

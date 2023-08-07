@@ -2,7 +2,7 @@
 
 if(! defined('ABSPATH')) exit;
 
-function providers_post_types() {
+function providers_post_type() {
     $labels = [
         'name'                  => 'Proveedores',
         'singular_name'         => 'Proveedor',
@@ -19,7 +19,7 @@ function providers_post_types() {
         'not_found'             => 'No se encontraron proveedores.',
         'not_found_in_trash'    => 'No se encontraron proveedores en la papelera.',
         'featured_image'        => 'Imagen destacada',
-        'set_featured_image'    => 'Anhadir imagen destacada',
+        'set_featured_image'    => 'Añadir imagen destacada',
         'remove_featured_image' => 'Borrar imagen',
         'use_featured_image'    => 'Usar como imagen',
         'archives'              => 'Proveedores Archivo',
@@ -37,28 +37,28 @@ function providers_post_types() {
         'show_ui'             => true,
         'show_in_menu'        => true,
         'query_var'           => true,
-        'rewrite'             => array( 'slug' => 'proveedores' ),
+        'rewrite'             => ['slug' => 'proveedores'],
         'capability_type'     => 'post',
         'menu_position'       => 6,
         'menu_icon'           => 'dashicons-businessperson', 
         'has_archive'         => true,
         'hierarchical'        => false,
-        'supports'            => array( 'title', 'editor'),
+        'supports'            => ['title', 'editor'],
     ];
 
     register_post_type( 'proveedores', $args );
 }
 
-add_action( 'init', 'providers_post_types' );
+add_action( 'init', 'providers_post_type' );
 
 /*
 crear un post type wordpress con el nombre de proveedores, donde pueda ingresar nuevos proveedores con los campos de: Fotos de perfil, NOmbres y apellidos, Correo, Contraseña, Telefono, Direccion, Codigo Postal, Ciudad, Pais, Horario, Autonomo o empresa, Nombre de la empresa, IVA, Areas, Logotipo, Comentarios, Descripcion, Membresia, Valoracion, IBAN
 */
 
 //Funcion para regenerar los slug necesarios
-// function providers_rewrite_flush() {
-//     providers_post_type();
-//     flush_rewrite_rules();
-// }
+function providers_rewrite_flush() {
+    providers_post_type();
+    flush_rewrite_rules();
+}
 
 ?>

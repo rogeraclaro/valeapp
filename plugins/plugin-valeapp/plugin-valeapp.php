@@ -15,17 +15,22 @@ Text Domain:
 //Añade el nuevo Post Type de Proveedores
 require_once plugin_dir_path(__FILE__) . 'includes/providers/providers-post-types.php';
 
+//Añade el nuevo Post Type de CLiente
+require_once plugin_dir_path(__FILE__) . 'includes/customers/customers-post-types.php';
 
-//Regenera las reglas de las URL
-// register_activation_hook(__FILE__, 'providers_rewrite_flush');
+//Regenera las reglas de las URL providers
+register_activation_hook(__FILE__, 'providers_rewrite_flush');
+
+//Regenera las reglas de las URL customers
+register_activation_hook(__FILE__, 'customers_rewrite_flush');
 
 //Añade el nuevos campos a Proveedores
 require_once plugin_dir_path(__FILE__) . 'includes/providers/providers-metaboxes.php';
 
+//Añade el nuevos campos a Cliente
+require_once plugin_dir_path(__FILE__) . 'includes/customers/customers-metaboxes.php';
+
 //Añade shortcodes
 require_once plugin_dir_path(__FILE__) . 'includes/providers/providers-shortcode.php';
-
-//Añade el nuevo Post Type de CLiente
-require_once plugin_dir_path(__FILE__) . 'includes/customers/customers-post-types.php';
 
 ?>
