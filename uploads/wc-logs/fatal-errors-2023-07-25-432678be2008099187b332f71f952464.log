@@ -1,0 +1,34 @@
+2023-07-25T06:50:51+00:00 CRITICAL Uncaught Error: Call to undefined function providers_post_type() in C:\Users\mendi\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-post-types.php:60
+Stack trace:
+#0 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(308): providers_rewrite_flush(false)
+#1 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\mendi\Local Sites\valeapp\app\public\wp-admin\includes\plugin.php(691): do_action('activate_plugin...', false)
+#4 C:\Users\mendi\Local Sites\valeapp\app\public\wp-admin\plugins.php(58): activate_plugin('plugin-valeapp/...', 'http://valeapp....', false)
+#5 {main}
+  thrown in C:\Users\mendi\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-post-types.php on line 60
+
+2023-07-25T06:50:55+00:00 CRITICAL Uncaught Error: Call to undefined function providers_post_type() in C:\Users\mendi\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-post-types.php:60
+Stack trace:
+#0 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(308): providers_rewrite_flush('')
+#1 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\mendi\Local Sites\valeapp\app\public\wp-admin\plugins.php(194): do_action('activate_plugin...')
+#4 {main}
+  thrown in C:\Users\mendi\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-post-types.php on line 60
+
+2023-07-25T06:50:56+00:00 CRITICAL Uncaught Error: Call to undefined function providers_post_type() in C:\Users\mendi\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-post-types.php:60
+Stack trace:
+#0 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(308): providers_rewrite_flush('')
+#1 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\mendi\Local Sites\valeapp\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\mendi\Local Sites\valeapp\app\public\wp-admin\plugins.php(194): do_action('activate_plugin...')
+#4 {main}
+  thrown in C:\Users\mendi\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-post-types.php on line 60
+
+2023-07-25T15:18:14+00:00 CRITICAL Cannot redeclare providers_save_metaboxes() (previously declared in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-metaboxes.php:224) in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\page-registro-proveedores.php on line 206
+
+2023-07-25T15:18:41+00:00 CRITICAL Cannot redeclare providers_save_metaboxes() (previously declared in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\plugins\plugin-valeapp\includes\providers\providers-metaboxes.php:224) in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\page-registro-proveedores.php on line 206
+
+2023-07-25T20:50:42+00:00 CRITICAL Cannot redeclare front_providers_save_metaboxes() (previously declared in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php:215) in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\page-registro-proveedores.php on line 216
+

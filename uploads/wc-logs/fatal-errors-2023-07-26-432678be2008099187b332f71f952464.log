@@ -1,0 +1,33 @@
+2023-07-26T17:43:08+00:00 CRITICAL syntax error, unexpected token ",", expecting "]" in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php on line 222
+
+2023-07-26T17:43:25+00:00 CRITICAL syntax error, unexpected token ",", expecting "]" in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php on line 222
+
+2023-07-26T17:43:28+00:00 CRITICAL syntax error, unexpected token ",", expecting "]" in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php on line 222
+
+2023-07-26T17:45:52+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php:222
+Stack trace:
+#0 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(308): front_providers_save_metaboxes('')
+#1 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\DELL\Local Sites\valeapp\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_front_p...')
+#4 {main}
+  thrown in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php on line 222
+
+2023-07-26T17:46:10+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php:222
+Stack trace:
+#0 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(308): front_providers_save_metaboxes('')
+#1 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\DELL\Local Sites\valeapp\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_front_p...')
+#4 {main}
+  thrown in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php on line 222
+
+2023-07-26T17:48:00+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php:222
+Stack trace:
+#0 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(308): front_providers_save_metaboxes('')
+#1 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\DELL\Local Sites\valeapp\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\DELL\Local Sites\valeapp\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_front_p...')
+#4 {main}
+  thrown in C:\Users\DELL\Local Sites\valeapp\app\public\wp-content\themes\valeapp\functions.php on line 222
+
