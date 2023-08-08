@@ -14,43 +14,21 @@
 
 get_header();
 
-
 ?>
-    <form method="POST" id="login-providers" action="/home">
-        <table class="form-table">
-            <tr>
-                <th class= "row-title">
-                    <label>Inicio de Sesion Proveedor</label>
-                </th>
-                
-            </tr>    
-
-            <tr>
-                <th class= "row-title">
-                    <label for="email">Correo Electrónico:</label>
-                </th>
-                <td>
-                    <input value="" type="email" id="email" name="email" class="regular-text" placeholder="Ej. ejemplo@ejemplo.com" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="password">Contraseña:</label>
-                </th>
-                <td>
-                    <input value="" type="password" id="password" name="password" class="regular-text" required>
-                </td>
-            </tr>
-            <tr>
-                <th class= "row-title">
-                </th>
-                <td>
-                    <button type="submit" name="save" id="publish2" >Enviar</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+<div class="container login mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+            <form method="POST" id="login-providers" action="/home">
+                <h2 class="title">Inicio de sesion Proveedor</h2>
+                <input value="" type="email" id="email" name="email" class="text-form" placeholder="Email" required>
+                <input value="" type="password" id="password" name="password" class="text-form" placeholder="Contraseña"
+                    required>
+                <i class="bi bi-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:#d4d4d4"></i>
+                <button type="submit" name="save" id="publish2" class="btn btn-brand">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <?php
 

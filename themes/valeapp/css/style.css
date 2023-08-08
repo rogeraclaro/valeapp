@@ -66,7 +66,7 @@
 
 /* GENERAL */
 :root {
-  --bs-font-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+  --bs-font-sans-serif: "Century Gothic", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-secondary: "Open Sans";
@@ -88,10 +88,11 @@ html {
   --bs-gutter-x: 1rem;
   width: 100%;
   height: 100%;
+  color: #575550;
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
@@ -203,9 +204,10 @@ small,
 .title {
   position: relative;
   margin-bottom: 1.25em;
-  font-size: 1.5rem;
+  font-size: 1.62rem;
   font-family: 'Century Gothic';
-  font-weight: 600;
+  font-weight: bold;
+  color: #575550;
 }
 
 .title-big-header {
@@ -970,21 +972,6 @@ small,
 }
 
 /* brand */
-.btn-brand {
-  color: #ffffff;
-  background-color: #263a34;
-  border-color: #263a34;
-}
-
-.btn-brand:hover,
-.btn-brand:not(:disabled):not(.disabled).active,
-.btn-brand:not(:disabled):not(.disabled):active,
-.show>.btn-brand.dropdown-toggle {
-  color: #ffffff;
-  background-color: #3a5950;
-  border-color: #3a5950;
-}
-
 .btn-outline-brand {
   color: #263a34;
   background-color: transparent;
@@ -999,22 +986,6 @@ small,
   color: #ffffff;
   border-color: #263a34;
   background-color: #263a34;
-}
-
-.btn-brand.focus,
-.btn-brand:focus,
-.btn-brand:not(:disabled):not(.disabled).active:focus,
-.btn-brand:not(:disabled):not(.disabled):active:focus,
-.show>.btn-brand.dropdown-toggle:focus,
-.btn-outline-brand.focus,
-.btn-outline-brand:focus,
-.btn-outline-brand:not(:disabled):not(.disabled).active:focus,
-.btn-outline-brand:not(:disabled):not(.disabled):active:focus,
-.show>.btn-outline-brand.dropdown-toggle:focus {
-  color: #fff;
-  background-color: #263a34;
-  border-color: #263a34;
-  box-shadow: 0 0 0 0.2rem rgb(24 72 58 / 50%);
 }
 
 .bg-brand {
@@ -2206,7 +2177,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: row;
-  height: 4.2rem;
+  height: 5rem;
   font-size: 1.5rem;
   text-align: center;
   font-family: var(--bs-font-tertiary);
