@@ -1,10 +1,10 @@
 jQuery(document).ready(function () {
   var Menu = {
     el: {
-      ham: $(".menuburger"),
-      menuTop: $(".menu-top"),
-      menuMiddle: $(".menu-middle"),
-      menuBottom: $(".menu-bottom"),
+      ham: jQuery(".menuburger"),
+      menuTop: jQuery(".menu-top"),
+      menuMiddle: jQuery(".menu-middle"),
+      menuBottom: jQuery(".menu-bottom"),
     },
 
     init: function () {
