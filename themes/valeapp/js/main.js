@@ -26,7 +26,6 @@ jQuery(document).ready(function () {
       jQuery(".menu-main ul").slideToggle(300);
     },
   };
-
   Menu.init();
 
   // Eye password
