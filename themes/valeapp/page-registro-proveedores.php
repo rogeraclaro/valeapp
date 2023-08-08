@@ -19,7 +19,7 @@ get_header();
 <div class="container login mt-5">
     <div class="row justify-content-center align-items-center">
         <div class="col-12">
-            <form method="POST" id="form-providers" action="/inicio-sesion-proveedores">
+            <form method="POST" id="form-providers" action="/?page_id=100">
                 <h2 class="title">Registro Proveedor</h2>
                 <input type="text" id="name" name="name" class="text-form" placeholder="Nombre" required>
                 <input type="text" id="last_name" name="last_name" class="text-form" placeholder="Apellidos" required>

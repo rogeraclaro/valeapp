@@ -19,7 +19,7 @@ get_header();
 <div class="container login mt-5">
     <div class="row justify-content-center align-items-center">
         <div class="col-12">
-            <form method="POST" id="form_customer" action="/inicio-sesion-clientes">
+            <form method="POST" id="form_customer" action="/?page_id=211">
                 <h2 class="title">Registro Cliente</h2>
                 <input type="text" id="name_customer" name="name_customer" class="text-form" placeholder="Nombre"
                     required>
