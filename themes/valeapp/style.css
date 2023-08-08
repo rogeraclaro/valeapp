@@ -158,7 +158,7 @@ i.bi.bi-search {
 	display: none;
 	position: absolute;
 	overflow: auto;
-	top: 4rem;
+	top: 4.5rem;
 	left: 0;
 	z-index: 999;
 	padding: 1rem;
@@ -243,4 +243,125 @@ i.bi.bi-search {
 	background-color: #5aab9f;
 	border-color: #5aab9f;
 	box-shadow: 0 0 0 0.2rem rgb(24 72 58 / 50%);
+}
+
+/* Footer */
+footer {
+	margin-top: 3rem;
+}
+
+footer .container {
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 100%;
+	border-top: 1px solid #d4d4d4;
+	padding-top: 1.5rem;
+}
+
+footer .accordion {
+	padding-right: var(--bs-gutter-x, .75rem);
+	padding-left: var(--bs-gutter-x, .75rem);
+}
+
+footer .accordion-item {
+	border: 0;
+	/* border-top: 1px solid #d4d4d4; */
+	margin-bottom: 0.4rem;
+}
+
+footer .accordion-item:last-child {
+	border-bottom: 1px solid #d4d4d4;
+	padding-bottom: 1rem;
+}
+
+footer .accordion-button {
+	padding: 1.1rem 0rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	font-family: "Century Gothic";
+	justify-content: space-between;
+	color: #575550;
+}
+
+footer .accordion-button img {
+	width: 0.6rem;
+	height: auto;
+	transform: rotate(0deg);
+	transition: all .3s;
+}
+
+footer .accordion-button:not(.collapsed) {
+	box-shadow: none;
+	background-color: #fff;
+	color: #575550;
+	font-weight: bold;
+	font-family: "Century Gothic";
+	padding-right: 0.3rem;
+}
+
+footer .accordion-button:not(.collapsed) img {
+	width: 0.6rem;
+	height: auto;
+	transform: rotate(90deg);
+	margin-top: 0.3rem;
+}
+
+footer .accordion-button:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
+
+footer .accordion-button::after {
+	display: none;
+}
+
+footer .accordion-body {
+	padding-top: 0.5rem;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	padding-bottom: 0.8rem;
+}
+
+footer .accordion-body p {
+	text-align: left;
+	font-size: 1rem;
+	color: #575550;
+	font-weight: 500;
+	font-family: "Open Sans";
+	line-height: 1.35rem;
+	margin-bottom: 0rem;
+}
+
+footer .footlast {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+footer .copyright {
+	font-family: 'Open Sans';
+	font-size: 60%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+footer .xxss a {
+	color: #575550;
+	transition: all 0.3s;
+}
+
+footer .xxss i {
+	font-size: 1.2rem;
+}
+
+footer .xxss {
+	display: flex;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	max-width: 10rem;
+	margin: 0 auto;
+}
+
+footer .xxss a:hover {
+	color: #ccc;
 }
