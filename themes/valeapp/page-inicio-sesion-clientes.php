@@ -13,45 +13,27 @@
  */
 
 get_header();
-
-
 ?>
-    <form method="POST" id="login-customers" action="/home">
-        <table class="form-table">
-            <tr>
-                <th class= "row-title">
-                    <label>Inicio de Sesion Cliente</label>
-                </th>
-                
-            </tr>    
 
-            <tr>
-                <th class= "row-title">
-                    <label for="email_customer">Correo Electrónico:</label>
-                </th>
-                <td>
-                    <input value="" type="email" id="email_customer" name="email_customer" class="regular-text" placeholder="Ej. ejemplo@ejemplo.com" required>
-                </td>
-            </tr>
+<div class="container login mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+            <form method="POST" id="login-customers" action="/">
+                <h2 class="title">Inicio de sesion Clientes</h2>
+                <input value="" type="email" id="email_customer" name="email_customer" class="text-form" placeholder="Email" required>
+                <input value="" type="password" id="password" name="password" class="text-form" placeholder="Contraseña"
+                    required>
+                <i class="bi bi-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:#d4d4d4"></i>
+                <button type="submit" name="save" id="publish2" class="btn btn-brand">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-            <tr>
-                <th class= "row-title">
-                    <label for="password_customer">Contraseña:</label>
-                </th>
-                <td>
-                    <input value="" type="password" id="password_customer" name="password_customer" class="regular-text" required>
-                </td>
-            </tr>
-            <tr>
-                <th class= "row-title">
-                </th>
-                <td>
-                    <button type="submit" name="save" id="publish2" >Enviar</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+
+<!-- 
+<input value="" type="password" id="password_customer" name="password_customer" class="regular-text" required>
+-->
 
 <?php
-
 get_footer();

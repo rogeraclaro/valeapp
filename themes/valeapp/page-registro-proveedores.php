@@ -14,172 +14,53 @@
  */
 
 get_header();
-
 ?>
-    <form method="POST" id="form_providers" action="/inicio-sesion-proveedores">
-        <table class="form-table">
-            <tr>
-                <th class= "row-title">
-                    <label for="name">Nombre:</label>
-                </th>
-                <td>
-                    <input type="text" id="name" name="name" class="regular-text" placeholder="Ej. Juan" required>
-                </td>
-            </tr>
-            <tr>
-                <th class= "row-title">
-                    <label for="last_name">Apellidos:</label>
-                </th>
-                <td>
-                    <input type="text" id="last_name" name="last_name" class="regular-text" placeholder="Ej. Mendez" required>
-                </td>
-            </tr>
 
-            <tr>
-                <th class= "row-title">
-                    <label for="email">Correo Electrónico:</label>
-                </th>
-                <td>
-                    <input type="email" id="email" name="email" class="regular-text" placeholder="Ej. ejemplo@ejemplo.com" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="password">Contraseña:</label>
-                </th>
-                <td>
-                    <input type="password" id="password" name="password" class="regular-text" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="phone_number">Teléfono:</label>
-                </th>
-                <td>
-                    <input type="tel" id="phone_number" name="phone_number" class="regular-text" placeholder="Ej. 888888888" required>
-                </td>
-            </tr>
-            
-            <tr>
-                <th class= "row-title">
-                    <label for="address">Dirección:</label>
-                </th>
-                <td>
-                    <input type="text" id="address" name="address" class="regular-text" placeholder="Ej. Av. Siempre Viva" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="cd_postal">Código Postal:</label>
-                </th>
-                <td>
-                    <input type="number" id="cd_postal" name="cd_postal" class="regular-text">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="city">Ciudad:</label>
-                </th>
-                <td>
-                    <input type="text" id="city" name="city" class="regular-text" placeholder="Ej. Madrid">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="country">Pais:</label>
-                </th>
-                <td>
-                    <input type="text" id="country" name="country" class="regular-text" placholder="Ej. Francia">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="schedule">Horario:</label>
-                </th>
-                <td>
-                    <input type="text" id="schedule" name="schedule" class="regular-text">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="enterprise">Autónomo o Empresa:</label>
-                </th>
-                <td>
-                    <select id="enterprise" name="enterprise" class="postbox" >
-                        <option hidden >Elige una opcion</option>
-                        <option value="Autónomo" >Autónomo</option>
-                        <option value="Empresa" >Empresa</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="enterprise_name">Nombre de la empresa:</label>
-                </th>
-                <td>
-                    <input type="text" id="enterprise_name" name="enterprise_name" class="regular-text" placeholder="Ej. SMBS">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="enterprise_logo">Logotipo:</label>
-                </th>
-                <td>
-                    <input type="file" id="enterprise_logo" name="enterprise_logo" class="regular-text" accept="image/png,image/jpeg">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="profile_photo">Fotos:</label>
-                </th>
-                <td>
-                    <input type="file" id="profile_photo" name="profile_photo" class="regular-text" accept="image/png,image/jpeg" multiple>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="description">Descripción:</label>
-                </th>
-                <td>
-                    <textarea type="text" id="description" name="description" class="regular-text"></textarea>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="membership">Membresia:</label>
-                </th>
-                <td>
-                    <select id="membership" name="membership" class="postbox">
-                        <option hidden >Elige una opcion</option>
-                        <option value="Silver" >Silver</option>
-                        <option value="Gold" >Gold</option>
-                        <option value="Platinum" >Platinum</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">   
-                </th>
-                <td>
-                    <?php wp_nonce_field(basename(__FILE__), 'providers_register_nonce'); ?>
-                    <button type="submit" name="save" id="publish" >Enviar</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+<div class="container login mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+            <form method="POST" id="form-providers" action="/?page_id=100">
+                <h2 class="title">Registro Proveedor</h2>
+                <input type="text" id="name" name="name" class="text-form" placeholder="Nombre" required>
+                <input type="text" id="last_name" name="last_name" class="text-form" placeholder="Apellidos" required>
+                <input type="email" id="email" name="email" class="text-form" placeholder="Email" required>
+                <input type="password" id="password" name="password" class="text-form" placeholder="Contraseña"
+                    required>
+                <i class="bi bi-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:#d4d4d4"></i>
+                <input type="tel" id="phone_number" name="phone_number" class="text-form" placeholder="Teléfono"
+                    required>
+                <input type="text" id="address" name="address" class="text-form" placeholder="Dirección" required>
+                <input type="number" id="cd_postal" name="cd_postal" class="text-form" placeholder="CP">
+                <input type="text" id="city" name="city" class="text-form" placeholder="Localidad">
+                <input type="text" id="country" name="country" class="text-form" placeholder="País">
+                <input type="text" id="schedule" name="schedule" class="text-form" placeholder="Horario">
+                <select id="enterprise" name="enterprise" class="postbox">
+                    <option hidden>Autonomo o Empresa</option>
+                    <option value="Autónomo">Autónomo</option>
+                    <option value="Empresa">Empresa</option>
+                </select>
+                <input type="text" id="enterprise_name" name="enterprise_name" class="text-form"
+                    placeholder="Nombre de la empresa">
+                <div class="text text-form">Logo de la empresa:</div>
+                <input type="file" id="enterprise_logo" name="enterprise_logo" class="text-form"
+                    accept="image/png,image/jpeg">
+                <div class="text text-form">Fotografía:</div>
+                <input type="file" id="profile_photo" name="profile_photo" class="text-form"
+                    accept="image/png,image/jpeg" multiple>
+                <textarea type="text" id="description" name="description" class="text-form"
+                    placeholder="Descripción"></textarea>
+                <select id="membership" name="membership" class="postbox">
+                    <option hidden>Membresía:</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+                </select>
+                <?php wp_nonce_field(basename(__FILE__), 'providers_register_nonce'); ?>
+                <button type="submit" name="save" id="publish" class="btn btn-brand">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <?php
 

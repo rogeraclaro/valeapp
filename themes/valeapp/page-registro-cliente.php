@@ -14,135 +14,47 @@
  */
 
 get_header();
-
 ?>
-    <form method="POST" id="form_customer" action="/inicio-sesion-proveedores">
-        <table class="form-table">
-            <tr>
-                <th class= "row-title">
-                    <label for="name_customer">Nombre:</label>
-                </th>
-                <td>
-                    <input type="text" id="name_customer" name="name_customer" class="regular-text" placeholder="Ej. Juan" required>
-                </td>
-            </tr>
-            <tr>
-                <th class= "row-title">
-                    <label for="last_name_customer_customer">Apellidos:</label>
-                </th>
-                <td>
-                    <input type="text" id="last_name_customer" name="last_name_customer" class="regular-text" placeholder="Ej. Mendez" required>
-                </td>
-            </tr>
 
-            <tr>
-                <th class= "row-title">
-                    <label for="date_customer">Fecha de Nacimiento:</label>
-                </th>
-                <td>
-                    <input type="date" id="date_customer" name="date_customer" class="regular-text" placeholder="" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="email_customer">Correo Electrónico:</label>
-                </th>
-                <td>
-                    <input type="email" id="email_customer" name="email_customer" class="regular-text" placeholder="Ej. ejemplo@ejemplo.com" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="password_customer">Contraseña:</label>
-                </th>
-                <td>
-                    <input type="password" id="password_customer" name="password_customer" class="regular-text" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="phone_number_customer">Teléfono:</label>
-                </th>
-                <td>
-                    <input type="tel" id="phone_number_customer" name="phone_number_customer" class="regular-text" placeholder="Ej. 888888888" required>
-                </td>
-            </tr>
-            
-            <tr>
-                <th class= "row-title">
-                    <label for="address_customer">Dirección:</label>
-                </th>
-                <td>
-                    <input type="text" id="address_customer" name="address_customer" class="regular-text" placeholder="Ej. Av. Siempre Viva" required>
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="cd_postal_customer">Código Postal:</label>
-                </th>
-                <td>
-                    <input type="number" id="cd_postal_customer" name="cd_postal_customer" class="regular-text">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="city_customer">Ciudad:</label>
-                </th>
-                <td>
-                    <input type="text" id="city_customer" name="city_customer" class="regular-text" placeholder="Ej. Madrid">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="country_customer">Pais:</label>
-                </th>
-                <td>
-                    <input type="text" id="country_customer" name="country_customer" class="regular-text" placholder="Ej. Francia">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="interests_customer">Intereses:</label>
-                </th>
-                <td>
-                    <input type="text" id="interests_customer" name="interests_customer" class="regular-text" placholder="">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="profile_photo_customer">Foto:</label>
-                </th>
-                <td>
-                    <input type="text" id="profile_photo_customer" name="profile_photo_customer" class="regular-text" placholder="">
-                </td>
-            </tr>
-
-            <tr>
-                <th class= "row-title">
-                    <label for="description_customer">Descripcion:</label>
-                </th>
-                <td>
-                    <input type="text" id="description_customer" name="description_customer" class="regular-text" placholder="">
-                </td>
-            </tr>
-            <tr>
-                <th class= "row-title">   
-                </th>
-                <td>
-                    <?php wp_nonce_field(basename(__FILE__), 'customers_register_nonce'); ?>
-                    <button type="submit" name="save" id="publish" >Enviar</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+<div class="container login mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+            <form method="POST" id="form_customer" action="/?page_id=211">
+                <h2 class="title">Registro Cliente</h2>
+                <input type="text" id="name_customer" name="name_customer" class="text-form" placeholder="Nombre"
+                    required>
+                <input type="text" id="last_name_customer" name="last_name_customer" class="text-form"
+                    placeholder="Apellidos" required>
+                <input type="date" id="date_customer" name="date_customer" class="text-form"
+                    placeholder="Fecha nacimiento" required>
+                <input type="email" id="email_customer" name="email_customer" class="text-form" placeholder="Email"
+                    required>
+                <input type="password" id="password" name="password" class="text-form" placeholder="Contraseña"
+                    required>
+                <!-- <input type="password" id="password_customer" name="password_customer" class="text-form" placeholder="Contraseña"
+                                                                            required> -->
+                <i class="bi bi-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:#d4d4d4"></i>
+                <input type="tel" id="phone_number_customer" name="phone_number_customer" class="text-form"
+                    placeholder="Teléfono" required>
+                <input type="text" id="address_customer" name="address_customer" class="text-form"
+                    placeholder="Dirección" required>
+                <input type="number" id="cd_postal_customer" name="cd_postal_customer" class="text-form"
+                    placeholder="CP">
+                <input type="text" id="city_customer" name="city_customer" class="text-form" placeholder="Población">
+                <input type="text" id="country_customer" name="country_customer" class="text-form" placeholder="País">
+                <input type="text" id="interests_customer" name="interests_customer" class="text-form"
+                    placeholder="Intereses">
+                <div class="text text-form">Fotografía de perfil:</div>
+                <input type="file" id="profile_photo_customer" name="profile_photo_customer" class="text-form"
+                    accept="image/png,image/jpeg" multiple>
+                <textarea type="text" id="description_customer" name="description_customer" class="text-form"
+                    placeholder="Descripción"></textarea>
+                <?php wp_nonce_field(basename(__FILE__), 'customers_register_nonce'); ?>
+                <button type="submit" name="save" id="publish" class="btn btn-brand">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <?php
 

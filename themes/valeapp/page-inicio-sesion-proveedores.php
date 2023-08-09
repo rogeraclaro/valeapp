@@ -17,11 +17,11 @@ get_header();
 ?>
 <div class="container login mt-5">
     <div class="row justify-content-center align-items-center">
-        <div class="col-12">
-            <form method="POST" id="login-providers" action="/home">
+        <div class="col-12" id="login-code-container">
+            <form method="POST" id="login-providers" action="/wp-login.php">
                 <h2 class="title">Inicio de sesion Proveedor</h2>
-                <input value="" type="email" id="email" name="email" class="text-form" placeholder="Email" required>
-                <input value="" type="password" id="password" name="password" class="text-form" placeholder="Contraseña"
+                <input value="" type="text" id="user_login" name="log" class="text-form" placeholder="Email" required>
+                <input value="" type="password" id="user_pass" name="pwd" class="text-form" placeholder="Contraseña"
                     required>
                 <i class="bi bi-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:#d4d4d4"></i>
                 <button type="submit" name="save" id="publish2" class="btn btn-brand">Enviar</button>

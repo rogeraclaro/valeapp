@@ -187,20 +187,27 @@ i.bi.bi-search {
 
 /* Form */
 
-.login input {
+.login input,
+.login select,
+.login textarea {
 	width: 100%;
 	border: 1px solid #d4d4d4;
 	border-radius: 6px;
 	margin-top: 1rem;
 	padding: 0.6rem 1.3rem;
 	font-family: 'Century Gothic';
+	color: #575550;
 }
 
-.login input:focus-visible {
+.login input:focus-visible,
+.login select:focus-visible,
+.login textarea:focus-visible {
 	outline: 0;
 }
 
-.login input:focus::placeholder {
+.login input:focus::placeholder,
+.login select:focus::placeholder,
+.login textarea:focus::placeholder {
 	color: #5aab9f;
 }
 
@@ -243,6 +250,12 @@ i.bi.bi-search {
 	background-color: #5aab9f;
 	border-color: #5aab9f;
 	box-shadow: 0 0 0 0.2rem rgb(24 72 58 / 50%);
+}
+
+.text.text-form {
+	margin-top: 1rem;
+	padding: 1rem 1.3rem 0 1.3rem;
+	font-family: 'Century Gothic';
 }
 
 /* Footer */
