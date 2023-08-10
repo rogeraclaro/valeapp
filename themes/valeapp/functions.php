@@ -411,7 +411,7 @@ function add_providers_user( $user ) {
                     <label for="email">Correo Electrónico:</label>
                 </th>
                 <td>
-                    <input value="<?php echo get_user_meta( $user->ID, 'billing_email', true); ?>" type="email" id="billing_email" name="billing_email" class="regular-text" placeholder="Ej. ejemplo@ejemplo.com" required>
+                    <input value="<?php echo get_user_meta( $user->ID, 'email', true); ?>" type="email" id="email" name="email" class="regular-text" placeholder="Ej. ejemplo@ejemplo.com" required>
                 </td>
             </tr>
 
@@ -420,7 +420,7 @@ function add_providers_user( $user ) {
                     <label for="phone_number">Teléfono:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'phone_number', true); ?>" type="tel" id="phone_number" name="phone_number" class="regular-text" placeholder="Ej. 888888888" required>
+                    <input value="<?php echo get_user_meta( $user->ID, 'phone_number', true); ?>" type="tel" id="phone_number" name="phone_number" class="regular-text" placeholder="Ej. 888888888" required>
                 </td>
             </tr>
             
@@ -429,7 +429,7 @@ function add_providers_user( $user ) {
                     <label for="address">Dirección:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'address', true); ?>" type="text" id="address" name="address" class="regular-text" placeholder="Ej. Av. Siempre Viva" required>
+                    <input value="<?php echo get_user_meta( $user->ID, 'address', true); ?>" type="text" id="address" name="address" class="regular-text" placeholder="Ej. Av. Siempre Viva" required>
                 </td>
             </tr>
 
@@ -438,7 +438,7 @@ function add_providers_user( $user ) {
                     <label for="cd_postal">Código Postal:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'cd_postal', true); ?>" type="number" id="cd_postal" name="cd_postal" class="regular-text">
+                    <input value="<?php echo get_user_meta( $user->ID, 'cd_postal', true); ?>" type="number" id="cd_postal" name="cd_postal" class="regular-text">
                 </td>
             </tr>
 
@@ -447,7 +447,7 @@ function add_providers_user( $user ) {
                     <label for="city">Ciudad:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'city', true); ?>" type="text" id="city" name="city" class="regular-text" placeholder="Ej. Madrid">
+                    <input value="<?php echo get_user_meta( $user->ID, 'city', true); ?>" type="text" id="city" name="city" class="regular-text" placeholder="Ej. Madrid">
                 </td>
             </tr>
 
@@ -456,7 +456,7 @@ function add_providers_user( $user ) {
                     <label for="country">Pais:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'country', true); ?>" type="text" id="country" name="country" class="regular-text" placholder="Ej. Francia">
+                    <input value="<?php echo get_user_meta( $user->ID, 'country', true); ?>" type="text" id="country" name="country" class="regular-text" placholder="Ej. Francia">
                 </td>
             </tr>
 
@@ -465,7 +465,7 @@ function add_providers_user( $user ) {
                     <label for="schedule">Horario:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'schedule', true); ?>" type="text" id="schedule" name="schedule" class="regular-text">
+                    <input value="<?php echo get_user_meta( $user->ID, 'schedule', true); ?>" type="text" id="schedule" name="schedule" class="regular-text">
                 </td>
             </tr>
 
@@ -475,7 +475,7 @@ function add_providers_user( $user ) {
                 </th>
                 <td>
                     <select id="enterprise" name="enterprise" class="postbox" >
-                        <option hidden ><?php if(get_user_meta( $user->ID, 'enterprise', true)){get_user_meta( $user->ID, 'enterprise', true);} else { echo "Elige una opcion";} ?></option>
+                        <option hidden ><?php if(get_user_meta( $user->ID, 'enterprise', true)){echo get_user_meta( $user->ID, 'enterprise', true);} else { echo "Elige una opcion";} ?></option>
                         <option value="Autónomo" >Autónomo</option>
                         <option value="Empresa" >Empresa</option>
                     </select>
@@ -487,7 +487,7 @@ function add_providers_user( $user ) {
                     <label for="enterprise_name">Nombre de la empresa:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'enterprise_name', true); ?>" type="text" id="enterprise_name" name="enterprise_name" class="regular-text" placeholder="Ej. SMBS">
+                    <input value="<?php echo get_user_meta( $user->ID, 'enterprise_name', true); ?>" type="text" id="enterprise_name" name="enterprise_name" class="regular-text" placeholder="Ej. SMBS">
                 </td>
             </tr>
 
@@ -497,7 +497,7 @@ function add_providers_user( $user ) {
                 </th>
                 <td>
                     <select id="tax_iva" name="tax_iva" class="postbox" >
-                        <option hidden ><?php if(get_user_meta( $user->ID, 'tax_iva', true)){get_user_meta( $user->ID, 'tax_iva', true);} else { echo "Elige una opcion";} ?></option>
+                        <option hidden ><?php if(get_user_meta( $user->ID, 'tax_iva', true)){echo get_user_meta( $user->ID, 'tax_iva', true);} else { echo "Elige una opcion";} ?></option>
                         <option value="NIE" >NIE</option>
                         <option value="NIF" >NIF</option>
                     </select>
@@ -509,7 +509,7 @@ function add_providers_user( $user ) {
                     <label for="categorys">Áreas:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'categorys', true); ?>" type="text" id="categorys" name="categorys" class="regular-text">
+                    <input value="<?php echo get_user_meta( $user->ID, 'categorys', true); ?>" type="text" id="categorys" name="categorys" class="regular-text">
                 </td>
             </tr>
 
@@ -518,7 +518,7 @@ function add_providers_user( $user ) {
                     <label for="enterprise_logo">Logotipo:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'enterprise_logo', true); ?>" type="file" id="enterprise_logo" name="enterprise_logo" class="regular-text" accept="image/png,image/jpeg">
+                    <input value="<?php echo get_user_meta( $user->ID, 'enterprise_logo', true); ?>" type="file" id="enterprise_logo" name="enterprise_logo" class="regular-text" accept="image/png,image/jpeg">
                 </td>
             </tr>
 
@@ -527,7 +527,7 @@ function add_providers_user( $user ) {
                     <label for="profile_photo">Fotos:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'profile_photo', true); ?>" type="file" id="profile_photo" name="profile_photo" class="regular-text" accept="image/png,image/jpeg" multiple>
+                    <input value="<?php echo get_user_meta( $user->ID, 'profile_photo', true); ?>" type="file" id="profile_photo" name="profile_photo" class="regular-text" accept="image/png,image/jpeg" multiple>
                 </td>
             </tr>
 
@@ -536,7 +536,7 @@ function add_providers_user( $user ) {
                     <label for="comments">Comentarios:</label>
                 </th>
                 <td>
-                    <textarea value="<?php get_user_meta( $user->ID, 'comments', true); ?>" type="text" id="comments" name="comments" class="regular-text"></textarea>
+                    <textarea value="<?php echo get_user_meta( $user->ID, 'comments', true); ?>" type="text" id="comments" name="comments" class="regular-text"></textarea>
                 </td>
             </tr>
 
@@ -545,7 +545,7 @@ function add_providers_user( $user ) {
                     <label for="description">Descripción:</label>
                 </th>
                 <td>
-                    <textarea value="<?php get_user_meta( $user->ID, 'description', true); ?>" type="text" id="description" name="description" class="regular-text"></textarea>
+                    <textarea value="<?php echo get_user_meta( $user->ID, 'description', true); ?>" type="text" id="description" name="description" class="regular-text"></textarea>
                 </td>
             </tr>
 
@@ -555,7 +555,7 @@ function add_providers_user( $user ) {
                 </th>
                 <td>
                     <select id="membership" name="membership" class="postbox">
-                        <option hidden ><?php if(get_user_meta( $user->ID, 'membership', true)){get_user_meta( $user->ID, 'membership', true);} else { echo "Elige una opcion";} ?></option>
+                        <option hidden ><?php if(get_user_meta( $user->ID, 'membership', true)){echo get_user_meta( $user->ID, 'membership', true);} else { echo "Elige una opcion";} ?></option>
                         <option value="Silver" >Silver</option>
                         <option value="Gold" >Gold</option>
                         <option value="Platinum" >Platinum</option>
@@ -568,7 +568,7 @@ function add_providers_user( $user ) {
                     <label for="assessment">Valoración:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'assessment', true); ?>" type="text" id="assessment" name="assessment" class="regular-text">
+                    <input value="<?php echo get_user_meta( $user->ID, 'assessment', true); ?>" type="text" id="assessment" name="assessment" class="regular-text">
                 </td>
             </tr>
 
@@ -577,7 +577,7 @@ function add_providers_user( $user ) {
                     <label for="number_iban">IBAN:</label>
                 </th>
                 <td>
-                    <input value="<?php get_user_meta( $user->ID, 'number_iban', true); ?>" type="number" id="number_iban" name="number_iban" class="regular-text">
+                    <input value="<?php echo get_user_meta( $user->ID, 'number_iban', true); ?>" type="number" id="number_iban" name="number_iban" class="regular-text">
                 </td>
             </tr>
 
@@ -587,7 +587,7 @@ function add_providers_user( $user ) {
 add_action( 'personal_options_update', 'save_providers_database' );
 add_action( 'edit_user_profile_update', 'save_providers_database' );
 
-function save_providers_database( $user_id ) {
+function save_providers_database($user_id) {
 	$first_name = $last_name = $email = $password = $phone_number = $address = $cd_postal = $city = $country = $schedule = $enterprise = $enterprise_first_name = $tax_iva = $categorys = $enterprise_logo = $profile_photo = $comments = $description = $membership = $assessment = $number_iban = '';
 	$regular_words = '/^[a-zA-Zá-úÁ-Ú\s]+$/';
     $regular_number = "/^([1-9]\d*|0)$/";
@@ -749,6 +749,4 @@ function save_providers_database( $user_id ) {
         }
     }
 }
-
-
 

@@ -29,7 +29,7 @@ get_header();
                     placeholder="Fecha nacimiento" required>
                 <input type="email" id="email_customer" name="email_customer" class="text-form" placeholder="Email"
                     required>
-                <input type="password" id="password" name="password" class="text-form" placeholder="Contraseña"
+                <input type="password" id="password_customer" name="password_customer" class="text-form" placeholder="Contraseña"
                     required>
                 <!-- <input type="password" id="password_customer" name="password_customer" class="text-form" placeholder="Contraseña"
                                                                             required> -->

@@ -14,13 +14,12 @@
 
 get_header();
 
-$temp = $wp_query;
-$wp_query = null;
-$wp_query = new WP_Query();
-$args = [  
-	'post_type' => 'proveedores',
-];
-$wp_query->query($args);
+$users = get_users([
+    'role' => 'contributor',
+]);
+
+if ($users) {
+
 ?>
 
 	<!-- BEGIN SECTION 2 -->
@@ -66,34 +65,34 @@ $wp_query->query($args);
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="cards">
-								<?php if ( $wp_query->have_posts() ) : while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
+								<?php foreach($users as $user) {  ?>
 								<div class="card" id="modal01-button">
 									<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-card-image-v3.png" alt="ValeApp">
 									<div class="wrapper">
-										<p class="name"><?php echo get_post_meta($post->ID, 'name', true); ?></p>
+										<p class="name"><?php echo get_user_meta($user->ID, 'first_name', true); ?></p>
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
-										<p class="rate"><?php echo get_post_meta($post->ID, 'assessment', true); ?></p>
+										<p class="rate"><?php echo get_user_meta($user->ID, 'assessment', true); ?></p>
 									</div>
 									<span class="duration">3 meses en Vale</span>
 									<p class="price">20 <span>€/h</span></p>
 								</div>
-								<?php endwhile; endif; ?>
+								<?php } ?>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="cards">	
-							<?php if ( $wp_query->have_posts() ) : while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
+							<?php foreach($users as $user) {  ?>
 								<div class="card" id="modal01-button">
 									<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-card-image-v3.png" alt="ValeApp">
 									<div class="wrapper">
-										<p class="name"><?php echo get_post_meta($post->ID, 'name', true); ?></p>
+										<p class="name"><?php echo get_user_meta($user->ID, 'first_name', true); ?></p>
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
-										<p class="rate"><?php echo get_post_meta($post->ID, 'assessment', true); ?></p>
+										<p class="rate"><?php echo get_user_meta($user->ID, 'assessment', true); ?></p>
 									</div>
 									<span class="duration">3 meses en Vale</span>
 									<p class="price">20 <span>€/h</span></p>
 								</div>
-								<?php endwhile; endif; ?>
+								<?php } ?>
 							</div>
 						</div>
 						<div class="swiper-slide">
@@ -1149,4 +1148,5 @@ $wp_query->query($args);
 	</div>
 
 <?php
+}
 get_footer();
