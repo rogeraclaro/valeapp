@@ -51,10 +51,6 @@ function providers_post_type() {
 
 add_action( 'init', 'providers_post_type' );
 
-/*
-crear un post type wordpress con el nombre de proveedores, donde pueda ingresar nuevos proveedores con los campos de: Fotos de perfil, NOmbres y apellidos, Correo, Contraseña, Telefono, Direccion, Codigo Postal, Ciudad, Pais, Horario, Autonomo o empresa, Nombre de la empresa, IVA, Areas, Logotipo, Comentarios, Descripcion, Membresia, Valoracion, IBAN
-*/
-
 //Funcion para regenerar los slug necesarios
 function providers_rewrite_flush() {
     providers_post_type();

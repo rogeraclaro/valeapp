@@ -8,7 +8,7 @@ function customers_add_metaboxes() {
 add_action('add_meta_boxes', 'customers_add_metaboxes');
 
 function customer_metaboxes($post) {  ?>
-    <form method="POST" id="form_customer" action="/inicio-sesion-clientes">
+    <form method="POST" id="form_customer" action="/inicio-sesion-clientes" enctype="multipart/form-data">
         <table class="form-table">
             <tr>
                 <th class= "row-title">
@@ -113,7 +113,8 @@ function customer_metaboxes($post) {  ?>
                     <label for="profile_photo_customer">Foto:</label>
                 </th>
                 <td>
-                    <input value="<?php echo get_post_meta($post->ID, 'profile_photo_customer', true); ?>" type="text" id="profile_photo_customer" name="profile_photo_customer" class="regular-text" placholder="">
+                    <input value="<?php echo get_post_meta($post->ID, 'profile_photo_customer', true); ?>" type="file" id="profile_photo_customer" name="profile_photo_customer" class="regular-text" accept="image/png,image/jpeg" multiple required>
+                    <img src="<?php echo esc_url(get_post_meta($post->ID, 'profile_photo_customer', true)); ?>" alt="">
                 </td>
             </tr>
 
@@ -234,9 +235,11 @@ function customer_save_metaboxes($post_id, $post, $update) {
         update_post_meta($post_id, 'interests_customer', $interests);
     }
 
-    if(isset( $_POST['profile_photo_customer'])) {
-        $profile_photo = sanitize_text_field( $_POST['profile_photo_customer']);
-        update_post_meta($post_id, 'profile_photo_customer', $profile_photo);
+    if(!empty($_FILES['profile_photo_customer']['name'])) {
+        $profile_photo = wp_handle_upload($_FILES['profile_photo_customer'], ['test_form' => false]);
+        if($profile_photo && !isset($profile_photo['error'])) {
+            update_post_meta($post_id, 'profile_photo_customer', $profile_photo['url']);
+        }
     }
 
     if(isset( $_POST['comments_customer'])) {

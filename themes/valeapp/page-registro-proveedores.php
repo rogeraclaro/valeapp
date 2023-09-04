@@ -13,6 +13,39 @@
  * @package ValeApp
  */
 
+ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $first_name = sanitize_text_field($_POST['first_name']);
+    $last_name = sanitize_text_field($_POST['last_name']);
+    $username = sanitize_text_field($_POST['first_name'] . ' ' . $_POST['last_name'] );
+    $email = sanitize_text_field($_POST['user_email']);
+    $password = sanitize_text_field($_POST['user_password']);
+    $phone_number = sanitize_text_field($_POST['phone_number']);
+    $address = sanitize_text_field($_POST['address']);
+    $cd_postal = sanitize_text_field($_POST['cd_postal']);
+    $city = sanitize_text_field($_POST['city']);
+    $country = sanitize_text_field($_POST['country']);
+    $schedule = sanitize_text_field($_POST['schedule']);
+    $enterprise = sanitize_text_field($_POST['enterprise']);
+    $enterprise_name = sanitize_text_field($_POST['enterprise_name']);
+    $enterprise_logo = sanitize_text_field($_FILES['enterprise_logo']);
+    $profile_photo = sanitize_text_field($_FILES['profile_photo']);
+    $description = sanitize_text_field($_POST['description']);
+    $membership = sanitize_text_field($_POST['membership']);
+
+    if (function_exists('add_provider_front_metaboxes')) {
+        $result = add_provider_front_metaboxes($first_name, $last_name, $email, $password, $phone_number, $address, $cd_postal, $city, $country, $schedule, $enterprise, $enterprise_name, $enterprise_logo, $profile_photo, $description, $membership,);
+
+        if($result === true) {
+            wp_redirect('/inicio-sesion-proveedores');
+            exit;
+        }
+        else {
+            $error_message = $result;
+        }
+    }
+    
+}
+
 get_header();
 
 ?>
@@ -20,7 +53,7 @@ get_header();
 <div class="container login mt-5">
     <div class="row justify-content-center align-items-center">
         <div class="col-12">
-            <form method="POST" id="" action='/?page_id=100'>
+            <form method="POST" id="" action='' enctype="multipart/form-data">
                 <h2 class="title">Registro Proveedor</h2>
                 <input type="text" id="first_name" name="first_name" class="text-form" placeholder="Nombre" required>
                 <input type="text" id="last_name" name="last_name" class="text-form" placeholder="Apellidos" required>
@@ -36,7 +69,7 @@ get_header();
                 <input type="text" id="country" name="country" class="text-form" placeholder="País">
                 <input type="text" id="schedule" name="schedule" class="text-form" placeholder="Horario">
                 <select id="enterprise" name="enterprise" class="postbox">
-                    <option hidden>Autonomo o Empresa</option>
+                    <option hidden>Autónomo o Empresa</option>
                     <option value="Autónomo">Autónomo</option>
                     <option value="Empresa">Empresa</option>
                 </select>
@@ -63,56 +96,5 @@ get_header();
 </div>
 
 <?php
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $first_name = sanitize_text_field($_POST['first_name']);
-    $last_name = sanitize_text_field($_POST['last_name']);
-    $username = sanitize_text_field($_POST['first_name'] . ' ' . $_POST['last_name'] );
-    $email = sanitize_text_field($_POST['user_email']);
-    $password = sanitize_text_field($_POST['user_password']);
-    $phone_number = sanitize_text_field($_POST['phone_number']);
-    $address = sanitize_text_field($_POST['address']);
-    $cp_postal = sanitize_text_field($_POST['cd_postal']);
-    $city = sanitize_text_field($_POST['city']);
-    $country = sanitize_text_field($_POST['country']);
-    $schedule = sanitize_text_field($_POST['schedule']);
-    $enterprise = sanitize_text_field($_POST['enterprise']);
-    $enterprise_name = sanitize_text_field($_POST['enterprise_name']);
-    $enterprise_logo = sanitize_text_field($_POST['enterprise_logo']);
-    $profile_photo = sanitize_text_field($_POST['profile_photo']);
-    $description = sanitize_text_field($_POST['description']);
-    $membership = sanitize_text_field($_POST['membership']);
-
-
-
-    $user_id = wp_insert_user([
-        'user_login' => $username, 
-        'user_pass' => $password, 
-        'user_email' => $email,
-        'role' => 'contributor',
-        'first_name' => $first_name,
-        'last_name' => $last_name,
-    ]);
-
-    if (!is_wp_error($user_id)) {
-        update_user_meta($user_id, 'email', $email);
-        update_user_meta($user_id, 'phone_number', $phone_number);
-        update_user_meta($user_id, 'address', $address);
-        update_user_meta($user_id, 'cp_postal', $cp_postal);
-        update_user_meta($user_id, 'city', $city);
-        update_user_meta($user_id, 'country', $country);
-        update_user_meta($user_id, 'schedule', $schedule);
-        update_user_meta($user_id, 'enterprise', $enterprise);
-        update_user_meta($user_id, 'enterprise_name', $enterprise_name);
-        update_user_meta($user_id, 'enterprise_logo', $enterprise_logo);
-        update_user_meta($user_id, 'profile_photo', $profile_photo);
-        update_user_meta($user_id, 'description', $description);
-        update_user_meta($user_id, 'membership', $membership);
-    }
-
-        wp_redirect('/?page_id=100');
-        exit;
-}
-
 
 get_footer();

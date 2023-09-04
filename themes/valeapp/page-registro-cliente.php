@@ -13,26 +13,54 @@
  * @package ValeApp
  */
 
+//  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     $first_name_customer = sanitize_text_field($_POST['first_name_customer']);
+//     $last_name_customer = sanitize_text_field($_POST['last_name_customer']);
+//     $date_customer = sanitize_text_field($_POST['date_customer']);
+//     $email_customer = sanitize_text_field($_POST['user_email_customer']);
+//     $password_customer = sanitize_text_field($_POST['user_password_customer']);
+//     $phone_number_customer = sanitize_text_field($_POST['phone_number_customer']);
+//     $address_customer = sanitize_text_field($_POST['address_customer']);
+//     $cd_postal_customer = sanitize_text_field($_POST['cd_postal_customer']);
+//     $city_customer = sanitize_text_field($_POST['city_customer']);
+//     $country_customer = sanitize_text_field($_POST['country_customer']);
+//     $interests_customer = sanitize_text_field($_POST['interests_customer']);
+//     $profile_photo_customer = sanitize_text_field($_FILES['profile_photo_customer']);
+//     $description_customer = sanitize_text_field($_POST['description_customer']);
+
+//     if (function_exists('add_customer_front_metaboxes')) {
+//         $result = add_customer_front_metaboxes($first_name_customer, $last_name_customer, $date_customer, $email_customer, $password_customer, $phone_number_customer, $address_customer, $cd_postal_customer, $city_customer, $country_customer, $interests_customer, $profile_photo_customer, $description_customer);
+
+//         if($result === true) {
+//             wp_redirect('/inicio-sesion-clientes');
+//             exit;
+//         }
+//         else {
+//             $error_message = $result;
+//         }
+//     }
+    
+// }
+
 get_header();
 ?>
 
 <div class="container login mt-5">
     <div class="row justify-content-center align-items-center">
         <div class="col-12">
-            <form method="POST" id="form_customer" action="/?page_id=211">
+            <form method="POST" id="form_customer" action="" enctype="multipart/form-data">
                 <h2 class="title">Registro Cliente</h2>
-                <input type="text" id="name_customer" name="name_customer" class="text-form" placeholder="Nombre"
+                <input type="text" id="first_name_customer" name="first_name_customer" class="text-form" placeholder="Nombre"
                     required>
                 <input type="text" id="last_name_customer" name="last_name_customer" class="text-form"
                     placeholder="Apellidos" required>
                 <input type="date" id="date_customer" name="date_customer" class="text-form"
                     placeholder="Fecha nacimiento" required>
-                <input type="email" id="email_customer" name="email_customer" class="text-form" placeholder="Email"
+                <input type="email" id="user_email_customer" name="user_email_customer" class="text-form" placeholder="Email"
                     required>
-                <input type="password" id="password_customer" name="password_customer" class="text-form" placeholder="Contraseña"
+                <input type="password" id="user_password_customer" name="user_password_customer" class="text-form" placeholder="Contraseña"
                     required>
-                <!-- <input type="password" id="password_customer" name="password_customer" class="text-form" placeholder="Contraseña"
-                                                                            required> -->
+                <!-- <input type="password" id="password_customer" name="password_customer" class="text-form" placeholder="Contraseña" required> -->
                 <i class="bi bi-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color:#d4d4d4"></i>
                 <input type="tel" id="phone_number_customer" name="phone_number_customer" class="text-form"
                     placeholder="Teléfono" required>
