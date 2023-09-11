@@ -33,8 +33,8 @@ function validate_age($valid, $value, $field, $input) {
 }
 
 //Validation so that emails are not repeated
-add_filter('acf/validate_value/key=field_64dcf72be9eb3', 'duplicate_email', 10, 4);
-add_filter('acf/validate_value/key=field_64dcf20f615d0', 'duplicate_email', 10, 4);
+// add_filter('acf/validate_value/key=field_64dcf72be9eb3', 'duplicate_email', 10, 4);
+// add_filter('acf/validate_value/key=field_64dcf20f615d0', 'duplicate_email', 10, 4);
 function duplicate_email($valid, $value, $field, $input) {
     global $wpdb;
 
