@@ -386,6 +386,6 @@ footer .xxss a:hover {
 	padding: 0px !important;
 }
 
-.acf-field .acf-label {
+.form .acf-field .acf-label {
 	display: none;
 }

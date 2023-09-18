@@ -9,15 +9,14 @@ function page_verify_customers() {
             global $post;
             
             $user = wp_get_current_user();
-            $args = array(
+            $args = [
                 'post_type'      => 'cliente', 
                 'author'         => $user->ID,
                 'posts_per_page' => 1,
-            );
+            ];
 
             $query = new WP_Query($args);
 
-            error_log("Esto es antes del segundo if");
             if ($query->have_posts()) {
                 wp_redirect(home_url('home'));
                 exit;
@@ -45,7 +44,7 @@ function custom_acf_form_submission_customers($post_id) {
             update_field('field_64dcf6d0e9eb0', $first_name, $post_id);
             update_field('field_64dcf6f8e9eb1', $last_name, $post_id);
             update_field('field_64dcf72be9eb3', $email, $post_id);
-            update_field('field_64dcf746e9eb4', $email, $post_id);
+            update_field('field_64dcf746e9eb4', $password, $post_id);
             wp_update_post($post_data);
         }
     }

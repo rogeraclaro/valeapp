@@ -19,7 +19,7 @@ get_header();
 if (current_user_can('editor') || current_user_can('administrator') || current_user_can('contributor')) {
 
 ?>
-<div class="container login mt-5">
+<div class="container mt-5">
     <div class="row justify-content-center align-items-center">
         <div class="col-12">
             <?php
