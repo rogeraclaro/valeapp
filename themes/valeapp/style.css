@@ -189,14 +189,16 @@ i.bi.bi-search {
 
 .login input,
 .login select,
-.login textarea {
+.login textarea
+.login span {
 	width: 100%;
 	border: 1px solid #d4d4d4;
 	border-radius: 6px;
-	margin-top: 1rem;
-	padding: 0.6rem 1.3rem;
+	margin-top: 1rem !important;
+	padding: 0.6rem 1.3rem !important;
 	font-family: 'Century Gothic';
 	color: #575550;
+	font-size: 16px !important;
 }
 
 .login input:focus-visible,
@@ -377,4 +379,13 @@ footer .xxss {
 
 footer .xxss a:hover {
 	color: #ccc;
+}
+
+.acf-fields > .acf-field {
+	border-top-width: 0px !important;
+	padding: 0px !important;
+}
+
+.form .acf-field .acf-label {
+	display: none;
 }
