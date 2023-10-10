@@ -25,4 +25,27 @@ function page_no_authorization() {
     <?php
 }
 
+add_shortcode("service_limits", "posts_service_limits");
+function posts_service_limits() {
+    ?>
+    <main id="primary" class="site-main">
+        <section class="error-404 not-found">
+            <div class="container login mt-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12">
+                        <h1 class="page-title"><?php esc_html_e( 'Lo sentimos, ya haz excedido la cantidad de publicaciones segun tu membresia' ); ?></h1>
+                        <div class="page-content">
+                            <p><?php esc_html_e( 'Parece que no se encontró nada en este lugar. ¿Tal vez intente una búsqueda?' ); ?></p>
+                                <?php
+                                    get_search_form();
+                                ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <?php
+}
+
 ?>

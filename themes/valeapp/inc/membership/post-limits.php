@@ -1,20 +1,42 @@
 <?php
-    function post_limits_for_membership($post_id){
-        $membership = get_field('field_64e9299d5c1e9', $post_id);
+    $user_id = get_current_user_id();
+    $args = [
+        'post_type' => 'proveedor',
+        'author' => $user_id,
+        'posts_per_page' => -1,
+    ];
+    $posts = get_posts($args);
+    $membership_count = null;
+
+    foreach ($posts as $post){
+        $membership = get_field('field_64e9299d5c1e9');
 
         if($membership) {
-            $limits_posts = get_field('field_64de518b855a7', $membership);
-
-            $number_current_posts = count(get_posts([
-                'post_type' =>  'publicar-servicio',
-                'author' =>     get_current_user_id(),
-            ]));
-
-            if($number_current_posts >= $limits_posts) {
-                wp_die('Haz alcanzado el limite de publicaciones para esta membresia');
-            }
+            $membership_count = get_field('field_64de518b855a7', $membership);
         }
     }
+    
+    $args_posts_service = [
+        'post_type' => 'publicar-servicio',
+        'author' => $user_id,
+        'posts_per_page' => -1,
+    ];
 
-    add_action('publish_publicar-servicio', 'post_limits_for_membership');
+    $count_posts = null;
+    $posts_service = get_posts($args_posts_service);
+
+    foreach($posts_service as $post) {
+        $count_posts += 1;
+    }
+
+
+    if($membership_count != "Ilimitado") {
+        if($membership_count <= $count_posts) {
+            echo do_shortcode('[service_limits]');
+            get_footer();
+            exit();
+        }
+    }
+    
+
 ?>

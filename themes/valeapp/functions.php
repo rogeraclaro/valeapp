@@ -219,6 +219,5 @@ require_once plugin_dir_path(__FILE__) . 'inc/custom-post-title/customers.php';
 require_once plugin_dir_path(__FILE__) . 'inc/custom-post-title/service.php';
 require_once plugin_dir_path(__FILE__) . 'inc/login/redirection-page.php';
 require_once plugin_dir_path(__FILE__) . 'inc/delete-user.php';
-require_once plugin_dir_path(__FILE__) . 'inc/membership/post-limits.php';
 
 
