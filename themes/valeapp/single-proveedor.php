@@ -20,45 +20,80 @@ $city = get_field('field_64dcf2e7615d5', $post_id);
 $country = get_field('field_64dcf2fc615d6', $post_id);
 $membership = get_field('field_64e9299d5c1e9', $post_id);
 $membership_type = get_field('field_64de4979b1040', $post_id);
+$rate = get_field('field_64dcf621615e0', $post_id);
 
-// $args_posts_service = [
-//     'post_type' => 'publicar-servicio',
-//     'author' => $user_id,
-//     'posts_per_page' => -1,
-// ];
-
-// $posts_service = get_posts($args_posts_service);
 ?>
-
-
-<div class="container login mt-5">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-12">
-            <h1>Dashboard Proveedor</h1>
-            <h4><?php echo($post_id); ?></h4>
-            <img src="<?php echo($profile_photo['url']);?>" alt="<?php echo($profile_photo['alt']); ?>">
-            <h2>Nombre completo:</h2>
-            <h4><?php echo($name . " " . $last_name); ?></h4>
-            <h2>Correo:</h2>
-            <h4><?php echo($email); ?></h4>
-            <h2>Direccion actual:</h2>
-            <h4><?php echo($address); ?></h4>
-            <h2>Codigo Postal</h2>
-            <h4><?php echo($cp); ?></h4>
-            <h2>Ciudad actual</h2>
-            <h4><?php echo($city); ?></h4>
-            <h2>Pais actual</h2>
-            <h4><?php echo($country); ?></h4>
-            <h2>Tu membresia actual:</h2>
-            <h4><?php echo($membership_type); ?></h4>
-            <!-- <h1>Trabajos postulados actualmente</h1>
-            <div>
-                
-            </div> -->
-        </div>
-    </div>
-</div>
-
+<section class="professionalDashboard">
+       <div class="user">
+            <img class="image-profile" src="<?php echo($profile_photo['url']);?>" alt="<?php echo($profile_photo['alt']); ?>">
+            <p class="name"><?php echo($name . " " . $last_name); ?></p>
+            <div class="professionalDashboard-rate">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp">
+                <span class="rating"><?php echo($rate); ?></span>
+                <span class="opinions">(30 opiniones)</span>
+            </div>
+            <p class="price">20,00€</p>
+            <button class="tokens-btn">Retirar Tokens</button>
+       </div>
+       <div class="professionalDashboard-options">
+            <h2 class="title">Mi cuenta</h2>
+            <nav class="menu">
+                <ul class="list">
+                    <a class="link" href="">
+                        <li class="option">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-account-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                            <span class="option-text">Cuenta y datos personales</span>
+                        </li>
+                    </a>
+                     <a class="link" href="">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-catalogue-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <span class="option-text">Catálogo de servicios</span>
+                         </li>
+                     </a>
+                     <a class="link" href="">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-requests-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <span class="option-text">Solicitudes</span>
+                         </li>
+                     </a>
+                     <a class="link" href="">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-task-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <span class="option-text">Mis tareas</span>
+                         </li>
+                     </a>
+                     <a class="link" href="">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-messages-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <span class="count">1</span>
+                             <span class="option-text">Mensajes</span>
+                         </li>
+                     </a>
+                     <a class="link" href="">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-balance-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <span class="option-text">Mi saldo</span>
+                         </li>
+                     </a>
+                     <a class="link" href="">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <span class="option-text">Membresía</span>
+                         </li>
+                     </a>
+                    <div class="subtitle">Centro de soporte</div>
+                     <a class="link" href="">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-help-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <span class="option-text">Ayuda</span>
+                         </li>
+                     </a>
+                </ul>
+            </nav>
+            <button class="logOut">Cerrar Sesión</button>
+       </div>
+    </section>
 <?php
 
 get_sidebar();
