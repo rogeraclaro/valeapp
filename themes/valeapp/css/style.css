@@ -252,7 +252,6 @@ small,
 }
 
 .subtitle {
-  font-family: 'DIN Alternate';
   font-size: 1rem;
   margin-top: 0.3rem;
   margin-bottom: 2rem;
@@ -3548,7 +3547,6 @@ footer .footer-logos.carte-logos .footer-separator {
   }
 
   .section2 .subtitle {
-    font-family: 'DINPro';
     font-size: 0.95rem;
     color: #000;
     font-weight: 400;
@@ -4678,26 +4676,173 @@ footer .footer-logos.carte-logos .footer-separator {
   }
 }
 
+.professionalDashboard{
+ padding: 0;
+}
+
+.user{
+  background-color: #e2eeec;
+  padding-top: 1.7rem;
+  padding-bottom: 2.9rem;
+}
+
+.image-profile{
+  width: 6.6rem;
+  height: 6.7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
+.user .name{
+  color: #575550;
+  font-family: "Century Gothic";
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.professionalDashboard-rate .rating{
+  color: #575550;
+  font-family: 'Open Sans';
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.professionalDashboard-rate .opinions{
+  color: #575550;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.user .price{
+  color: #5aab9f;
+  font-family: 'Open Sans';
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+}
+
+.tokens-btn{
+  width: 12.7rem;
+    height: 3.4rem;
+    border-radius: 30px;
+    background-color: #5aab9f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border: 0;
+    margin-left: -0.5rem;
+}
+
+.professionalDashboard-options{
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.professionalDashboard-options .title{
+  color: #575550;;
+  font-family: 'Open Sans';
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.professionalDashboard-options .list{
+  padding-left: 0;
+  list-style: none;
+}
+
+.professionalDashboard-options .list a{
+  text-decoration: none;
+}
+
+.professionalDashboard-options .option{
+  text-align: left;
+  padding-left: 0.4rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.professionalDashboard-options .option .count{
+  background-color: red;
+  color: #fff;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 5%;
+  top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-family: 'Open Sans';
+}
+
+.professionalDashboard-options .option .img-fluid.option-icon{
+  width: 2rem;
+}
+
+.professionalDashboard-options .option:nth-child(4) .img-fluid.option-icon{
+  margin-top: 0.3rem;
+}
+.professionalDashboard-options .option:nth-child(6) .img-fluid.option-icon{
+  margin-top: -0.3rem;
+}
+.professionalDashboard-options .option:nth-child(7) .img-fluid.option-icon{
+  margin-top: -0.5rem;
+}
+
+.professionalDashboard-options .option-text{
+  color: #575550;
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 0.9rem;
+    border-bottom: 1px solid #d4d4d4;
+    width: 100%;
+    padding-bottom: 1.4rem;
+}
+
+.professionalDashboard-options .subtitle{
+  text-align: left;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  margin-top: 1.4rem;
+}
+
+.professionalDashboard-options .logOut{
+  background-color: transparent;
+  border: 0;
+  color: red;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 1.7rem;
+}
+
 
 /* IPHONE SE, 6,7,8 */
 @media (min-width: 350px) and (max-width: 380px) {
   html {
     font-size: 15px;
   }
-
-  .section4 .sarten-ani-mango {
-    margin-left: 160px;
-  }
 }
 
 
 /* html {
-background-image: url(../img/proveedores-interior-backmobile.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position-y: -2472px;
+  background-image: url("../img/mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
-opacity: 0.6;
+  opacity: 0.6;
 } */

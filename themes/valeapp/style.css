@@ -389,3 +389,13 @@ footer .xxss a:hover {
 .form .acf-field .acf-label {
 	display: none;
 }
+
+html {
+  background-image: url("img/mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  opacity: 0.6;
+}
