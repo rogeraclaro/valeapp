@@ -28,6 +28,32 @@
           clickable: true,
         },
       },
+      reviews: {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        allowTouchMove: true,
+        centeredSlides: false,
+        pagination: true,
+        mousewheel: false,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      },
+      gallery: {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        allowTouchMove: true,
+        centeredSlides: true,
+        pagination: true,
+        mousewheel: false,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      },
     },
     countdown: {
       deadline: "May 20, 2022 6:59:59",

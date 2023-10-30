@@ -4828,6 +4828,434 @@ footer .footer-logos.carte-logos .footer-separator {
   margin-top: 1.7rem;
 }
 
+.card-searcher {
+  display: flex;
+  margin-bottom: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+.card-searcher:first-of-type {
+  border-bottom: 1px black solid;
+}
+.card-searcher:last-of-type {
+  margin: 0;
+}
+.card-searcher-img {
+  height: 1.5rem;
+  margin-right: 0.8rem;
+  object-fit: contain;
+  width: 1.5rem;
+}
+.card-searcher-text {
+  font-size: 1.2rem;
+  font-family: 'Century Gothic';
+  font-weight: 400;
+  color: #898989;
+}
+.home-menu-cardBtn {
+  background-color: #E2EEEC;
+  border: none;
+  border-bottom-left-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
+  height: 3.6rem;
+  margin-top: 0rem;
+  outline: none;
+  width: 100%;
+  font-family: 'Century Gothic';
+  font-weight: 700;
+  color: #575550;
+}
+
+.Home{
+  margin-top: 4.2rem;
+}
+
+.Homecategories{
+  background-color: #5aaa9f;
+  padding-top: 1.5rem;
+  padding-bottom: 2.1rem;
+}
+
+.Homecategories .title{
+  color: #fff;
+  text-align: center;
+  font-size: 1.65rem;
+  margin-bottom: 1.8rem;
+}
+
+.Homecategories-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 390px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 1.7rem;
+}
+
+.Homecategories .category {
+  width: 7.5rem;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.Homecategories .category:nth-child(4) img {
+  width: 3.5rem;
+}
+
+.Homecategories .category .img-fluid{
+  width: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.category-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.HomeOffer{
+  padding: 3.4rem 1rem 2.5rem 1rem;
+  background-color: #e2eeec;
+}
+
+.HomeOffer .img-fluid.offer{
+  width: 23rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+.HomeOffer .title{
+  font-size: 1.78rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #575550;
+}
+
+.HomeOffer .text{
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  color: #575550;
+  margin-bottom: 2.1rem;
+}
+
+.HomeOffer-btn {
+  background-color: #5aab9f;
+  width: 14.4rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.1rem 1rem 1.5rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.22rem;
+  line-height: 1.4rem;
+}
+
+.home-menu-card {
+  padding: 0 1rem;
+}
+
+.home-menu-cardContent{
+  background-color: #fff;
+  border: none;
+  border-top-left-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
+  outline: none;
+  width: 100%;
+  padding: 20px 1rem;
+}
+
+.HomeDoesWork {
+  background-color: #fff;
+  padding: 2.5rem 1rem 1.3rem 1rem;
+}
+
+.HomeDoesWork .title{
+  color: #575550;
+  text-align: center;
+  font-size: 1.78rem;
+  font-family: 'Century Gothic';
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.HomeDoesWork .img-fluid.offer{
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.4rem;
+}
+
+.HomeDoesWork .subtitle{
+  font-size: 1.38rem;
+  margin-bottom: 1.3rem;
+  color: #575550;
+  font-family: 'Century Gothic';
+  font-weight: 700;
+  text-align: center;
+}
+
+.HomeDoesWork .text{
+  font-size: 1.18rem;
+  margin-bottom: 1.6rem;
+  color: #575550;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.9rem;
+  margin-bottom: 2.9rem;
+}
+
+.HomeDoesWork .text:last-child{
+  margin-bottom: 0rem;
+}
+
+.FindService {
+  background-color: #e2eeec;
+  padding: 2.1rem 1rem 3.2rem 1rem;
+}
+
+.FindService .title {
+  text-align: left;
+  font-size: 1.78rem;
+  margin-bottom: 1.9rem;
+}
+
+.FindService .text {
+  text-align: left;
+  font-size: 1.18rem;
+  line-height: 1.9rem;
+  margin-bottom: 2.2rem;
+}
+
+.FindService .button {
+  background-color: #5aab9f;
+  width: 19rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.1rem 1rem 1.5rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.Popular {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.Popular .title{
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.Popular .content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.3rem;
+}
+
+.Popular .img-fluid.popular{
+  width: 10.2rem;
+}
+
+.WhyVale {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.WhyVale .title{
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2.7rem;
+}
+
+.WhyVale .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.9rem;
+}
+
+.WhyVale .item img{
+  width: 3.7rem;
+  margin-bottom: 2rem;
+}
+
+.WhyVale .title2{
+  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+  font-family: 'Open Sans';
+}
+
+
+.WhyVale .text{
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.9rem;
+  margin-bottom: 0rem;
+  font-weight: 400;
+  color: #575550;
+}
+
+.Reviews {
+  background-color: #e2eeec;
+  padding: 1.8rem 1rem 1.7rem 1rem;
+}
+
+.Reviews .swiper-pagination-bullet{
+  border-radius: 50%;
+  width: 0.7rem !important;
+  height: 0.7rem !important;
+  background-color: #d4d4d4 !important;
+  border-color: #d4d4d4 !important;
+  margin: 6px !important;
+}
+.Reviews .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #5aab9f !important;
+    border: #5aab9f !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    margin: 3px 6px !important;
+}
+
+.Reviews .title {
+  text-align: center;
+  font-size: 1.78rem;
+  color: #575550;
+  margin-bottom: 1.7rem;
+}
+
+.Reviews .content {
+  background-color: #fff;
+  padding: 2.1rem 1rem 2.1rem 2.3rem;
+  border-radius: 28px;
+}
+
+.Reviews .text {
+  font-size: 1.15rem;
+  color: #575550;
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 1.9rem;
+}
+
+.Home .Reviews .rate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 10.2rem;
+}
+
+.Reviews .rate span{
+ font-size: 1.18rem;
+}
+
+.Reviews .rate img{
+  width: 5.7rem !important;
+}
+
+.Reviews .swiper {
+  min-height: 400px;
+}
+
+.Blog{
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+
+.Blog .title{
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.Blog .nav{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  border: 0;
+  margin-bottom: 2.3rem;
+}
+
+.Blog .nav::-webkit-scrollbar{
+  width: 2px;
+  height: 6px;
+}
+
+.Blog .nav::-webkit-scrollbar-track{
+  border-radius: 0px;
+  background-color: #d4d4d4;
+  width: 4px;
+  height: 4px;
+}
+
+.Blog .nav::-webkit-scrollbar-thumb{
+  border-radius: 0px;
+  background-color: #575550;
+  width: 245px;
+  height: 4px;
+}
+
+.Blog .nav-item {
+  margin-right: 2rem;
+}
+
+.Blog .nav-tabs .nav-link{
+  width: max-content;
+  padding: 0.2rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #575550;
+  text-align: left;
+}
+
+.Blog .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: #59ab9f;
+  border: 0;
+}
+
+.Blog .content {
+ margin-bottom: 2.4rem;
+}
+
+
+.Blog .content .img-fluid.tab{
+  height: 13.5rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.4rem;
+}
+
+.Blog .content .subtitle{
+  font-weight: 700;
+  font-size: 1.38rem;
+  font-family: 'Century Gothic';
+  margin-bottom: 1.3rem;
+  color: #575550;
+}
+
+.Blog .content .text{
+  font-size: 1.16rem;
+  line-height: 1.9rem;
+  color: #575550;
+}
+
+.Blog .button {
+  background-color: #5aab9f;
+  width: 19rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.1rem 1rem 1.5rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 
 /* IPHONE SE, 6,7,8 */
 @media (min-width: 350px) and (max-width: 380px) {
