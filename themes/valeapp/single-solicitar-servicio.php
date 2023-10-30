@@ -6,46 +6,9 @@
  *
  * @package ValeApp
  */
-
+include 'inc/match-service/index.php';
+// require_once plugin_dir_path(__FILE__) . 'inc/match-service/index.php';
 get_header();
-
-$category = get_field('field_64dfa4132490a', $post_id);
-$subcategory = '';
-if($category) {
-    switch($category) {
-        case 'Casa':
-            $subcategory = get_field('field_64dfac56364ec', $post_id);
-            break;
-        case 'Aprende':
-            $subcategory = get_field('field_64dfb333364ed', $post_id);
-            break;
-        case 'Cuerpo':
-            $subcategory = get_field('field_64dfb374364ee', $post_id);
-            break;
-        case 'Mente':
-            $subcategory = get_field('field_64dfb584364ef', $post_id);
-            break;
-        case 'Cuida de los tuyos':
-            $subcategory = get_field('field_64dfb5a4364f0', $post_id);
-            break;
-        case 'Belleza':
-            $subcategory = get_field('field_64dfb5c0364f1', $post_id);
-            break;
-        case 'Contrata':
-            $subcategory = get_field('field_64dfb5d9364f2', $post_id);
-            break;
-        case 'Alquila':
-            $subcategory = get_field('field_64dfb5f9364f3', $post_id);
-            break;
-    }
-}
-
-$task_option = get_field('field_64dcf9888b157', $post_id);
-$task_need = get_field('field_64dd02a18b158', $post_id);
-$price = get_field('field_64e5232fb40f9', $post_id);
-$date = get_field('field_64dd040e8b15b', $post_id);
-$i_time = get_field('field_64dd04688b15c', $post_id);
-$f_time = get_field('field_64dd04d28b15d', $post_id);
 ?>
 
 <div class="container login mt-5">
@@ -60,8 +23,12 @@ $f_time = get_field('field_64dd04d28b15d', $post_id);
             <h4><?php echo($task_option) ?></h4>
             <h2>Necesidad de la tarea:</h2>
             <h4><?php echo($task_need) ?></h4>
+            <h2>Ubicacion de la tarea:</h2>
+            <h4><?php echo($location) ?></h4>
             <h2>Fecha de la tarea:</h2>
             <h4><?php echo($date) ?></h4>
+            <h2>Dia de la tarea:</h2>
+            <h4><?php echo($day_date) ?></h4>
             <h2>Hora de inicio:</h2>
             <h4><?php echo($i_time) ?></h4>
             <h2>Hora final:</h2>
@@ -69,9 +36,70 @@ $f_time = get_field('field_64dd04d28b15d', $post_id);
             <h2>Precio maximo por hora:</h2>
             <h4>€<?php echo($price) ?></h4>
         </div>
+
+        <!-- Consulta -->
+        <div class="col-6">
+            <h1>Propuestas: </h1>
+            <?php
+                if ($the_query->have_posts()) :
+                    while ($the_query->have_posts()) : $the_query->the_post();
+                    $i += 1;
+                    $user = get_the_author();
+            ?>
+                    <h3>Propuesta #<?php echo($i); ?></h3>
+                    <h5>Categoria:<?php $category_x = get_field('field_64e3cd0cbe4b2'); echo($category); ?></h5>
+                    <h5>Trabajo:<?php echo(get_field($subcategory_result)); ?></h5>
+                    <h5>Precio por hora: <?php $price_x = get_field('field_64e789857cbfa'); echo(get_field('field_64e789857cbfa')); ?></h5>
+                    <?php $prueba = [$category_x , $subcategory_result, $price_x]; ?>
+                    <h4>Dias disponibles</h4>
+                    <?php
+                    $day1 = get_field('field_64e3d70f0f3bd');
+                    $day2 = get_field('field_64e3d6880f3b7');
+                    $day3 = get_field('field_64e3d6b90f3b8');
+                    $day4 = get_field('field_64e3d6c70f3b9');
+                    $day5 = get_field('field_64e3d6e80f3ba');
+                    $day6 = get_field('field_64e3d6f20f3bb');
+                    $day7 = get_field('field_64e3d6ff0f3bc');
+                    if($day2 == 1){
+                        ?><h6>Lunes</h6><?php
+                    } ?>
+                    <?php if($day3 == 1){
+                        ?><h6>Martes<?php
+                    } ?>
+                    <?php if($day4 == 1){
+                        ?><h6>Miercoles</h6><?php
+                    } ?>
+                    <?php if($day5 == 1){
+                        ?><h6>Jueves</h6><?php
+                    } ?>
+                    <?php if($day6 == 1){
+                        ?><h6>Viernes</h6><?php
+                    } ?>
+                    <?php if($day7 == 1){
+                        ?><h6>Sabado</h6><?php
+                    } ?>
+                    <?php if($day1 == 1){
+                        ?><h6>Domingo</h6><?php
+                    } ?>
+                    <?php
+                        search_user($user);
+                        
+                        ?> <h2><?php echo($prueba); ?></h2>  <?php
+                    endwhile;
+                else:
+            ?>
+                <h3>No se encontraron resultados</h3>
+            <?php
+                endif;
+                
+                wp_reset_postdata();
+            ?>
+        </div>
     </div>
 </div>
 
 <?php
 get_sidebar();
 get_footer();
+
+?>

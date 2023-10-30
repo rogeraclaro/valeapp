@@ -1,3 +1,21 @@
+<?php
+
+/**
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package ValeApp
+ */
+
+get_header();
+?>
+
 <div class="Home">
     <div class="Homecategories">
       <h1 class="title">
@@ -5,48 +23,48 @@
       </h1>
       <div class="Homecategories-content">
           <div class="category">
-            <img src="img/valeapp-home-category1-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category1-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Hogar</p>
           </div>
           <div class="category">
-            <img src="img/valeapp-home-category2-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category2-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Aprende</p>
           </div>
           <div class="category">
-            <img src="img/valeapp-home-category3-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category3-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Cuerpo</p>
           </div>
           <div class="category">
-            <img src="img/valeapp-home-category4-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category4-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Mente</p>
           </div>
           <div class="category">
-            <img src="img/valeapp-home-category5-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category5-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Cuida de <br class="xs-br"> los tuyos</p>
           </div>
           <div class="category">
-            <img src="img/valeapp-home-category6-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category6-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Belleza</p>
           </div>
           <div class="category">
-            <img src="img/valeapp-home-category7-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category7-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Contrata</p>
           </div>
           <div class="category">
-            <img src="img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Alquila</p>
           </div>
         </div>
         <div class="home-menu-card w-100">
           <div class="home-menu-cardContent">
               <div class="card-searcher">
-                  <img class="card-searcher-img" src="img/card-searcher-img.png" alt="lupa" />
+                  <img class="card-searcher-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-searcher-img.png" alt="lupa" />
                   <div class="card-searcher-text">
                       Servicio
                   </div>
               </div>
               <div class="card-searcher">
-                  <img class="card-searcher-img" src="img/card-ubication.png" alt="lupa" />
+                  <img class="card-searcher-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-ubication.png" alt="lupa" />
                   <div class="card-searcher-text">
                       Busca en tu zona
                   </div>
@@ -58,7 +76,7 @@
       </div>
     </div>
     <div class="HomeOffer">
-      <img class="img-fluid offer" src="img/valeapp-home-HomeOffer.png" alt="valeapp" />
+      <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-HomeOffer.png" alt="valeapp" />
       <h2 class="title">¿Quieres ofrecer tus servicios en Vale?</h2>
       <p class="text">
         Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -70,21 +88,21 @@
     </div>
     <div class="HomeDoesWork">
       <h2 class="title">¿Como funciona?</h2>
-      <img class="img-fluid offer" src="img/valeapp-home-homedoeswork-image1.png" alt="valeapp" />
+      <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image1.png" alt="valeapp" />
       <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
       <p class="text">
         Lorem ipsum dolor sit amet, <br class="xs-br" />
         consectetur adipisicing elit, sed do <br class="xs-br" />
         eiusmod tempor incididunt ut labore.
       </p>
-      <img class="img-fluid offer" src="img/valeapp-home-homedoeswork-image2.png" alt="valeapp" />
+      <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image2.png" alt="valeapp" />
       <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
       <p class="text">
         Lorem ipsum dolor sit amet, <br class="xs-br" />
         consectetur adipisicing elit, sed do <br class="xs-br" />
         eiusmod tempor incididunt ut labore.
       </p>
-      <img class="img-fluid offer" src="img/valeapp-home-homedoeswork-image3.png" alt="valeapp" />
+      <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image3.png" alt="valeapp" />
       <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
       <p class="text">
         Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -105,18 +123,18 @@
     <div class="Popular">
       <h2 class="title">Servcios mas populares</h2>
       <div class="content">
-          <img class="img-fluid popular" src="img/valeapp-home-popular1.png" alt="valeapp">
-          <img class="img-fluid popular" src="img/valeapp-home-popular2.png" alt="valeapp">
-          <img class="img-fluid popular" src="img/valeapp-home-popular3.png" alt="valeapp">
-          <img class="img-fluid popular" src="img/valeapp-home-popular4.png" alt="valeapp">
-          <img class="img-fluid popular" src="img/valeapp-home-popular5.png" alt="valeapp">
-          <img class="img-fluid popular" src="img/valeapp-home-popular6.png" alt="valeapp">
+          <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular1.png" alt="valeapp">
+          <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular2.png" alt="valeapp">
+          <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular3.png" alt="valeapp">
+          <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular4.png" alt="valeapp">
+          <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular5.png" alt="valeapp">
+          <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular6.png" alt="valeapp">
       </div>
     </div>
     <div class="WhyVale">
       <h2 class="title">¿Por que Vale ?</h2>
       <div class="item">
-          <img class="img-fluid" src="img/valeapp-home-why1.png" alt="valeapp">
+          <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why1.png" alt="valeapp">
           <h3 class="title2"> Lorem ipsum dolor sit amet</h3>
           <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -124,7 +142,7 @@
           </p>
       </div>
       <div class="item">
-          <img class="img-fluid" src="img/valeapp-home-why2.png" alt="valeapp">
+          <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why2.png" alt="valeapp">
           <h3 class="title2"> Lorem ipsum dolor sit amet</h3>
           <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -132,7 +150,7 @@
           </p>
       </div>
       <div class="item">
-          <img class="img-fluid" src="img/valeapp-home-why3.png" alt="valeapp">
+          <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why3.png" alt="valeapp">
           <h3 class="title2"> Lorem ipsum dolor sit amet</h3>
           <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -156,7 +174,7 @@
                   </p>
                   <div class="rate">
                       <span>Lorem</span>
-                      <img class="img-fluid rate" src="img/valeapp-home-reviews-rate.png" alt="valeapp">
+                      <img class="img-fluid rate" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-reviews-rate.png" alt="valeapp">
                   </div>
               </div>
           </div>
@@ -173,7 +191,7 @@
                 </p>
                 <div class="rate">
                     <span>Lorem</span>
-                    <img class="img-fluid rate" src="img/valeapp-home-reviews-rate.png" alt="valeapp">
+                    <img class="img-fluid rate" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-reviews-rate.png" alt="valeapp">
                 </div>
             </div>
         </div>
@@ -190,7 +208,7 @@
                 </p>
                 <div class="rate">
                     <span>Lorem</span>
-                    <img class="img-fluid rate" src="img/valeapp-home-reviews-rate.png" alt="valeapp">
+                    <img class="img-fluid rate" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-reviews-rate.png" alt="valeapp">
                 </div>
             </div>
         </div>
@@ -207,7 +225,7 @@
                 </p>
                 <div class="rate">
                     <span>Lorem</span>
-                    <img class="img-fluid rate" src="img/valeapp-home-reviews-rate.png" alt="valeapp">
+                    <img class="img-fluid rate" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-reviews-rate.png" alt="valeapp">
                 </div>
             </div>
         </div>
@@ -224,7 +242,7 @@
                 </p>
                 <div class="rate">
                     <span>Lorem</span>
-                    <img class="img-fluid rate" src="img/valeapp-home-reviews-rate.png" alt="valeapp">
+                    <img class="img-fluid rate" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-reviews-rate.png" alt="valeapp">
                 </div>
             </div>
         </div>
@@ -241,7 +259,7 @@
                 </p>
                 <div class="rate">
                     <span>Lorem</span>
-                    <img class="img-fluid rate" src="img/valeapp-home-reviews-rate.png" alt="valeapp">
+                    <img class="img-fluid rate" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-reviews-rate.png" alt="valeapp">
                 </div>
             </div>
         </div>
@@ -283,7 +301,7 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -292,7 +310,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -301,7 +319,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -313,7 +331,7 @@
         </div>
         <div class="tab-pane fade" id="learn" role="tabpanel" aria-labelledby="learn-tab">
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -322,7 +340,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -331,7 +349,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -343,7 +361,7 @@
         </div>
         <div class="tab-pane fade" id="body" role="tabpanel" aria-labelledby="contact-tab">
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -352,7 +370,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -361,7 +379,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -372,7 +390,7 @@
           <button class="button">Ver todos los articulos</button>
         </div>
         <div class="tab-pane fade" id="mind" role="tabpanel" aria-labelledby="contact-tab"><div class="content">
-          <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+          <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
           <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
           <p class="text">
             Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -381,7 +399,7 @@
           </p>
         </div>
         <div class="content">
-          <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+          <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
           <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
           <p class="text">
             Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -390,7 +408,7 @@
           </p>
         </div>
         <div class="content">
-          <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+          <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
           <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
           <p class="text">
             Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -402,7 +420,7 @@
       </div>
         <div class="tab-pane fade" id="takecare" role="tabpanel" aria-labelledby="contact-tab">
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -411,7 +429,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -420,7 +438,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -432,7 +450,7 @@
         </div>
         <div class="tab-pane fade" id="beauty" role="tabpanel" aria-labelledby="contact-tab">
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -441,7 +459,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -450,7 +468,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -461,7 +479,7 @@
           <button class="button">Ver todos los articulos</button>
         </div>
         <div class="tab-pane fade" id="hire" role="tabpanel" aria-labelledby="contact-tab"><div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -470,7 +488,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -479,7 +497,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -491,7 +509,7 @@
         </div>
         <div class="tab-pane fade" id="rent" role="tabpanel" aria-labelledby="contact-tab">
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs1.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -500,7 +518,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs2.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -509,7 +527,7 @@
             </p>
           </div>
           <div class="content">
-            <img class="img-fluid tab" src="img/valeapp-home-tabs3.png" alt="valeapp" />
+            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <p class="text">
               Lorem ipsum dolor sit amet, <br class="xs-br" />
@@ -522,3 +540,6 @@
       </div>
     </div>
   </div>
+    
+<?php
+get_footer();
