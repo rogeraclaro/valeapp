@@ -5256,6 +5256,32 @@ footer .footer-logos.carte-logos .footer-separator {
   display: block;
 }
 
+a.HomeOffer-btn {
+  background-color: #5aab9f;
+  width: 14.4rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.1rem 2.5rem 1.5rem 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.22rem;
+  line-height: 1.4rem;
+  text-decoration: none;
+}
+
+.FindService a.button {
+  background-color: #5aab9f;
+  width: 19rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.1rem 3rem 1.5rem 3rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.22rem;
+  line-height: 1.4rem;
+  text-decoration: none;
+}
+
 
 /* IPHONE SE, 6,7,8 */
 @media (min-width: 350px) and (max-width: 380px) {

@@ -12,6 +12,7 @@
  *
  * @package ValeApp
  */
+include 'inc/blog-categories/index.php';
 
 get_header();
 ?>
@@ -32,7 +33,7 @@ get_header();
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category3-white.png" alt="valeapp" class="img-fluid category-icon" />
-            <p class="category-name">Cuerpo</p>
+            <p class="category-name">Deporte</p>
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category4-white.png" alt="valeapp" class="img-fluid category-icon" />
@@ -70,7 +71,7 @@ get_header();
                   </div>
               </div>
           </div>
-          <button class="home-menu-cardBtn">
+          <button class="home-menu-cardBtn" id="search_button" onclick="" >
               Buscar
           </button>
       </div>
@@ -79,46 +80,34 @@ get_header();
       <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-HomeOffer.png" alt="valeapp" />
       <h2 class="title">¿Quieres ofrecer tus servicios en Vale?</h2>
       <p class="text">
-        Lorem ipsum dolor sit amet, <br class="xs-br" />
-        consectetur adipisicing elit, sed do <br class="xs-br" />
-        eiusmod tempor incididunt ut labore. <br class="xs-br" />
-        et dolore magna aliqua. Ut enim ad
+      Ofrece tus servicios a una amplia gama de clientes potenciales que buscan ayuda con tareas cotidianas y proyectos especializados. ¡Expande tu negocio hoy mismo!
       </p>
-      <button class="HomeOffer-btn">Ofrecer servicios</button>
+      <a class="HomeOffer-btn" href="/profesionales">Ofrecer servicios</a>
     </div>
     <div class="HomeDoesWork">
       <h2 class="title">¿Como funciona?</h2>
       <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image1.png" alt="valeapp" />
-      <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
+      <h3 class="subtitle">Amplia variedad de servicios a tu alcance</h3>
       <p class="text">
-        Lorem ipsum dolor sit amet, <br class="xs-br" />
-        consectetur adipisicing elit, sed do <br class="xs-br" />
-        eiusmod tempor incididunt ut labore.
+        Busca el servicio que necesitas (limpieza, reparación, clases, deporte, belleza, etc.) y bríndanos algunos detalles básicos sobre tu tarea. ¡No importa qué necesites, encontraremos un profesional adecuado para ti!
       </p>
       <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image2.png" alt="valeapp" />
-      <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
+      <h3 class="subtitle">Elige a tu profesional</h3>
       <p class="text">
-        Lorem ipsum dolor sit amet, <br class="xs-br" />
-        consectetur adipisicing elit, sed do <br class="xs-br" />
-        eiusmod tempor incididunt ut labore.
+        Encuentra a profesionales de confianza cerca de ti, te mostramos sus perfiles, calificaciones y precios para que ¡escojas el que más te guste!
       </p>
       <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image3.png" alt="valeapp" />
-      <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
+      <h3 class="subtitle">¡Dicho y hecho!</h3>
       <p class="text">
-        Lorem ipsum dolor sit amet, <br class="xs-br" />
-        consectetur adipisicing elit, sed do <br class="xs-br" />
-        eiusmod tempor incididunt ut labore.
+        Programa el servicio en línea y realiza el pago de manera segura y fácil. ¡Así de simple, en 2 clicks!
       </p>
     </div>
     <div class="FindService">
-      <h2 class="title">Lorem ipsum dolor sit <br class="xs-br" /> amet, consectetur <br class="xs-br" />  adipisicing elit, sed do</h2>
+      <h2 class="title">¡Simplificamos tu día a día!</h2>
       <p class="text">
-          Lorem ipsum dolor sit amet, <br class="xs-br" />
-          consectetur adipisicing elit, sed do <br class="xs-br" />
-          eiusmod tempor incididunt ut labore. <br class="xs-br" />
-          et dolore magna aliqua. Ut enim ad
+        Conectamos contigo a profesionales verificados que brindan servicios en diversas áreas. Nuestra plataforma engloba todas las necesidades que puedas tener en cualquier momento, de manera fácil, segura y sencilla.
       </p>
-      <button class="button">Encuentra tu servicio</button>
+      <a class="button" href="/servicios-generica">Encuentra tu servicio</a>
     </div>
     <div class="Popular">
       <h2 class="title">Servcios mas populares</h2>
@@ -135,26 +124,23 @@ get_header();
       <h2 class="title">¿Por que Vale ?</h2>
       <div class="item">
           <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why1.png" alt="valeapp">
-          <h3 class="title2"> Lorem ipsum dolor sit amet</h3>
+          <h3 class="title2">Compromiso</h3>
           <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do.
+          Garantizamos que los profesionales cumplan con nuestras condiciones y proporcionen un servicio de calidad en el plazo acordado.
           </p>
       </div>
       <div class="item">
           <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why2.png" alt="valeapp">
-          <h3 class="title2"> Lorem ipsum dolor sit amet</h3>
+          <h3 class="title2">Tranquilidad</h3>
           <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do.
+            Tu pago estará seguro y protegido hasta que se complete el trabajo satisfactoriamente con el profesional.
           </p>
       </div>
       <div class="item">
           <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why3.png" alt="valeapp">
-          <h3 class="title2"> Lorem ipsum dolor sit amet</h3>
+          <h3 class="title2">Atención personalizada</h3>
           <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do.
+            Soporte 365 días para resolver cualquier duda o problema que puedas tener.
           </p>
       </div>
     </div>
@@ -273,270 +259,68 @@ get_header();
         Blog
       </h2>
       <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Hogar</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab" aria-controls="profile" aria-selected="false">Aprende</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="body-tab" data-bs-toggle="tab" data-bs-target="#body" type="button" role="tab" aria-controls="contact" aria-selected="false">Cuerpo</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="mind-tab" data-bs-toggle="tab" data-bs-target="#mind" type="button" role="tab" aria-controls="contact" aria-selected="false">Mente</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="takecare-tab" data-bs-toggle="tab" data-bs-target="#takecare" type="button" role="tab" aria-controls="contact" aria-selected="false">Cuida de los tuyos</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="beauty-tab" data-bs-toggle="tab" data-bs-target="#beauty" type="button" role="tab" aria-controls="contact" aria-selected="false">Belleza</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="hire-tab" data-bs-toggle="tab" data-bs-target="#hire" type="button" role="tab" aria-controls="contact" aria-selected="false">Contrata</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="rent-tab" data-bs-toggle="tab" data-bs-target="#rent" type="button" role="tab" aria-controls="contact" aria-selected="false">Alquila</button>
-        </li>
+        <?php 
+        if ($query->have_posts()) {
+          while ($query->have_posts()) {
+              $query->the_post();
+              $title = get_the_title();
+              $counter = 0;
+              ?>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="<?php echo($title);?>-tab" data-bs-toggle="tab" data-bs-target="#<?php echo($title); ?>" type="button" role="tab" aria-controls="<?php echo($title);?>" aria-selected="true"><?php echo($title); ?></button>
+
+                </li>
+              <?php
+          }
+          wp_reset_postdata();
+        }
+        ?>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <button class="button">Ver todos los articulos</button>
-        </div>
-        <div class="tab-pane fade" id="learn" role="tabpanel" aria-labelledby="learn-tab">
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <button class="button">Ver todos los articulos</button>
-        </div>
-        <div class="tab-pane fade" id="body" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <button class="button">Ver todos los articulos</button>
-        </div>
-        <div class="tab-pane fade" id="mind" role="tabpanel" aria-labelledby="contact-tab"><div class="content">
-          <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-          <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet, <br class="xs-br" />
-            consectetur adipisicing elit, sed do <br class="xs-br" />
-            eiusmod tempor incididunt ut labore.
-          </p>
-        </div>
-        <div class="content">
-          <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-          <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet, <br class="xs-br" />
-            consectetur adipisicing elit, sed do <br class="xs-br" />
-            eiusmod tempor incididunt ut labore.
-          </p>
-        </div>
-        <div class="content">
-          <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-          <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet, <br class="xs-br" />
-            consectetur adipisicing elit, sed do <br class="xs-br" />
-            eiusmod tempor incididunt ut labore.
-          </p>
-        </div>
-        <button class="button">Ver todos los articulos</button>
-      </div>
-        <div class="tab-pane fade" id="takecare" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <button class="button">Ver todos los articulos</button>
-        </div>
-        <div class="tab-pane fade" id="beauty" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <button class="button">Ver todos los articulos</button>
-        </div>
-        <div class="tab-pane fade" id="hire" role="tabpanel" aria-labelledby="contact-tab"><div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <button class="button">Ver todos los articulos</button>
-        </div>
-        <div class="tab-pane fade" id="rent" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs1.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs2.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <div class="content">
-            <img class="img-fluid tab" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-tabs3.png" alt="valeapp" />
-            <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, <br class="xs-br" />
-              consectetur adipisicing elit, sed do <br class="xs-br" />
-              eiusmod tempor incididunt ut labore.
-            </p>
-          </div>
-          <button class="button">Ver todos los articulos</button>
-        </div>
+        <?php 
+          if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+                $title = get_the_title();
+                $title1 = get_field('title_1');
+                $image1 = get_field('image_1');
+                $description1 = get_field('description_1');
+                $title2 = get_field('title_2');
+                $image2 = get_field('image_2');
+                $description2 = get_field('description_2');
+                $title3 = get_field('title_3');
+                $image3 = get_field('image_3');
+                $description3 = get_field('description_3');
+                ?>
+                  <div class="tab-pane fade" id="<?php echo($title);?>" role="tabpanel" aria-labelledby="<?php echo($title);?>-tab">
+                    <div class="content">
+                      <img class="img-fluid tab" src="<?php echo($image1['url']);?>" alt="<?php echo($image1['alt']); ?>" alt="valeapp" />
+                      <h3 class="subtitle"> <?php echo($title1) ?></h3>
+                      <p class="text">
+                        <?php echo($description1); ?>
+                      </p>
+                    </div>
+                    <div class="content">
+                      <img class="img-fluid tab" src="<?php echo($image2['url']);?>" alt="<?php echo($image2['alt']); ?>" alt="valeapp" />
+                      <h3 class="subtitle"> <?php echo($title2) ?></h3>
+                      <p class="text">
+                        <?php echo($description2); ?>
+                      </p>
+                    </div>
+                    <div class="content">
+                      <img class="img-fluid tab" src="<?php echo($image3['url']);?>" alt="<?php echo($image3['alt']); ?>" alt="valeapp" />
+                      <h3 class="subtitle"> <?php echo($title3) ?></h3>
+                      <p class="text">
+                        <?php echo($description3); ?>
+                      </p>
+                    </div>
+                    <button class="button">Ver todos los articulos</button>
+                  </div>
+                <?php
+            }
+            wp_reset_postdata();
+          }
+        ?>
       </div>
     </div>
   </div>

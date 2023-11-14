@@ -7,7 +7,7 @@
  * @package ValeApp
  */
 include 'inc/match-service/index.php';
-// require_once plugin_dir_path(__FILE__) . 'inc/match-service/index.php';
+
 get_header();
 ?>
 
@@ -19,6 +19,10 @@ get_header();
             <h4><?php echo($category); ?></h4>
             <h2>Sub-categoria: </h2>
             <h4><?php echo($subcategory); ?></h4>
+            <?php if($filter_boolean){ ?>
+                <h2>Filtro: </h2>
+                <h4><?php echo($filter); ?></h4>
+            <?php } ?>
             <h2>Opciones de la tarea:</h2>
             <h4><?php echo($task_option) ?></h4>
             <h2>Necesidad de la tarea:</h2>
@@ -49,8 +53,10 @@ get_header();
                     <h3>Propuesta #<?php echo($i); ?></h3>
                     <h5>Categoria:<?php $category_x = get_field('field_64e3cd0cbe4b2'); echo($category); ?></h5>
                     <h5>Trabajo:<?php echo(get_field($subcategory_result)); ?></h5>
+                    <?php if($filter_boolean){ ?>
+                        <h5>Filtro:<?php echo(get_field($filter_result)); ?> </h2>
+                    <?php } ?>
                     <h5>Precio por hora: <?php $price_x = get_field('field_64e789857cbfa'); echo(get_field('field_64e789857cbfa')); ?></h5>
-                    <?php $prueba = [$category_x , $subcategory_result, $price_x]; ?>
                     <h4>Dias disponibles</h4>
                     <?php
                     $day1 = get_field('field_64e3d70f0f3bd');
@@ -84,7 +90,7 @@ get_header();
                     <?php
                         search_user($user);
                         
-                        ?> <h2><?php echo($prueba); ?></h2>  <?php
+                        ?>  <?php
                     endwhile;
                 else:
             ?>
