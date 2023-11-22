@@ -19,7 +19,7 @@ if($category) {
         case 'Aprende':
             $subcategory = get_field('field_64e3d4bb88a53', $post_id);
             break;
-        case 'Cuerpo':
+        case 'Deporte':
             $subcategory = get_field('field_64e3d4f788a54', $post_id);
             break;
         case 'Mente':

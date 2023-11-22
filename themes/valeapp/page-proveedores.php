@@ -669,7 +669,7 @@ if ($users) {
 							data-bs-target="#collapseBody" aria-expanded="false"
 							aria-controls="collapseBody">
 							<img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category3.png" alt="ValeApp">
-							Cuerpo
+							Deporte
 						</button>
 					</h2>
 					<div id="collapseBody" class="accordion-collapse collapse" aria-labelledby="headingPoints"
