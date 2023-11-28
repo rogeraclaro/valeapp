@@ -9,6 +9,7 @@
 include 'inc/match-service/index.php';
 
 get_header();
+$i = 0;
 ?>
 
 <div class="container login mt-5">

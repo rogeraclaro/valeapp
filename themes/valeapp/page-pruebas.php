@@ -14,43 +14,9 @@
  */
 
 get_header();
+
+require_once plugin_dir_path(__FILE__) . 'inc/photo-header/index.php';
 ?>
-
-<?php
-
-$current_user = wp_get_current_user();
-$user = "";
-$user_role = "";
-$rol = "";
-
-if($current_user->ID !=0) {
-    $user = $current_user->user_login;
-    $user_roles = $current_user->roles;
-};
-
-foreach($user_roles as $role) {
-    $user_role = $role;
-};
-
-switch ($user_role) {
-    case "contributor":
-        $rol = "proveedor";
-    break;
-    case "customer":
-        $rol = "cliente";
-    break;
-};
-
-$arg = [
-    'post_type' => 'rol'
-    
-];
-?>
-<p><?php echo($user); ?></p>
-<p><?php echo($user_role); ?></p>
 
 <?php
 get_footer();
-
-// contributor
-// customer

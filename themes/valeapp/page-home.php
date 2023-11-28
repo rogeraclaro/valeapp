@@ -264,7 +264,6 @@ get_header();
           while ($query->have_posts()) {
               $query->the_post();
               $title = get_the_title();
-              $counter = 0;
               ?>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="<?php echo($title);?>-tab" data-bs-toggle="tab" data-bs-target="#<?php echo($title); ?>" type="button" role="tab" aria-controls="<?php echo($title);?>" aria-selected="true"><?php echo($title); ?></button>
@@ -292,7 +291,9 @@ get_header();
                 $image3 = get_field('image_3');
                 $description3 = get_field('description_3');
                 ?>
-                  <div class="tab-pane fade" id="<?php echo($title);?>" role="tabpanel" aria-labelledby="<?php echo($title);?>-tab">
+                  <div class="tab-pane fade <?php if($title === "Alquila") {
+                    echo("active show");
+                  } ?>" id="<?php echo($title);?>" role="tabpanel" aria-labelledby="<?php echo($title);?>-tab">
                     <div class="content">
                       <img class="img-fluid tab" src="<?php echo($image1['url']);?>" alt="<?php echo($image1['alt']); ?>" alt="valeapp" />
                       <h3 class="subtitle"> <?php echo($title1) ?></h3>

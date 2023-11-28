@@ -9,6 +9,7 @@
 
 get_header();
 
+$post_id = get_the_ID();
 $user_id = get_current_user_id();
 $profile_photo = get_field('field_64dcf7f7e9ebb', $post_id);
 $name = get_field('field_64dcf6d0e9eb0', $post_id);

@@ -10,6 +10,7 @@
  */
 
 $current_lang = get_bloginfo( 'language' );
+include_once plugin_dir_path(__FILE__) . 'inc/photo-header/header.php';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -75,7 +76,10 @@ $current_lang = get_bloginfo( 'language' );
 				<i class="bi bi-search"></i>
 			</div>
 			<div class="userlogin">
-				<i class="bi bi-person-circle"></i>
+				<!-- <i class="bi bi-person-circle"></i> -->
+				<?php
+					add_photo_profile_header();
+				?>
 			</div>
 		</div>
 	</header>

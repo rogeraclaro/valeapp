@@ -4695,6 +4695,14 @@ footer .footer-logos.carte-logos .footer-separator {
   margin-bottom: 1rem;
 }
 
+.image-profile-header{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .user .name{
   color: #575550;
   font-family: "Century Gothic";
@@ -5254,6 +5262,32 @@ footer .footer-logos.carte-logos .footer-separator {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+a.HomeOffer-btn {
+  background-color: #5aab9f;
+  width: 14.4rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.1rem 2.5rem 1.5rem 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.22rem;
+  line-height: 1.4rem;
+  text-decoration: none;
+}
+
+.FindService a.button {
+  background-color: #5aab9f;
+  width: 19rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.1rem 3rem 1.5rem 3rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.22rem;
+  line-height: 1.4rem;
+  text-decoration: none;
 }
 
 .acf-field.client-profile-picture{
