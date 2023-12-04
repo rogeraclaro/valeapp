@@ -24,10 +24,18 @@ $i = 0;
                 <h2>Filtro: </h2>
                 <h4><?php echo($filter); ?></h4>
             <?php } ?>
+            <?php if($level_boolean){ ?>
+                <h2>Nivel: </h2>
+                <h4><?php echo($level); ?></h4>
+            <?php } ?>
             <h2>Opciones de la tarea:</h2>
             <h4><?php echo($task_option) ?></h4>
             <h2>Necesidad de la tarea:</h2>
             <h4><?php echo($task_need) ?></h4>
+            <h2>Modalidad:</h2>
+            <h4><?php echo($modality) ?></h4>
+            <h2>Vienes o vengo?:</h2>
+            <h4><?php echo($come) ?></h4>
             <h2>Ubicacion de la tarea:</h2>
             <h4><?php echo($location) ?></h4>
             <h2>Fecha de la tarea:</h2>
@@ -35,11 +43,24 @@ $i = 0;
             <h2>Dia de la tarea:</h2>
             <h4><?php echo($day_date) ?></h4>
             <h2>Hora de inicio:</h2>
-            <h4><?php echo($i_time) ?></h4>
+            <h4><?php echo($initial_time) ?></h4>
             <h2>Hora final:</h2>
-            <h4><?php echo($f_time) ?></h4>
-            <h2>Precio maximo por hora:</h2>
-            <h4>€<?php echo($price) ?></h4>
+            <h4><?php echo($final_time) ?></h4>
+            <?php
+                if($price_search == "precio_por_hora"){
+                    ?>
+                    <h2>Precio maximo por hora:</h2>
+                    <h4>€<?php echo($price) ?></h4>
+                    <?php
+                }
+                else {
+                    ?>
+                    <h2>Precio maximo por servicio:</h2>
+                    <h4>€<?php echo($price) ?></h4>
+                    <?php
+                }
+            ?>
+            
         </div>
 
         <!-- Consulta -->
@@ -57,6 +78,7 @@ $i = 0;
                     <?php if($filter_boolean){ ?>
                         <h5>Filtro:<?php echo(get_field($filter_result)); ?> </h2>
                     <?php } ?>
+                    <h5>Modalidad:<?php echo(get_field('field_65530e137aa45')); ?></h5>
                     <h5>Precio por hora: <?php $price_x = get_field('field_64e789857cbfa'); echo(get_field('field_64e789857cbfa')); ?></h5>
                     <h4>Dias disponibles</h4>
                     <?php

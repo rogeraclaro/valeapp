@@ -33,7 +33,6 @@ if (current_user_can('editor') || current_user_can('administrator') || current_u
                         'post_type'     => 'publicar-servicio',
                         'post_status'   => 'publish'
                     ],
-                    'uploader' => 'wp',
                     'submit_value'  => 'Enviar',
                     'updated_message' => '¡Formulario actualizado!',
                     'return' => '/home',
