@@ -4,43 +4,53 @@
     
     //Solicitar variables
     $category = get_field('field_64dfa4132490a', $post_id);
-    $subcategory = '';
-
-    $subcategory_search = '';
-    $subcategory_result = '';
+    $subcategory = "";
+    $filter = "";
+    $modality = get_field('field_65530f63df3a1', $post_id);
+    $come = get_field('field_65531738bae58', $post_id);
+    $level = get_field('field_6565100108b48', $post_id);
     $task_option = get_field('field_64dcf9888b157', $post_id);
     $task_need = get_field('field_64dd02a18b158', $post_id);
-    $price = "";
-    $price_data = "";
-    $gender = "";
     $location = get_field('field_652e9c87acc1f', $post_id);
     $date = get_field('field_64dd040e8b15b', $post_id);
+    $initial_time = get_field('field_64dd04688b15c', $post_id);
+    $final_time = get_field('field_64dd04d28b15d', $post_id);
+    $price = "";
+    $gender = "";
+
+    //Transalate date appointment
     $date = str_replace('/', '-', $date);
     $timestamp = strtotime($date);
     $day = date("l", $timestamp);
-    $i_time = get_field('field_64dd04688b15c', $post_id);
-    $f_time = get_field('field_64dd04d28b15d', $post_id);
-    $start_time = '';
-    $end_time = '';
-    $day_date = '';
-    $day_query = '';
 
-    //Search for Filters
-    $filter = '';
-    $filter_search = '';
-    $filter_result = '';
+    //+*+*+*+*+*+*+*+*+*
+    //Search variables
+    //+*+*+*+*+*+*+*+*+*
+
+        //Subcategory
+    $subcategory_search = "";
+    $subcategory_result = "";
+
+        //Filter
     $filter_boolean = false;
+    $filter_search = "";
+    $filter_result = "";
 
-    //Levels (Aprende y Deporte)
-    $level = '';
-    $level_search = '';
-    $level_result = '';
+        //Price
+    $price_search = "";
 
-    //Vienes o vengo
-    $come = '';
-    $come_search = '';
-    $come_result = '';
+        //Times
+    $start_time = "";
+    $end_time = "";
 
-    $args = [];
-    $the_query = new WP_Query($args);
+        //Day Date
+    $day_date = "";
+    $day_search = "";
+
+        //Level
+    $level_boolean = false;
+
+    //Array Query
+    $array = [];
+
 ?>
