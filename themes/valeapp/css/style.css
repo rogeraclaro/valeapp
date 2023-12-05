@@ -5373,8 +5373,17 @@ a.HomeOffer-btn {
   height: 100%;
 }
 
+.acf-field.client-profile-picture .acf-image-uploader .image-wrap {
+  width: 100%;
+  height: 100%;
+}
+
 .acf-field.client-profile-picture .acf-input .acf-image-uploader.has-value .image-wrap img{
   border-radius: 50%;
+  max-height: max-content !important;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .acf-field.clients-content {
@@ -5382,6 +5391,13 @@ a.HomeOffer-btn {
   padding: 1.2rem 1rem !important;
   border-radius: 18px;
   padding-bottom: 7rem !important;
+}
+
+.acf-field.clients-content label{
+  font-size: 1.6rem;
+  font-weight: 700 !important;
+  color: #575550;
+  font-family: 'Century Gothic';
 }
 
 .acf-field.clients-content .acf-fields.-border {
@@ -5400,6 +5416,13 @@ a.HomeOffer-btn {
   border-radius: 6px;
   border: 1px solid #d4d4d4;
   resize: none;
+  padding-left: 1.3rem;
+  padding-top: 0.6rem;
+  font-family: 'Century Gothic';
+  font-weight: 400;
+  color: #a7a7a7;
+  font-size: 1rem;
+  height: 166px;
 }
 
 .acf-field.clients-content .acf-field textarea::placeholder {
@@ -5491,6 +5514,18 @@ a.HomeOffer-btn {
   border: 1px solid #D4D4D4;
 }
 
+.acf-field.provider-profile-picture .acf-input .acf-image-uploader .image-wrap {
+  width: 100%;
+  height: 100%;
+}
+.acf-field.provider-profile-picture .acf-input .acf-image-uploader.has-value .image-wrap img{
+  border-radius: 50%;
+  max-height: max-content !important;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
 .acf-field.provider-profile-picture .acf-input::before{
   content: '+';
   display: block;
@@ -5537,10 +5572,6 @@ a.HomeOffer-btn {
   opacity: 1;
   width: 100%;
   height: 100%;
-}
-
-.acf-field.provider-profile-picture .acf-input .acf-image-uploader.has-value .image-wrap img{
-  border-radius: 50%;
 }
 
 .acf-field.provider-content {
@@ -5751,8 +5782,17 @@ a.HomeOffer-btn {
   height: 100%;
 }
 
+.acf-field.company-content .acf-input .acf-image-uploader .image-wrap {
+  width: 100%;
+  height: 100%;
+}
+
 .acf-field.company-content .acf-input .acf-image-uploader.has-value .image-wrap img{
   border-radius: 50%;
+  max-height: max-content !important;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .acf-field.company-name .acf-label label{
@@ -5804,6 +5844,13 @@ a.HomeOffer-btn {
   border-radius: 6px;
   border: 1px solid #d4d4d4;
   resize: none;
+  padding-left: 1.3rem;
+  padding-top: 0.6rem;
+  font-family: 'Century Gothic';
+  font-weight: 400;
+  color: #a7a7a7;
+  font-size: 1rem;
+  height: 166px;
 }
 
 .acf-field.about-yourself .acf-field textarea::placeholder {

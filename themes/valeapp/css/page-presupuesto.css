@@ -61,7 +61,7 @@ body {
     right: 0;
     border-radius: 50%;
     background-color: #5aab9f;
-    background: center url('../img/valeapp-profile-check.png');
+    background: center url('<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 20px;
