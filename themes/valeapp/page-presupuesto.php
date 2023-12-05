@@ -25,6 +25,7 @@ get_header();
                 <div class="cards-item-content">
                     <div class="cards-item-img">
                         <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="ValeApp">
+                        <img class="cards-item-imgIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
                     </div>
                     <div class="cards-item-texts">
                         <p class="name">Maria</p>
@@ -39,6 +40,7 @@ get_header();
                 <div class="cards-item-content">
                     <div class="cards-item-img">
                         <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="ValeApp">
+                        <img class="cards-item-imgIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
                     </div>
                     <div class="cards-item-texts">
                         <p class="name">Juan</p>
@@ -53,6 +55,7 @@ get_header();
                 <div class="cards-item-content">
                     <div class="cards-item-img">
                         <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="ValeApp">
+                        <img class="cards-item-imgIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
                     </div>
                     <div class="cards-item-texts">
                         <p class="name">Andrea</p>
