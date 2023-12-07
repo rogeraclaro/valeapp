@@ -1,0 +1,123 @@
+/* CARD WRAPPER */
+.forms-default .acf-field.card {
+  box-shadow: 3px 3px 11.63px 2.38px rgba(0, 0, 0, 0.1);
+  padding: 1rem !important;
+  border-radius: 18px;
+  padding-bottom: 3rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* CARD TITLE */
+.forms-default .acf-field.card .acf-label label {
+  font-weight: 700;
+  font-family: "Century Gothic";
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.forms-default .acf-field.card .acf-label {
+  margin: 0;
+}
+
+.forms-default .acf-field.card .acf-fields.-border {
+  border: 0;
+}
+
+.forms-default .acf-field.card .acf-input .hideLabel .acf-label {
+  display: none;
+}
+.forms-default .acf-field.card .acf-input div .acf-label label {
+  font-size: 13px;
+}
+
+.forms-default .acf-field.card .acf-field.acf-field-textarea {
+  margin-top: 1rem;
+}
+
+.forms-default .acf-field.card .acf-field textarea {
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  resize: none;
+}
+
+.forms-default .acf-field.card .acf-field textarea::placeholder {
+  color: #a7a7a7;
+  font-weight: 400;
+  font-family: "Century Gothic";
+  font-size: 1rem;
+}
+
+.forms-default .acf-field.card .acf-field.acf-field-textarea .acf-input {
+  height: 166px;
+}
+
+.forms-default .acf-field.card .acf-field .acf-input input {
+  color: #a7a7a7;
+  font-weight: 400;
+  font-family: "Century Gothic";
+}
+
+.forms-default .acf-field.card .acf-field {
+  margin-top: 1rem;
+}
+/* TEXT INPUTS */
+.forms-default
+  .acf-field.card
+  .acf-field
+  .acf-input
+  input[type="text"]::placeholder {
+  color: #a7a7a7;
+  font-weight: 500;
+  font-family: "Century Gothic";
+}
+.forms-default .acf-field.card .acf-field .acf-input input[type="text"] {
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  padding: 0.6rem 1.3rem !important;
+  font-family: "Century Gothic";
+  color: #575550;
+  font-size: 16px !important;
+}
+
+/* CHECKBOX AND RADIOBTNS*/
+.forms-default .acf-field.card ul.acf-radio-list,
+ul.acf-checkbox-list {
+  text-align: left;
+}
+
+.radioAsBtns ul.acf-radio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.radioAsBtns ul.acf-radio-list::before,
+.radioAsBtns ul.acf-radio-list::after {
+  width: 100%;
+}
+.radioAsBtns ul.acf-radio-list li {
+  width: 48%;
+}
+.radioAsBtns ul.acf-radio-list li label {
+  border-radius: 5px;
+  border: 1px solid #59ab9f;
+  display: block;
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
+  text-align: center;
+  width: 100%;
+}
+.radioAsBtns ul.acf-radio-list li label.selected {
+  background-color: #59ab9f;
+  color: white;
+}
+
+.radioAsBtns ul.acf-radio-list li label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}

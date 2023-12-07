@@ -181,6 +181,7 @@ function valeapp_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); 
 	wp_enqueue_style('main-style', get_theme_file_uri('/css/style.css'), array('parent-style'));
 	wp_enqueue_style('page-presupuesto', get_theme_file_uri('/css/page-presupuesto.css'), array('parent-style'));
+	wp_enqueue_style('forms-default', get_theme_file_uri('/css/forms-default.css'), array('parent-style'));
 	wp_enqueue_style('animate', get_theme_file_uri('/css/animate.min.css'), array('parent-style'));
 	wp_enqueue_style('popup', get_theme_file_uri('/css/redirectionPopup.css'), array('parent-style'));
 	wp_enqueue_style('bootstrap', get_theme_file_uri('/vendor/bootstrap/bootstrap.min.css'), array('parent-style'));
@@ -210,6 +211,7 @@ function load_script_js() {
 	wp_localize_script( 'form_ajax', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
 	wp_enqueue_script( 'main-script', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ) );
 	wp_enqueue_script('placeholder', get_theme_file_uri('/js/placeholder.js'), array(), '1.0', true);
+	wp_enqueue_script('radioAsStars', get_theme_file_uri('/js/forms-default/radioAsStars.js'), array(), '1.0', true);
 }
 
 
