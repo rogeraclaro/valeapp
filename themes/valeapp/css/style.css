@@ -5948,6 +5948,498 @@ a.HomeOffer-btn {
   text-align: left;
 }
 
+/*Publicar servicio*/
+
+.acf-field.Categories-card {
+  border: 0;
+  box-shadow: 3px 3px 11.63px 2.38px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 1rem 1rem 2.5rem 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.acf-field.Categories-card .acf-fields.-border {
+  border: 0;
+}
+
+.acf-field.Categories-card .Categories-card-content label{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #575550;
+  font-family: 'Century Gothic';
+}
+
+.acf-field.Categories-card .Categories-card-content p{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #575550;
+  font-family: 'Open Sans';
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 340px;
+}
+
+.acf-field.Categories-card select{
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 0rem !important;
+  margin-bottom: 1rem !important;
+  padding: 0.6rem 1.3rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
+
+.acf-field.Categories-card .Categories-card-option {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.acf-field.Categories-card .acf-radio-list:focus-within {
+  border: 0;
+}
+
+.acf-field.Categories-card .Categories-card-option > .acf-label{
+  display: none;
+}
+
+.acf-field.Categories-card .Categories-card-option .acf-input .acf-radio-list label{
+  font-size: 16px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #575550;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.acf-field.Categories-card .Categories-card-option .acf-input .acf-radio-list label input{
+  margin-top: 0 !important;
+  margin-right: 8px !important;
+  width: auto;
+  opacity: 0;
+}
+
+.acf-field.Categories-card .Categories-card-option .acf-input .acf-radio-list label.selected{
+  font-weight: 700;
+  background: #E2EEEC;
+  padding: 1rem;
+  border-radius: 32px;
+  padding-left: 0;
+}
+
+.acf-field.ServiceDetail {
+  border: 0;
+  box-shadow: 3px 3px 11.63px 2.38px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 1rem 1rem 8rem 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.PublishService .acf-form-submit {
+  bottom: 1%;
+}
+
+.PublishService .acf-form-submit input {
+  width: 100%;
+  border-radius: 32px;
+  background-color: #5aab9f;
+  border: 0;
+  color: #fff;
+  padding: 1rem 0rem !important;
+  font-weight: 700;
+  font-family: "Century Gothic";
+  font-size: 1rem !important;
+}
+
+
+.acf-field.ServiceDetail .acf-fields.-border {
+  border: 0;
+}
+
+.acf-field.ServiceDetail .acf-label label{
+  font-size: 1.6rem;
+  font-weight: 700 !important;
+  color: #575550;
+  font-family: 'Century Gothic';
+}
+
+.acf-field.ServiceDetail p{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #575550 !important;
+  font-family: 'Open Sans';
+  margin-bottom: 1.5rem !important;
+  width: 100%;
+  max-width: 340px;
+}
+
+.acf-field.ServiceDetail input{
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 0rem !important;
+  margin-bottom: 1rem !important;
+  padding: 0.6rem 1.3rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
+
+.acf-field.ServiceDetail textarea{
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 0rem !important;
+  margin-bottom: 1rem !important;
+  padding: 0.6rem 1.3rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
+
+.acf-field.ServiceDetail .acf-field.DetailService-modality {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.acf-field.ServiceDetail .acf-field.DetailService-modality > .acf-label label {
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+.acf-field.ServiceDetail .acf-field.DetailService-modality label{
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+.acf-field.ServiceDetail .acf-field.DetailService-modality label.selected{
+  font-weight: 700;
+}
+
+.acf-field.ServiceDetail .acf-field.DetailService-modality input {
+  width: auto;
+  margin-bottom: 0 !important;
+}
+
+.acf-field.ServiceDetail .acf-field.DetailService-modality .acf-radio-list:focus-within {
+  border: 0;
+}
+
+.acf-field.ServiceDetail .DetailService-youCome {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem !important;
+}
+
+.acf-field.ServiceDetail .DetailService-youCome label {
+  font-size: 1.2rem;
+}
+
+.acf-field.ServiceDetail .DetailService-youCome select{
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  padding: 0.6rem 1rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
+
+.acf-field.DayWrapper {
+  display: flex;
+}
+
+.acf-field.ServiceDetail  .acf-field.DayWrapper label{
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 0rem !important;
+  display: block;
+  margin-right: 1.5rem;
+  width: 100px;
+}
+
+.acf-field.ServiceDetail .acf-field.DayWrapper .acf-input label{
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.acf-field.ServiceDetail .acf-field.DayWrapper .acf-input label input{
+  margin-bottom: 0 !important;
+  margin-right: 10px;
+}
+.acf-field.ServiceDetail .acf-field.DayWrapper .acf-input label span{
+  font-size: 1rem;
+}
+
+.acf-field.ServiceDetail .acf-field.HourWrapper label{
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 0rem !important;
+  display: block;
+  margin-right: 0rem;
+}
+
+.acf-field.ServiceDetail .acf-field.HourWrapper .acf-fields{
+  display: flex; 
+  justify-content: space-between;
+}
+
+.acf-field.ServiceDetail .acf-field.HourWrapper .acf-fields::after{
+  content: none;
+}
+
+.acf-field.ServiceDetail .acf-field.HourWrapper .acf-fields .acf-field-time-picker{
+  width: 48%;
+}
+
+.acf-field.ServiceDetail .acf-field.HourWrapper .acf-fields .acf-field-time-picker label{
+  font-size: 1rem;
+}
+
+.acf-field.ServiceDetail .acf-field.Unavailability{
+  border-top: 1px solid #d4d4d4 !important;
+  border-bottom: 1px solid #d4d4d4 !important;
+  padding-top: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.acf-field.ServiceDetail .acf-field.Unavailability label{
+  font-size: 1.2rem;
+}
+
+.acf-field.ServiceDetail .acf-field.workzone {
+  border-bottom: 1px solid #d4d4d4 !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.acf-field.ServiceDetail .acf-field.workzone label{
+  font-size: 1.2rem;
+}
+
+.acf-field.ServiceDetail .acf-field.workzone select{
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 0rem !important;
+  margin-bottom: 1rem !important;
+  padding: 0.6rem 1rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
+
+.acf-field.ServiceDetail .acf-field.PriceHour {
+  border-bottom: 1px solid #d4d4d4 !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.acf-field.ServiceDetail .acf-field.PriceHour label{
+  font-size: 1.2rem;
+}
+
+.acf-field.ServiceDetail .acf-field.PriceHour .acf-range-wrap{
+ display: flex;
+ align-items: center;
+}
+
+.acf-field.ServiceDetail .acf-field.PriceHour input[type=range]{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  padding: 0 !important;
+}
+
+.acf-field.ServiceDetail .acf-field.PriceHour input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.acf-field.ServiceDetail .acf-field.PriceHour input[type=range]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.acf-field.ServiceDetail .acf-field.ServiceType {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+
+.acf-field.ServiceDetail .acf-field.ServiceType > .acf-label label {
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+.acf-field.ServiceDetail .acf-field.ServiceType label{
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+.acf-field.ServiceDetail .acf-field.ServiceType label.selected{
+  font-weight: 700;
+}
+
+.acf-field.ServiceDetail .acf-field.ServiceType input {
+  width: auto;
+  margin-bottom: 0 !important;
+  margin-top: -3px !important;
+}
+
+.acf-field.ServiceDetail .acf-field.ServiceType .acf-radio-list:focus-within {
+  border: 0;
+}
+
+.acf-field.ServiceDetail .acf-field.Recurrence {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.acf-field.ServiceDetail .acf-field.Recurrence > .acf-label label {
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+.acf-field.ServiceDetail .acf-field.Recurrence .acf-radio-list:focus-within {
+  border: 0;
+}
+.acf-field.ServiceDetail .acf-field.NumberHoursRequested {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.acf-field.ServiceDetail .acf-field.NumberHoursRequested label{
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+.acf-field.ServiceDetail .acf-field.DateEarlyBooking {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.acf-field.ServiceDetail .acf-field.DateEarlyBooking label {
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 0.5rem;
+  padding-bottom: 4rem !important;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates .acf-gallery {
+  border: 0;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates .acf-gallery .acf-gallery-toolbar {
+  bottom: -15%;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates .acf-gallery .acf-gallery-toolbar select{
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 1rem !important;
+  margin-bottom: 0rem !important;
+  padding: 0.6rem 1rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates .acf-gallery .acf-gallery-toolbar .acf-hl{
+  display: flex;
+  flex-direction: column;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates .acf-gallery .acf-gallery-attachments{
+ padding: 10px;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates .acf-gallery .acf-gallery-attachment .margin{
+ border-radius: 0.75rem;
+ background-color: transparent;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates .acf-gallery .acf-gallery-attachment .thumbnail img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.acf-field.ServiceDetail .acf-field.Certificates label {
+  font-weight: 400;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
 /* IPHONE SE, 6,7,8 */
 @media (min-width: 350px) and (max-width: 380px) {
   html {
