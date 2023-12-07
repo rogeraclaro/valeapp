@@ -212,6 +212,7 @@ function load_script_js() {
 	wp_enqueue_script( 'main-script', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ) );
 	wp_enqueue_script('placeholder', get_theme_file_uri('/js/placeholder.js'), array(), '1.0', true);
 	wp_enqueue_script('radioAsStars', get_theme_file_uri('/js/forms-default/radioAsStars.js'), array(), '1.0', true);
+	wp_enqueue_script('defaultRange', get_theme_file_uri('/js/forms-default/defaultRange.js'), array(), '1.0', true);
 }
 
 
