@@ -182,6 +182,7 @@ function valeapp_enqueue_styles() {
 	wp_enqueue_style('main-style', get_theme_file_uri('/css/style.css'), array('parent-style'));
 	wp_enqueue_style('page-presupuesto', get_theme_file_uri('/css/page-presupuesto.css'), array('parent-style'));
 	wp_enqueue_style('forms-default', get_theme_file_uri('/css/forms-default.css'), array('parent-style'));
+	wp_enqueue_style('membership', get_theme_file_uri('/css/membership.css'), array('parent-style'));
 	wp_enqueue_style('animate', get_theme_file_uri('/css/animate.min.css'), array('parent-style'));
 	wp_enqueue_style('popup', get_theme_file_uri('/css/redirectionPopup.css'), array('parent-style'));
 	wp_enqueue_style('bootstrap', get_theme_file_uri('/vendor/bootstrap/bootstrap.min.css'), array('parent-style'));
