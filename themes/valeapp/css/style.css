@@ -1,3 +1,5 @@
+@import url('./pages/page-presupuesto.css');
+@import url('./pages/page-crear-cuenta-profesional-o-usuario.css');
 @font-face {
   font-family: 'Century Gothic';
   src: url('fonts/CenturyGothic.woff2') format('woff2'),
@@ -4902,7 +4904,7 @@ footer .footer-logos.carte-logos .footer-separator {
 }
 
 .Homecategories .category {
-  width: 7.5rem;
+  width: 30%;
   text-align: center;
   margin-bottom: 1.1rem;
 }
