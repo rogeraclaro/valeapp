@@ -22,7 +22,7 @@
   font-weight: 700;
   font-family: "Century Gothic";
   color: #575550;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -38,11 +38,13 @@
   display: none;
 }
 .forms-default .acf-field.card .acf-input div .acf-label label {
-  font-size: 13px;
+  font-size: 1.2rem;
 }
 .forms-default .acf-field.card p.description {
-  font-size: 13px;
+  font-size: 1rem;
+  font-weight: 600;
   text-align: left;
+  font-family: 'Open Sans';
 }
 .forms-default .acf-field.card .acf-field.acf-field-textarea {
   margin-top: 1rem;
@@ -207,14 +209,14 @@ ul.acf-checkbox-list {
   content:  attr(data-defaultRange-rangeValue);
   font-size: 18px;
   font-weight: bold;
-
+  text-align: center;
   margin: auto;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
 }
-.forms-default .acf-field.card .acf-field.defaultRange .acf-input .acf-range-wrap input[type="number"]{
+.acf-field.defaultRange .acf-input .acf-range-wrap input[type="number"]{
   display: none;
 }
 
@@ -222,6 +224,7 @@ ul.acf-checkbox-list {
   height: 2px;
   background: #ccc;
   border-radius: 16px;
+  padding: 0 !important;
 }
 .defaultRange .acf-range-wrap input[type="range"]::-webkit-slider-runnable-track,
 .defaultRange .acf-range-wrap input[type="range"]::-moz-range-track {
@@ -254,4 +257,62 @@ ul.acf-checkbox-list {
   border: none;
   
   transition: .2s ease-in-out;
+}
+
+
+.forms-default .acf-field.card .acf-field.DetailService-youCome select{
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  padding: 0.6rem 1rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
+
+.acf-field.defaultRange.range-label label {
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1.2rem;
+  margin-bottom: 0rem !important;
+  display: block;
+  margin-right: 0rem;
+}
+
+.acf-field.defaultRange.range-label {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem !important;
+}
+
+.forms-default .acf-field.card .acf-input .acf-radio-list label{
+  font-size: 1rem;
+  display: block !important;
+  margin-bottom: 1rem !important;
+}
+.forms-default .acf-field.card .acf-input .acf-radio-list label.selected{
+  font-weight: 700;
+}
+
+.forms-default .acf-field.card .acf-fields .acf-field-radio > .acf-label label{
+  font-size: 1.2rem;
+}
+
+.forms-default .acf-field.card .acf-input .acf-radio-list:focus-within {
+  border: 0;
+}
+
+.service-request-form .acf-form-submit .acf-button{
+  width: 100%;
+  border-radius: 32px;
+  background-color: #5aab9f;
+  border: 0;
+  color: #fff;
+  padding: 1rem 0rem !important;
+  font-weight: 700;
+  font-family: "Century Gothic";
+  font-size: 1rem !important;
 }

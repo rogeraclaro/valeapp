@@ -17,7 +17,7 @@ acf_form_head();
 
 get_header();
 
-// if (current_user_can('customer') || current_user_can('administrator')) {
+if (current_user_can('customer') || current_user_can('administrator')) {
 
 ?>
 <div class="service-request-form forms-default container mt-5">
@@ -39,7 +39,7 @@ get_header();
                         'field_656f52929087a',
                         'field_656f53019087b'
                     ],
-                    'submit_value'  => 'Enviar',
+                    'submit_value'  => 'Continuar',
                     'updated_message' => '¡Formulario actualizado!',
                     'return' => '/home',
                 ]);
@@ -49,8 +49,8 @@ get_header();
 </div>
 
 <?php
-// }
-// else {
-//     echo do_shortcode('[no_authorization_page]');
-// }
+}
+ else {
+     echo do_shortcode('[no_authorization_page]');
+ }
 get_footer();
