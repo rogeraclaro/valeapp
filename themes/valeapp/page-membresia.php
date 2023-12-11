@@ -15,7 +15,6 @@
 
 get_header();
 
-require_once plugin_dir_path(__FILE__) . 'inc/photo-header/index.php';
 ?>
 
 <section class="Membership">
