@@ -180,7 +180,6 @@ add_action( 'wp_enqueue_scripts', 'valeapp_enqueue_styles' );
 function valeapp_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); 
 	wp_enqueue_style('main-style', get_theme_file_uri('/css/style.css'), array('parent-style'));
-	wp_enqueue_style('page-presupuesto', get_theme_file_uri('/css/page-presupuesto.css'), array('parent-style'));
 	wp_enqueue_style('forms-default', get_theme_file_uri('/css/forms-default.css'), array('parent-style'));
 	wp_enqueue_style('animate', get_theme_file_uri('/css/animate.min.css'), array('parent-style'));
 	wp_enqueue_style('popup', get_theme_file_uri('/css/redirectionPopup.css'), array('parent-style'));
