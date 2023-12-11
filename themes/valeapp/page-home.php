@@ -41,7 +41,7 @@ get_header();
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category5-white.png" alt="valeapp" class="img-fluid category-icon" />
-            <p class="category-name">Cuida de <br class="xs-br"> los tuyos</p>
+            <p class="category-name">Cuidados</p>
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category6-white.png" alt="valeapp" class="img-fluid category-icon" />
@@ -54,6 +54,10 @@ get_header();
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon" />
             <p class="category-name">Alquila</p>
+          </div>
+          <div class="category">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category9.svg" alt="valeapp" class="img-fluid category-icon" />
+            <p class="category-name">Eventos</p>
           </div>
         </div>
         <div class="home-menu-card w-100">
