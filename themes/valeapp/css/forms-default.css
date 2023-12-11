@@ -54,6 +54,10 @@
   border-radius: 6px;
   border: 1px solid #d4d4d4;
   resize: none;
+  padding: 9.6px 20.8px;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 1rem;
 }
 
 .forms-default .acf-field.card .acf-field textarea::placeholder {
@@ -71,6 +75,7 @@
   color: #a7a7a7;
   font-weight: 400;
   font-family: "Century Gothic";
+  margin-right: 8px;
 }
 
 .forms-default .acf-field.card .acf-field {
@@ -292,6 +297,7 @@ ul.acf-checkbox-list {
   font-size: 1rem;
   display: block !important;
   margin-bottom: 1rem !important;
+  font-family: 'Open Sans' !important;
 }
 .forms-default .acf-field.card .acf-input .acf-radio-list label.selected{
   font-weight: 700;
