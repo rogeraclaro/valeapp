@@ -322,3 +322,16 @@ ul.acf-checkbox-list {
   font-family: "Century Gothic";
   font-size: 1rem !important;
 }
+
+.Categories-card-content .acf-input select {
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-top: 1rem !important;
+  margin-bottom: 0rem !important;
+  padding: 0.6rem 1.3rem !important;
+  font-family: 'Century Gothic';
+  color: #575550;
+  font-size: 16px !important;
+  padding-right: 1rem !important;
+}
