@@ -6121,7 +6121,7 @@ a.HomeOffer-btn {
 
 .acf-field.ServiceDetail .acf-field.DetailService-modality label{
   font-weight: 400;
-  font-family: 'Century Gothic';
+  font-family: 'Open Sans';
   color: #575550;
   font-size: 1rem;
   margin-bottom: 1rem !important;
@@ -6135,6 +6135,7 @@ a.HomeOffer-btn {
 .acf-field.ServiceDetail .acf-field.DetailService-modality input {
   width: auto;
   margin-bottom: 0 !important;
+  margin-right: 8px;
 }
 
 .acf-field.ServiceDetail .acf-field.DetailService-modality .acf-radio-list:focus-within {
@@ -6316,7 +6317,7 @@ a.HomeOffer-btn {
 
 .acf-field.ServiceDetail .acf-field.ServiceType label{
   font-weight: 400;
-  font-family: 'Century Gothic';
+  font-family: 'Open Sans';
   color: #575550;
   font-size: 1rem;
   margin-bottom: 1rem !important;
@@ -6331,6 +6332,7 @@ a.HomeOffer-btn {
   width: auto;
   margin-bottom: 0 !important;
   margin-top: -3px !important;
+  margin-right: 8px;
 }
 
 .acf-field.ServiceDetail .acf-field.ServiceType .acf-radio-list:focus-within {
