@@ -1,3 +1,5 @@
+@import url("./pages/page-presupuesto.css");
+@import url("./pages/page-crear-cuenta-profesional-o-usuario.css");
 @font-face {
   font-family: 'Century Gothic';
   src: url('fonts/CenturyGothic.woff2') format('woff2'),
