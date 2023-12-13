@@ -53,7 +53,7 @@ get_header();
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon" />
-            <p class="category-name">Alquila</p>
+            <p class="category-name">Comparte</p>
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category9.svg" alt="valeapp" class="img-fluid category-icon" />

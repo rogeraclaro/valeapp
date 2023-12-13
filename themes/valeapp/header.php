@@ -52,21 +52,11 @@ include_once plugin_dir_path(__FILE__) . 'inc/photo-header/header.php';
 
 	<header class="site-header header-mobile d-sm-none">
 		<div class="menumobile">
-			<div class="menuburger">
+			<button class="menuburger"  type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu" aria-controls="navMenu">
 				<span class="menu-global menu-top"></span>
 				<span class="menu-global menu-middle"></span>
 				<span class="menu-global menu-bottom"></span>
-			</div>
-			<nav id="site-navigation-mobile" class="main-navigation menu-main">
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
-			</nav>
+			</button>
 		</div>
 		<div class="logomobile">
 	       	<img class="image-fluid image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valelogo.png" alt="ValeApp">
@@ -83,3 +73,181 @@ include_once plugin_dir_path(__FILE__) . 'inc/photo-header/header.php';
 			</div>
 		</div>
 	</header>
+
+	<div class="NavMenu offcanvas offcanvas-start" tabindex="-1" id="navMenu" aria-labelledby="navMenuLabel">
+		<div class="offcanvas-header">
+			<button type="button" class="btn-close text-reset NavMenu-closeBtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div class="NavMenu-section">
+				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" aria-expanded="false" aria-controls="servicesCollapse">
+					Servicios
+				</button>
+				<div class="collapse" id="servicesCollapse">
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService1" aria-expanded="false" aria-controls="collapsedService1">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category1.png" alt="valeapp">
+							Hogar
+						</button>
+						<div class="collapse" id="collapsedService1">
+							<a href="#" class="NavMenu-service-link">Fontanería</a>
+							<a href="#" class="NavMenu-service-link">Limpieza</a>
+							<a href="#" class="NavMenu-service-link">Pintura</a>
+							<a href="#" class="NavMenu-service-link">Mudanza</a>
+							<a href="#" class="NavMenu-service-link">Obras</a>
+							<a href="#" class="NavMenu-service-link">Electricidad</a>
+							<a href="#" class="NavMenu-service-link">Montaje</a>
+							<a href="#" class="NavMenu-service-link">Muebles</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService2" aria-expanded="false" aria-controls="collapsedService2">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category2.png" alt="valeapp">
+							Aprende
+						</button>
+						<div class="collapse" id="collapsedService2">
+							<a href="#" class="NavMenu-service-link">Idiomas</a>
+							<a href="#" class="NavMenu-service-link">Idiomas</a>
+							<a href="#" class="NavMenu-service-link">Clases de repaso</a>
+							<a href="#" class="NavMenu-service-link">Baile</a>
+							<a href="#" class="NavMenu-service-link">Inversiones</a>
+							<a href="#" class="NavMenu-service-link">Pintura</a>
+							<a href="#" class="NavMenu-service-link">Fotografía</a>
+							<a href="#" class="NavMenu-service-link">Gaming</a>
+							<a href="#" class="NavMenu-service-link">Cocina</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService3" aria-expanded="false" aria-controls="collapsedService3">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category3.png" alt="valeapp">
+							Deporte
+						</button>
+						<div class="collapse" id="collapsedService3">
+							<a href="#" class="NavMenu-service-link">Ski o tabla</a>
+							<a href="#" class="NavMenu-service-link">De palo</a>
+							<a href="#" class="NavMenu-service-link">Con balón</a>
+							<a href="#" class="NavMenu-service-link">Con raqueta</a>
+							<a href="#" class="NavMenu-service-link">Al agua</a>
+							<a href="#" class="NavMenu-service-link">Al aire</a>
+							<a href="#" class="NavMenu-service-link">Sobre ruedas</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService4" aria-expanded="false" aria-controls="collapsedService4">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category4.png" alt="valeapp">
+							Mente
+						</button>
+						<div class="collapse" id="collapsedService4">
+							<a href="#" class="NavMenu-service-link">Coach</a>
+							<a href="#" class="NavMenu-service-link">Psicología</a>
+							<a href="#" class="NavMenu-service-link">Tarot</a>
+							<a href="#" class="NavMenu-service-link">Terapias de pareja</a>
+							<a href="#" class="NavMenu-service-link">Meditación</a>
+							<a href="#" class="NavMenu-service-link">Yoga</a>
+							<a href="#" class="NavMenu-service-link">Terapias alternativas</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService5" aria-expanded="false" aria-controls="collapsedService5">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category5.png" alt="valeapp">
+							Cuidados
+						</button>
+						<div class="collapse" id="collapsedService5">
+							<a href="#" class="NavMenu-service-link">Mascotas</a>
+							<a href="#" class="NavMenu-service-link">Niños</a>
+							<a href="#" class="NavMenu-service-link">Personas mayores</a>
+							<a href="#" class="NavMenu-service-link">Au pair</a>
+							<a href="#" class="NavMenu-service-link">Seguridad</a>
+							<a href="#" class="NavMenu-service-link">Masajes</a>
+							<a href="#" class="NavMenu-service-link">Dietas</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService6" aria-expanded="false" aria-controls="collapsedService6">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category6.png" alt="valeapp">
+							Belleza
+						</button>
+						<div class="collapse" id="collapsedService6">
+							<a href="#" class="NavMenu-service-link">Peluquería</a>
+							<a href="#" class="NavMenu-service-link">Tratamientos</a>
+							<a href="#" class="NavMenu-service-link">Uñas</a>
+							<a href="#" class="NavMenu-service-link">Maquillaje</a>
+							<a href="#" class="NavMenu-service-link">Depilación</a>
+							<a href="#" class="NavMenu-service-link">Dental</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService7" aria-expanded="false" aria-controls="collapsedService7">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category7.png" alt="valeapp">
+							Contrata
+						</button>
+						<div class="collapse" id="collapsedService7">
+							<a href="#" class="NavMenu-service-link">Publicidad</a>
+							<a href="#" class="NavMenu-service-link">Desarrollo y app</a>
+							<a href="#" class="NavMenu-service-link">Análisis de datos</a>
+							<a href="#" class="NavMenu-service-link">Legal</a>
+							<a href="#" class="NavMenu-service-link">Traducciones</a>
+							<a href="#" class="NavMenu-service-link">Redes sociales</a>
+							<a href="#" class="NavMenu-service-link">Foto / Video</a>
+							<a href="#" class="NavMenu-service-link">Hostelería</a>
+							<a href="#" class="NavMenu-service-link">Guía turístico</a>
+							<a href="#" class="NavMenu-service-link">Agente viajes</a>
+							<a href="#" class="NavMenu-service-link">Influencers</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService8" aria-expanded="false" aria-controls="collapsedService8">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-category8.png" alt="valeapp">
+							Comparte
+						</button>
+						<div class="collapse" id="collapsedService8">
+							<a href="#" class="NavMenu-service-link">Espacio</a>
+							<a href="#" class="NavMenu-service-link">Estudio</a>
+							<a href="#" class="NavMenu-service-link">Consulta</a>
+							<a href="#" class="NavMenu-service-link">Equipo</a>
+							<a href="#" class="NavMenu-service-link">Material</a>
+							<a href="#" class="NavMenu-service-link">Pista</a>
+						</div>
+					</div>
+					<div class="NavMenu-service">
+						<button class="NavMenu-service-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedService9" aria-expanded="false" aria-controls="collapsedService9">
+							<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category9-green.svg" alt="valeapp">
+							Eventos
+						</button>
+						<div class="collapse" id="collapsedService9">
+							<a href="#" class="NavMenu-service-link">Empresas</a>
+							<a href="#" class="NavMenu-service-link">Bodas</a>
+							<a href="#" class="NavMenu-service-link">Despedidas / cumpleaños</a>
+							<a href="#" class="NavMenu-service-link">DJ / Musica en vivo</a>
+							<a href="#" class="NavMenu-service-link">Promocionales</a>
+							<a href="#" class="NavMenu-service-link">Sin animo de lucro</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="NavMenu-section">
+				<a class="NavMenu-link" href="#">
+					Registrarse / Iniciar sesión
+				</a>
+			</div>
+			<div class="NavMenu-section">
+				<a class="HomeOffer-btn" href="/profesionales">
+					Ofrecer servicios
+				</a>
+			</div>
+			<div class="NavMenu-section">
+				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#langCollapse" aria-expanded="false" aria-controls="langCollapse">
+					idioma
+				</button>
+				<div class="collapse" id="langCollapse">
+					<a href="#" class="NavMenu-link ml-2">Español</a>
+					<a href="#" class="NavMenu-link ml-2">Inglés</a>
+				</div>
+			</div>
+			<div class="NavMenu-section NavMenu-lastSection">
+				<a class="NavMenu-link" href="#">
+					Contacto
+				</a>
+			</div>
+		</div>
+	</div>

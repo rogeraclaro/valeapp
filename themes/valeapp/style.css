@@ -104,6 +104,9 @@ i.bi.bi-search {
 	position: relative;
 	width: 30px;
 	height: 30px;
+
+	background: transparent;
+    border: none;
 }
 
 .menu-global {
@@ -153,19 +156,16 @@ i.bi.bi-search {
 	left: 0;
 	top: 0;
 }
-
 .menu-main ul {
 	display: none;
 	position: absolute;
 	overflow: auto;
-	top: 4.5rem;
+	top: 0;
 	left: 0;
 	z-index: 999;
 	padding: 1rem;
 	background: #fff;
-	width: 100vw;
 }
-
 .menu-main ul li {
 	float: none;
 	display: block;
