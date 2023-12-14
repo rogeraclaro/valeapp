@@ -233,7 +233,7 @@ include_once plugin_dir_path(__FILE__) . 'inc/button-menu.php';
 			</div>
 			<div class="NavMenu-section">
 				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#langCollapse" aria-expanded="false" aria-controls="langCollapse">
-					idioma
+					Idioma
 				</button>
 				<div class="collapse" id="langCollapse">
 					<a href="#" class="NavMenu-link ml-2">Español</a>

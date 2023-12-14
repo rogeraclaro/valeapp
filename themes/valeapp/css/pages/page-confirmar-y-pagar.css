@@ -130,6 +130,7 @@
   flex-direction: row;
   justify-content: space-between;
   line-height: 2rem;
+  font-weight: 500;
 }
 
 .ConfirmAndPay-sectionBody-item-total,
@@ -191,7 +192,7 @@
   padding-left: 1rem;
   text-align: left;
   width: 60%;
-
+  font-weight: 500;
   border: 1px solid #d4d4d4;
   border-top: none;
 }
@@ -205,6 +206,7 @@
 }
 
 /* WHYVALE */
-.WhyVale .text{
+.ConfirmAndPay .WhyVale p.text{
     font-weight: 500;
+    font-family: "Open Sans";
 }
