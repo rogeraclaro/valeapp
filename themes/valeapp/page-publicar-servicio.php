@@ -17,7 +17,7 @@ acf_form_head();
 get_header();
 
 
-if (current_user_can('editor') || current_user_can('administrator') || current_user_can('contributor')) {
+if (current_user_can('editor') || current_user_can('administrator') || current_user_can('contributor') || current_user_can('ProveedorValeApp')) {
 
     require_once plugin_dir_path(__FILE__) . 'inc/membership/post-limits.php';
 

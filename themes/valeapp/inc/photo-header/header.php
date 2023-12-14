@@ -22,7 +22,15 @@ function add_photo_profile_header() {
             $rol = "proveedor";
             $field_photo = "field_64dcf553615dc";
         break;
+        case 'ProveedorValeApp':
+            $rol = "proveedor";
+            $field_photo = "field_64dcf553615dc";
+        break;
         case 'customer':
+            $rol = "cliente";
+            $field_photo = "field_64dcf7f7e9ebb";
+        break;
+        case 'ClienteValeApp':
             $rol = "cliente";
             $field_photo = "field_64dcf7f7e9ebb";
         break;
@@ -41,10 +49,13 @@ function add_photo_profile_header() {
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post();
             $profile_photo = get_field($field_photo);
+            $id = get_the_ID();
 
             if($profile_photo){
-                ?>
-                    <img class="image-profile-header" src="<?php echo($profile_photo['url']);?>" alt="<?php echo($profile_photo['alt']); ?>">
+                ?>  
+                    <a href="/<?php echo($rol); ?>/<?php echo($id); ?>">
+                        <img class="image-profile-header" src="<?php echo($profile_photo['url']);?>" alt="<?php echo($profile_photo['alt']); ?>">
+                    </a>
                 <?php
             }
             else{

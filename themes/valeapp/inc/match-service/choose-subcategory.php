@@ -1,108 +1,153 @@
-<?php 
+<?php
 
 // Choose subcategory and filter
 
-if($category){
-    switch($category) {
+function variables_category(){
+    
+}
+
+if ($category) {
+    switch ($category) {
         case "Hogar":
-            $subcategory = get_field('field_64dfac56364ec', $post_id);
+            $subcategory = $group_category['hogar'];
             $subcategory_search = 'hogar';
-            $subcategory_result = 'field_64e3d2df88a52';
+            $subcategory_result = $group_category_publisher['hogar'];
 
             //Price
-            $price = get_field('field_64e5232fb40f9', $post_id);
+            $price = $group_profesional['precio_maximo_por_hora'];
             $price_search = 'precio_por_hora';
             break;
         case "Aprende":
-            $subcategory = get_field('field_64dfb333364ed', $post_id);
+            $subcategory = $group_category['aprende'];
             $subcategory_search = 'aprende';
-            $subcategory_result = 'field_64e3d4bb88a53';
+            $subcategory_result = $group_category_publisher['aprende'];
 
             //Price
-            $price = get_field('field_64e5232fb40f9', $post_id);
+            $price = $group_profesional['precio_maximo_por_hora'];
             $price_search = 'precio_por_hora';
 
             //Level
             $level_boolean = true;
             break;
         case "Deporte":
-            $subcategory = get_field('field_64dfb374364ee', $post_id);
+            $subcategory = $group_category['deporte'];
             $subcategory_search = 'deporte';
-            $subcategory_result = 'field_64e3d4f788a54';
+            $subcategory_result = $group_category_publisher['deporte'];
 
             //Price
-            $price = get_field('field_64e5232fb40f9', $post_id);
+            $price = $group_profesional['precio_maximo_por_hora'];
             $price_search = 'precio_por_hora';
 
             //Level
             $level_boolean = true;
             break;
         case "Mente":
-            $subcategory = get_field('field_64dfb584364ef', $post_id);
+            $subcategory = $group_category['mente'];
             $subcategory_search = 'mente';
-            $subcategory_result = 'field_64e3d52b88a56';
+            $subcategory_result = $group_category_publisher['mente'];
 
             //Price
-            $price = get_field('field_64e5232fb40f9', $post_id);
+            $price = $group_profesional['precio_maximo_por_hora'];
             $price_search = 'precio_por_hora';
             break;
         case "Cuidados":
-            $subcategory = get_field('field_64dfb5a4364f0', $post_id);
+            $subcategory = $group_category['cuidados'];
             $subcategory_search = 'cuidados';
-            $subcategory_result = 'field_64e3d55188a58';
+            $subcategory_result = $group_category_publisher['cuidados'];
 
             //Price
-            if($subcategory == 'Seguridad' || $subcategory == 'Dietas'){
-                $price = get_field('field_64e5232fb40f9', $post_id);
+            if ($subcategory == 'Seguridad' || $subcategory == 'Dietas') {
+                $price = $group_profesional['precio_maximo_por_hora'];
                 $price_search = 'precio_por_hora';
-            }
-            else{
-                $price = get_field('field_654bf3176387d', $post_id);
-                $price_data = 'precio_por_servicio';
+            } else {
+                $price = $group_profesional['precio_maximo_por_servicio'];
+                $price_search = 'precio_por_servicio';
             }
             break;
         case "Belleza":
-            $subcategory = get_field('field_64dfb5c0364f1', $post_id);
+            $subcategory = $group_category['belleza'];
             $subcategory_search = 'belleza';
-            $subcategory_result = 'field_64e3d57188a59';
-
+            $subcategory_result = $group_category_publisher['belleza'];
+            $gender = $group_category['sexo'];
+            $nails = $group_category['unas'];
+            $hair_removal = $group_category['depilacion_con'];
             //Price
-            if($subcategory == 'Maquillaje'){
-                $price = get_field('field_64e5232fb40f9', $post_id);
+            if ($subcategory == 'Maquillaje') {
+                $price = $group_profesional['precio_maximo_por_hora'];
                 $price_search = 'precio_por_hora';
-            }
-            else{
-                $price = get_field('field_654bf3176387d', $post_id);
-                $price_data = 'precio_por_servicio';
+            } else {
+                $price = $group_profesional['precio_maximo_por_servicio'];
+                $price_search = 'precio_por_servicio';
             }
             break;
         case "Contrata":
-            $subcategory = get_field('field_64dfb5d9364f2', $post_id);
+            $subcategory = $group_category['contrata'];
             $subcategory_search = 'contrata';
-            $subcategory_result = 'field_64e3d5a188a5a';
+            $subcategory_result = $group_category_publisher['contrata'];
 
             //Price
-            $price = get_field('field_64e5232fb40f9', $post_id);
+            $price = $group_profesional['precio_maximo_por_hora'];
             $price_search = 'precio_por_hora';
             break;
         case "Comparte":
-            $subcategory = get_field('field_64dfb5f9364f3', $post_id);
+            $subcategory = $group_category['comparte'];
             $subcategory_search = 'comparte';
-            $subcategory_result = 'field_64e3d5fb88a5b';
+            $subcategory_result = $group_category_publisher['comparte'];
 
             //Price
-            $price = get_field('field_64e5232fb40f9', $post_id);
+            $price = $group_profesional['precio_maximo_por_hora'];
             $price_search = 'precio_por_hora';
             break;
         case "Eventos":
-            $subcategory = get_field('field_655f6cd65bca5', $post_id);
+            $subcategory = $group_category['eventos'];
             $subcategory_search = 'eventos';
-            $subcategory_result = 'field_655f6cd8c55b2';
+            $subcategory_result = $group_category_publisher['eventos'];
 
             //Price
-            $price = get_field('field_64e5232fb40f9', $post_id);
+            $price = $group_profesional['precio_maximo_por_hora'];
             $price_search = 'precio_por_hora';
             break;
     }
-};
+}
+
+if($level_boolean){
+    $level_query = [
+        'key' => 'categorias_nivel',
+        'value'=> $level,
+        'compare' => '=',
+    ];
+}
+
+if($gender) {
+    $gender_query = [
+        'key'=> 'categorias_sexo',
+        'value'=> $gender,
+        'compare' => '=',
+    ];
+} 
+
+if($subcategory == 'Uñas'){
+    $nails_query = [
+        'key'=> 'categorias_unas',
+        'value'=> $nails,
+        'compare' => '=',
+    ];
+}
+
+if($subcategory == 'Uñas'){
+    $nails_query = [
+        'key'=> 'categorias_unas',
+        'value'=> $nails,
+        'compare' => '=',
+    ];
+}
+
+if($subcategory == 'Depilación'){
+    $hair_removal_query = [
+        'key'=> 'categorias_depilacion_con',
+        'value'=> $hair_removal,
+        'compare' => '=',
+    ];
+}
+ 
 ?>

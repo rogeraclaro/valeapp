@@ -11,6 +11,7 @@
 
 $current_lang = get_bloginfo( 'language' );
 include_once plugin_dir_path(__FILE__) . 'inc/photo-header/header.php';
+include_once plugin_dir_path(__FILE__) . 'inc/button-menu.php';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -79,6 +80,11 @@ include_once plugin_dir_path(__FILE__) . 'inc/photo-header/header.php';
 			<button type="button" class="btn-close text-reset NavMenu-closeBtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body">
+		<div class="NavMenu-section NavMenu-lastSection">
+				<a class="NavMenu-link" href="/">
+					Home
+				</a>
+			</div>
 			<div class="NavMenu-section">
 				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" aria-expanded="false" aria-controls="servicesCollapse">
 					Servicios
@@ -225,16 +231,21 @@ include_once plugin_dir_path(__FILE__) . 'inc/photo-header/header.php';
 					</div>
 				</div>
 			</div>
-			<div class="NavMenu-section">
-				<a class="NavMenu-link" href="#">
-					Registrarse / Iniciar sesión
-				</a>
-			</div>
-			<div class="NavMenu-section">
-				<a class="HomeOffer-btn" href="/profesionales">
-					Ofrecer servicios
-				</a>
-			</div>
+			<?php
+				if(!is_user_logged_in()){
+					?>
+					<div class="NavMenu-section">
+						<a class="NavMenu-link" href="/crear-cuenta-profesional-o-usuario/">
+							Registrarse
+						</a>
+						<a class="NavMenu-link" href="/iniciar-sesion-profesional-o-usuario">
+							Iniciar sesión
+						</a>
+					</div>
+				<?php
+				}
+				change_button_menu_header()
+			?>
 			<div class="NavMenu-section">
 				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#langCollapse" aria-expanded="false" aria-controls="langCollapse">
 					idioma
@@ -249,5 +260,16 @@ include_once plugin_dir_path(__FILE__) . 'inc/photo-header/header.php';
 					Contacto
 				</a>
 			</div>
+			<?php
+				if(is_user_logged_in()){
+					?>
+						<div class="NavMenu-section">
+    						<a class="NavMenu-link" href="<?php echo wp_logout_url(home_url()); ?>">
+								Cerrar sesión
+							</a>
+						</div>
+    				<?php
+				}
+			?>
 		</div>
 	</div>

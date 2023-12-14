@@ -215,7 +215,9 @@ function load_script_js() {
 	wp_enqueue_script('defaultRange', get_theme_file_uri('/js/forms-default/defaultRange.js'), array(), '1.0', true);
 }
 
-
+// require_once plugin_dir_path(__FILE__) . 'inc/roles/clientevaleapp.php';
+// require_once plugin_dir_path(__FILE__) . 'inc/roles/proveedorvaleapp.php';
+require_once plugin_dir_path(__FILE__) . 'inc/home-page-redirection/index.php';
 require_once plugin_dir_path(__FILE__) . 'advanced-custom-fields/validation/validations.php';
 require_once plugin_dir_path(__FILE__) . 'advanced-custom-fields/validation/validations-time.php';
 require_once plugin_dir_path(__FILE__) . 'inc/shortcode.php';

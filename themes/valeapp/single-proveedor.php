@@ -9,6 +9,8 @@
 
 get_header();
 
+$post_id = get_the_ID();
+
 $user_id = get_current_user_id();
 $profile_photo = get_field('field_64dcf553615dc', $post_id);
 $name = get_field('field_64dcf1b4615ce', $post_id);
@@ -51,13 +53,13 @@ $rate = get_field('field_64dcf621615e0', $post_id);
                              <span class="option-text">Catálogo de servicios</span>
                          </li>
                      </a>
-                     <a class="link" href="">
+                     <a class="link" href="/publicaciones">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-requests-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Solicitudes</span>
                          </li>
                      </a>
-                     <a class="link" href="">
+                     <a class="link" href="/publicaciones">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-task-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Mis tareas</span>
@@ -76,7 +78,7 @@ $rate = get_field('field_64dcf621615e0', $post_id);
                              <span class="option-text">Mi saldo</span>
                          </li>
                      </a>
-                     <a class="link" href="">
+                     <a class="link" href="/membresia">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Membresía</span>
@@ -91,7 +93,7 @@ $rate = get_field('field_64dcf621615e0', $post_id);
                      </a>
                 </ul>
             </nav>
-            <button class="logOut">Cerrar Sesión</button>
+            <a  class="logOut" href="<?php echo wp_logout_url(home_url()); ?>" >Cerrar Sesión</a>
        </div>
     </section>
 <?php

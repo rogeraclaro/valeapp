@@ -9,10 +9,11 @@
     $membership_count = null;
 
     foreach ($posts as $post){
-        $membership = get_field('field_64e9299d5c1e9');
+        $membership = get_field('field_655e783771091');
+        $count = $membership['membresia'];
 
         if($membership) {
-            $membership_count = get_field('field_64de518b855a7', $membership);
+            $membership_count = get_field('field_64de518b855a7', $count);
         }
     }
     

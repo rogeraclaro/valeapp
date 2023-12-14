@@ -15,6 +15,7 @@ if (isset($_POST['registro_submit'])) {
             'user_login' => $username,
             'user_pass' => $password,
             'user_email' => $email,
+            // 'role' => 'ClienteValeApp',
             'role' => 'customer',
             'first_name' => $first_name,
             'last_name' => $last_name,
