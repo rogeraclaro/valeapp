@@ -111,7 +111,7 @@ body {
 .Membership-frequency-content {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 0.4rem;
 }
 
@@ -133,7 +133,7 @@ body {
 
 .Membership-frequency-option label {
     font-family: 'Century Gothic';
-    font-weight: 400;
+    font-weight: 600;
     color: #575550;
     font-size: 1rem;
 }
@@ -203,6 +203,7 @@ body {
     font-size: 1.05rem;
     text-align: left;
     width: 230px;
+    margin-bottom: 0;
 }
 
 .Membership-plan-value {
@@ -210,6 +211,7 @@ body {
     font-weight: 600;
     font-family: "Open Sans";
     font-size: 1.05rem;
+    margin-bottom: 0;
 }
 
 .Membership-plan-button {

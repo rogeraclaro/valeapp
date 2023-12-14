@@ -5113,6 +5113,21 @@ footer .footer-logos.carte-logos .footer-separator {
   padding: 1.8rem 1rem 1.7rem 1rem;
 }
 
+.Reviews.membership .content .text{
+  text-align: left;
+  font-weight: 600;
+}
+
+.Reviews.membership .content .rate{
+  text-align: left;
+}
+
+.Reviews.membership .content .rate span{
+  font-weight: 700;
+  font-family: 'Open Sans';
+  margin-right: 10px;
+}
+
 .Reviews .swiper-pagination-bullet{
   border-radius: 50%;
   width: 0.7rem !important;

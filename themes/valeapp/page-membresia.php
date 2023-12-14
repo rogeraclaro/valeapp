@@ -223,7 +223,7 @@ get_header();
           <button class="Membership-plan-button">Continuar</button>
         </div>
       </div>
-      <div class="Reviews">
+      <div class="Reviews membership">
         <div id="reviews" class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
