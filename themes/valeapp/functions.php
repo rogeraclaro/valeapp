@@ -217,7 +217,7 @@ function load_script_js() {
 
 // require_once plugin_dir_path(__FILE__) . 'inc/roles/clientevaleapp.php';
 // require_once plugin_dir_path(__FILE__) . 'inc/roles/proveedorvaleapp.php';
-// require_once plugin_dir_path(__FILE__) . 'inc/home-page-redirection/index.php';
+require_once plugin_dir_path(__FILE__) . 'inc/home-redirection.php';
 require_once plugin_dir_path(__FILE__) . 'advanced-custom-fields/validation/validations.php';
 require_once plugin_dir_path(__FILE__) . 'advanced-custom-fields/validation/validations-time.php';
 require_once plugin_dir_path(__FILE__) . 'inc/shortcode.php';
