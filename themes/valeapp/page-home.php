@@ -12,7 +12,7 @@
  *
  * @package ValeApp
  */
-include 'inc/blog-categories/index.php';
+include 'inc/blog-categories-home.php';
 
 get_header();
 ?>
