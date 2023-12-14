@@ -86,7 +86,7 @@ get_header();
       <p class="text">
       Ofrece tus servicios a una amplia gama de clientes potenciales que buscan ayuda con tareas cotidianas y proyectos especializados. ¡Expande tu negocio hoy mismo!
       </p>
-      <a class="HomeOffer-btn" href="/profesionales">Ofrecer servicios</a>
+      <a class="HomeOffer-btn" href="/servicios-generica">Ofrecer servicios</a>
     </div>
     <div class="HomeDoesWork">
       <h2 class="title">¿Como funciona?</h2>
