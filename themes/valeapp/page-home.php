@@ -12,7 +12,7 @@
  *
  * @package ValeApp
  */
-include 'inc/blog-categories/index.php';
+include 'inc/blog-categories-home.php';
 
 get_header();
 ?>
@@ -53,7 +53,7 @@ get_header();
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon" />
-            <p class="category-name">Alquila</p>
+            <p class="category-name">Comparte</p>
           </div>
           <div class="category">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category9.svg" alt="valeapp" class="img-fluid category-icon" />
@@ -86,7 +86,7 @@ get_header();
       <p class="text">
       Ofrece tus servicios a una amplia gama de clientes potenciales que buscan ayuda con tareas cotidianas y proyectos especializados. ¡Expande tu negocio hoy mismo!
       </p>
-      <a class="HomeOffer-btn" href="/profesionales">Ofrecer servicios</a>
+      <a class="HomeOffer-btn" href="/servicios-generica">Ofrecer servicios</a>
     </div>
     <div class="HomeDoesWork">
       <h2 class="title">¿Como funciona?</h2>

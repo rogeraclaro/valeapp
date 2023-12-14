@@ -3,143 +3,152 @@
 if($subcategory) {
     switch($subcategory){
         case "Idiomas":
-            $filter = get_field('field_65383e708a445', $post_id);
+            $filter = $group_category['idiomas'];
             $filter_search = 'idiomas';
-            $filter_result = 'field_65383cf15fc3e';
+            $filter_result = $group_category_publisher['idiomas'];
             $filter_boolean = true;
         break;
         case "Instrumentos":
-            $filter = get_field('field_65383f45414e8', $post_id);
+            $filter = $group_category['instrumentos'];
             $filter_search = 'instrumentos';
-            $filter_result = 'field_65383efd82067';
+            $filter_result = $group_category_publisher['instrumentos'];
             $filter_boolean = true;
         break;
         case "Clases de repaso":
-            $filter = get_field('field_65383fe2d9a9d', $post_id);
+            $filter = $group_category['clases_de_repaso'];
             $filter_search = 'clases_de_repaso';
-            $filter_result = 'field_65383f8e392eb';
+            $filter_result = $group_category_publisher['clases_de_repaso'];
             $filter_boolean = true;
         break;
         case "Baile":
-            $filter = get_field('field_653842f4b5ce0', $post_id);
+            $filter = $group_category['baile'];
             $filter_search = 'baile';
-            $filter_result = 'field_653842ba7489f';
+            $filter_result = $group_category_publisher['baile'];
             $filter_boolean = true;
         break;
         case "Gim":
-            $filter = get_field('field_653844277fa02', $post_id);
+            $filter = $group_category['gim'];
             $filter_search = 'gim';
-            $filter_result = 'field_6538443246a67';
+            $filter_result = $group_category_publisher['gim'];
             $filter_boolean = true;
         break;
         case "Ski o tabla":
-            $filter = get_field('field_6538454fd758d', $post_id);
+            $filter = $group_category['ski_o_tabla'];
             $filter_search = 'ski_o_tabla';
-            $filter_result = 'field_6538454c3be2e';
+            $filter_result = $group_category_publisher['ski_o_tabla'];
             $filter_boolean = true;
         break;
         case "De palo":
-            $filter = get_field('field_6538465fa66eb', $post_id);
-            $filter_search = 'de_palo';
-            $filter_result = 'field_65384639fdc2a';
+            $filter = $group_category['De_palo'];
+            $filter_search = 'De_palo';
+            $filter_result = $group_category_publisher['De_palo'];
             $filter_boolean = true;
         break;
         case "Con balón":
-            $filter = get_field('field_653846b9a4aea', $post_id);
+            $filter = $group_category['con_balon'];
             $filter_search = 'con_balon';
-            $filter_result = 'field_653846887a08e';
+            $filter_result = $group_category_publisher['con_balon'];
             $filter_boolean = true;
         break;
         case "Con raqueta":
-            $filter = get_field('field_6538475bc65e3', $post_id);
+            $filter = $group_category['con_raqueta'];
             $filter_search = 'con_raqueta';
-            $filter_result = 'field_653846fe66e28';
+            $filter_result = $group_category_publisher['con_raqueta'];
             $filter_boolean = true;
         break;
         case "Al agua":
-            $filter = get_field('field_6538486d709a4', $post_id);
+            $filter = $group_category['al_agua'];
             $filter_search = 'al_agua';
-            $filter_result = 'field_653848a35474a';
+            $filter_result = $group_category_publisher['al_agua'];
             $filter_boolean = true;
         break;
         case "Al aire":
-            $filter = get_field('field_653849300dfa3', $post_id);
+            $filter = $group_category['al_aire'];
             $filter_search = 'al_aire';
-            $filter_result = 'field_653848c1859c2';
+            $filter_result = $group_category_publisher['al_aire'];
             $filter_boolean = true;
         break;
         case "Sobre ruedas":
-            $filter = get_field('field_653849a00c73a', $post_id);
+            $filter = $group_category['sobre_ruedas'];
             $filter_search = 'sobre_ruedas';
-            $filter_result = 'field_653849585cb0d';
+            $filter_result = $group_category_publisher['sobre_ruedas'];
             $filter_boolean = true;
         break;
         case "Mascotas":
-            $filter = get_field('field_65453d67f2234', $post_id);
+            $filter = $group_category['mascotas'];
             $filter_search = 'mascotas';
-            $filter_result = 'field_65453b54b083b';
+            $filter_result = $group_category_publisher['mascotas'];
             $filter_boolean = true;
         break;
         case "Niños":
-            $filter = get_field('field_654542fd8a46d', $post_id);
+            $filter = $group_category['ninos'];
             $filter_search = 'ninos';
-            $filter_result = 'field_65454348a4183';
+            $filter_result = $group_category_publisher['ninos'];
             $filter_boolean = true;
         break;
         case "Personas mayores":
-            $filter = get_field('field_654553afdad49', $post_id);
+            $filter = $group_category['personas_mayores'];
             $filter_search = 'personas_mayores';
-            $filter_result = 'field_654553b1a3fd5';
+            $filter_result = $group_category_publisher['personas_mayores'];
             $filter_boolean = true;
         break;
         case "Au pair":
-            $filter = get_field('field_654bcd4869b1c', $post_id);
+            $filter = $group_category['au_pair'];
             $filter_search = 'au_pair';
-            $filter_result = 'field_654bcd4aceb4d';
+            $filter_result = $group_category_publisher['au_pair'];
             $filter_boolean = true;
         break;
         case "Seguridad":
-            $filter = get_field('field_654bcda569b1d', $post_id);
+            $filter = $group_category['seguridad'];
             $filter_search = 'seguridad';
-            $filter_result = 'field_654bcda4ceb4e';
+            $filter_result = $group_category_publisher['seguridad'];
             $filter_boolean = true;
         break;
         case "Masajes":
-            $filter = get_field('field_653937b3eadc9', $post_id);
+            $filter = $group_category['masajes'];
             $filter_search = 'masajes';
-            $filter_result = 'field_653936105c17b';
+            $filter_result = $group_category_publisher['masajes'];
             $filter_boolean = true;
         break;
         case "Peluquería":
-            $filter = get_field('field_654565e80869c', $post_id);
+            $filter = $group_category['peluqueria'];
             $filter_search = 'peluqueria';
-            $filter_result = 'field_65456683d547d';
+            $filter_result = $group_category_publisher['peluqueria'];
             $filter_boolean = true;
         break;
         case "Tratamientos":
-            $filter = get_field('field_654566af78a2b', $post_id);
+            $filter = $group_category['tratamientos'];
             $filter_search = 'tratamientos';
-            $filter_result = 'field_654570bd0ac96';
+            $filter_result = $group_category_publisher['tratamientos'];
             $filter_boolean = true;
         break;
         case "Uñas":
-            $filter = get_field('field_654572a198521', $post_id);
+            $filter = $group_category['unas_servicio'];
             $filter_search = 'unas_servicio';
-            $filter_result = 'field_6545729fda68b';
+            $filter_result = $group_category_publisher['unas_servicio'];
             $filter_boolean = true;
         break;
         case "Depilación":
-            $filter = get_field('field_65457464b92ba', $post_id);
+            $filter = $group_category['depilacion'];
             $filter_search = 'depilacion';
-            $filter_result = 'field_65457461e1ce0';
+            $filter_result = $group_category_publisher['depilacion'];
             $filter_boolean = true;
         break;
         case "Dental":
-            $filter = get_field('field_654574e26d159', $post_id);
+            $filter = $group_category['dental'];
             $filter_search = 'dental';
-            $filter_result = 'field_654574df8fa89';
+            $filter_result = $group_category_publisher['dental'];
             $filter_boolean = true;
         break;
     };
 };
+
+if($filter_boolean){
+    $filter_query = [
+        'key' => 'categorias_'.$filter_search,
+        'value'=> $filter,
+        'compare' => '=',
+    ];
+};
+
 ?>
