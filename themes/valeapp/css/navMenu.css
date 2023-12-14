@@ -1,3 +1,7 @@
+.NavMenu {
+  color: #575550;
+  font-family: 'Open Sans';
+}
 .NavMenu.offcanvas-start {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -16,7 +20,7 @@
 .NavMenu-link {
   color: #575550;
   display: block;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   padding: 1rem 0 0.5rem 0.2rem;
 }
@@ -47,7 +51,7 @@
   width: 100%;
 }
 .NavMenu-collapse {
-  font-weight: bold;
+  font-weight: 600;
   padding: 1rem 0 0.5rem 0.2rem;
 }
 .NavMenu-collapse::after {
@@ -71,7 +75,7 @@
   border-radius: 30px;
   display: flex;
   justify-content: flex-start;
-  font-weight: bold;
+  font-weight: 600;
   gap: 1.5rem;
   padding: 0.5rem 0 0.5rem 1.5rem;
   margin-bottom: 0.5rem;
@@ -88,9 +92,10 @@
 }
 .NavMenu-service-link {
   color: #575550;
-  margin-left: 1.5rem;
+  margin-left: auto;
   padding: 0.5rem 0 0.5rem 3.5rem;
   text-decoration: none;
+  width: calc(100% - 1.5rem);
 }
 .NavMenu-service-link:hover,
 .NavMenu-service-link:focus,
@@ -98,5 +103,5 @@
   border-radius: 30px;
   background-color: #e2eeec;
   color: #575550;
-  font-weight: bold;
+  font-weight: 600;
 }

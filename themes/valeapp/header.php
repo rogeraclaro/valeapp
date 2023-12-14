@@ -80,7 +80,7 @@ include_once plugin_dir_path(__FILE__) . 'inc/button-menu.php';
 			<button type="button" class="btn-close text-reset NavMenu-closeBtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body">
-		<div class="NavMenu-section NavMenu-lastSection">
+		<div class="NavMenu-section">
 				<a class="NavMenu-link" href="/">
 					Home
 				</a>
@@ -231,6 +231,20 @@ include_once plugin_dir_path(__FILE__) . 'inc/button-menu.php';
 					</div>
 				</div>
 			</div>
+			<div class="NavMenu-section">
+				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#langCollapse" aria-expanded="false" aria-controls="langCollapse">
+					idioma
+				</button>
+				<div class="collapse" id="langCollapse">
+					<a href="#" class="NavMenu-link ml-2">Español</a>
+					<a href="#" class="NavMenu-link ml-2">Inglés</a>
+				</div>
+			</div>
+			<div class="NavMenu-section">
+				<a class="NavMenu-link" href="#">
+					Contacto
+				</a>
+			</div>
 			<?php
 				if(!is_user_logged_in()){
 					?>
@@ -246,24 +260,10 @@ include_once plugin_dir_path(__FILE__) . 'inc/button-menu.php';
 				}
 				change_button_menu_header()
 			?>
-			<div class="NavMenu-section">
-				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#langCollapse" aria-expanded="false" aria-controls="langCollapse">
-					idioma
-				</button>
-				<div class="collapse" id="langCollapse">
-					<a href="#" class="NavMenu-link ml-2">Español</a>
-					<a href="#" class="NavMenu-link ml-2">Inglés</a>
-				</div>
-			</div>
-			<div class="NavMenu-section NavMenu-lastSection">
-				<a class="NavMenu-link" href="#">
-					Contacto
-				</a>
-			</div>
 			<?php
 				if(is_user_logged_in()){
 					?>
-						<div class="NavMenu-section">
+						<div class="NavMenu-section NavMenu-lastSection">
     						<a class="NavMenu-link" href="<?php echo wp_logout_url(home_url()); ?>">
 								Cerrar sesión
 							</a>
