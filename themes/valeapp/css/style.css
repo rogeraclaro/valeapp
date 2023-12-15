@@ -5122,6 +5122,9 @@ footer .footer-logos.carte-logos .footer-separator {
 
 .Reviews.membership .content .rate{
   text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .Reviews.membership .content .rate span{
