@@ -2758,7 +2758,7 @@ header .overlay {
 
 .section7 .accordion-button.collapsed {
   padding-left: 2.2rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   font-size: 1.2rem;
   color: #575550;
   font-weight: 700;
@@ -5913,7 +5913,7 @@ a.HomeOffer-btn {
 }
 
 .section7.servicio-generica .accordion-button:not(.collapsed) {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .section7.servicio-generica a {
