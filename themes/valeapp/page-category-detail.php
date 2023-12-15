@@ -106,7 +106,7 @@ get_header();
         Otras categorías
     </h2>
    </section>
-   <section class="section7 servicio-generica">
+   <section class="section7 servicio-generica CategoryDetail-categories">
     <div class="container">
         <div class="row">
             <div class="col-12">
