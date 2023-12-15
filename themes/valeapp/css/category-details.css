@@ -156,6 +156,11 @@
     font-family: 'Century Gothic';
 }
 
+.section7.servicio-generica.CategoryDetail-categories {
+    margin-top: 1rem;
+    padding-bottom: 0;
+}
+
 /* html {
     background-image: url("../img/Interior\ categoría.jpg");
     background-repeat: no-repeat;

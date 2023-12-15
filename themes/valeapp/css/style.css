@@ -2774,6 +2774,7 @@ header .overlay {
   padding-left: 2.2rem;
   padding-top: 1rem;
   box-shadow: none;
+  font-family: "Open Sans";
 }
 
 .section7 .accordion-button:focus {
