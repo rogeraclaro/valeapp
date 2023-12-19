@@ -4859,11 +4859,17 @@ footer .footer-logos.carte-logos .footer-separator {
   object-fit: contain;
   width: 1.5rem;
 }
-.card-searcher-text {
+.card-searcher-text,
+.card-searcher-text input::placeholder {
   font-size: 1.2rem;
   font-family: 'Century Gothic';
   font-weight: 400;
   color: #898989;
+}
+.card-searcher-text input {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .home-menu-cardBtn {
   background-color: #E2EEEC;
