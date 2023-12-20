@@ -2750,6 +2750,12 @@ header .overlay {
   height: 2.5rem;
   margin-right: 1.5rem;
   object-fit: contain;
+  &.iconEventos{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.9rem;
+    margin-left: 0.2rem;
+  }
 }
 
 .section7 .accordion-button::after {
@@ -4925,6 +4931,11 @@ footer .footer-logos.carte-logos .footer-separator {
 .Homecategories .category .img-fluid{
   width: 2.4rem;
   margin-bottom: 1rem;
+  &.icon8{
+    width: 1.35rem;
+    transform: rotate(40deg);
+    margin-bottom: 0.5rem;
+  }
 }
 
 .category-name {
