@@ -52,7 +52,7 @@ get_header();
         <p class="category-name">Contrata</p>
       </div>
       <div class="category">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon icon8" />
         <p class="category-name">Comparte</p>
       </div>
       <div class="category">
