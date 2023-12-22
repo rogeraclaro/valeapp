@@ -6,8 +6,47 @@ body {
 
 .cards {
     padding: 24.8px 16px;
+    font-family: 'Century Gothic';
 }
-
+.cards-header{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cards-header-deleteIcon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.cards-header button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+.cards-header-title{
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    margin-bottom: 0.1rem;
+}
+.cards-header-qty{
+    align-items: center;
+    background-color: #ef4047;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    font-size: 0.5rem;
+    font-weight: normal;
+    height: 1rem;
+    justify-content: center;
+    margin: 0.2rem 0.4rem 0;
+    width: 1rem;
+}
+.cards-header-time{
+    font-size: 0.8rem;
+}
 .cards-items {
     display: flex;
     flex-direction: row;
