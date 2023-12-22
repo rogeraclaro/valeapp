@@ -53,7 +53,7 @@ $rate = '';
                              <span class="option-text">Publicar Ofertas</span>
                          </li>
                      </a>
-                     <a class="link" href="/solicitudes">
+                     <a class="link" href="/mis-ofertas">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-task-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Mis ofertas</span>
