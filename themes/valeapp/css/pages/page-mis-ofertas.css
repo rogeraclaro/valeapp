@@ -1,0 +1,47 @@
+.myOffers-header{
+    padding: 1.2rem 0 2.4rem;
+}
+.myOffers-header.servicio-generica .breadcrumb{
+    margin-bottom: 0.7rem;
+}
+.myOffers-header.servicio-generica .title{
+    line-height: 2.3rem;
+}
+.myOffers .cards{
+    margin-bottom: 35px;
+}
+.myOffers .cards-title{
+    font-weight: 600;
+}
+.myOffers .cards-header-title{
+    font-size: 1.2rem;
+}
+.myOffers .cards-header-qty{
+    font-family: 'Open Sans';
+    font-size: 0.56rem;
+}
+.myOffers .cards-header-time{
+    font-family: 'Open Sans';
+}
+.myOffers .cards-item-texts .name{
+    font-size: 1.3rem;
+}
+.myOffers .cards-item-content .duration{
+    margin-bottom: 0.6rem;
+}
+.myOffers .cards-item-imgIcon{
+    height: 25px;
+    width: 25px;
+}
+.myOffers .cards-item-texts .rate{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.myOffers .cards-item-content .price span{
+    letter-spacing: normal;
+}
+.myOffers .cards-item-content .price span{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-left: 5px;
+}
