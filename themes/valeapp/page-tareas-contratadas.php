@@ -68,7 +68,7 @@ get_header();
                             Mie, 29 marzo a las 19:30
                         </span>
                     </div>
-                    <div class="contracted-tasks-item-body-item">
+                    <div class="contracted-tasks-item-body-item p-0">
                         <img class="contracted-tasks-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/clock-icon.svg" alt="contracted-tasks-item-body-itemIcon">
                         <span class="contracted-tasks-item-body-itemName">
                             1h
@@ -114,7 +114,7 @@ get_header();
                             Mie, 29 marzo a las 19:30
                         </span>
                     </div>
-                    <div class="contracted-tasks-item-body-item">
+                    <div class="contracted-tasks-item-body-item p-0">
                         <img class="contracted-tasks-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/clock-icon.svg" alt="contracted-tasks-item-body-itemIcon">
                         <span class="contracted-tasks-item-body-itemName">
                             1h
@@ -165,7 +165,7 @@ get_header();
                             Mie, 29 marzo a las 19:30
                         </span>
                     </div>
-                    <div class="contracted-tasks-item-body-item">
+                    <div class="contracted-tasks-item-body-item p-0">
                         <img class="contracted-tasks-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/clock-icon.svg" alt="contracted-tasks-item-body-itemIcon">
                         <span class="contracted-tasks-item-body-itemName">
                             1h
