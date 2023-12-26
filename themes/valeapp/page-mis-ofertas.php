@@ -39,7 +39,7 @@ $myOffersItems = [
 
 get_header();
 ?>
-    <section class="section2 servicio-generica myOffers-header">
+    <section class="section2 servicio-generica">
         <div class="container">
 			<div class="row">
 				<div class="col-12">

@@ -35,7 +35,7 @@ $rate = '';
                 <span class="opinions">(30 opiniones)</span>
             </div>
             <p class="price">20,00€</p>
-            <button class="tokens-btn">Añadir Tokens</button>
+            <a class="tokens-btn" href="/agregar-tokens">Añadir Tokens</a>
        </div>
        <div class="professionalDashboard-options">
             <h2 class="title">Mi cuenta</h2>
