@@ -214,6 +214,7 @@ function load_script_js() {
 	wp_enqueue_script('placeholder', get_theme_file_uri('/js/placeholder.js'), array(), '1.0', true);
 	wp_enqueue_script('radioAsStars', get_theme_file_uri('/js/forms-default/radioAsStars.js'), array(), '1.0', true);
 	wp_enqueue_script('defaultRange', get_theme_file_uri('/js/forms-default/defaultRange.js'), array(), '1.0', true);
+	wp_enqueue_script('multiCheck', get_theme_file_uri('/js/forms-default/multiCheck.js'), array(), '1.0', true);
 }
 
 // require_once plugin_dir_path(__FILE__) . 'inc/roles/clientevaleapp.php';
