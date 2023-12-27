@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
             $(multiCheckWrapper).attr("data-multicheck-qtyMsg", MultiCheck.qty_msg.replace('$qty', MultiCheck.el_data[multicheckId].qty_selected))
         },
         selectAllChecks: (multicheckId) => (checkEvent) => {
-            MultiCheck.el_data[multicheckId].qty_selected = MultiCheck.el_data[multicheckId].qty_el;
+            MultiCheck.el_data[multicheckId].qty_selected = checkEvent.target.checked? MultiCheck.el_data[multicheckId].qty_el : 0;
             MultiCheck.refreshCount(multicheckId)
             $(`div[data-multicheck-id=${multicheckId}]`).find("input[type='checkbox']").each((__, checkInput) => {
                 $(checkInput).prop('checked', checkEvent.target.checked)
