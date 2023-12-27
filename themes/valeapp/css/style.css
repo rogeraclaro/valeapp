@@ -6,6 +6,7 @@
 @import url("./pages/page-agregar-tokens.css");
 @import url("./pages/page-sin-ofertas.css");
 @import url("./pages/page-mi-saldo.css");
+@import url("./messages.css");
 @import url("./navMenu.css");
 @font-face {
   font-family: 'Century Gothic';

@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/messages.css">
-</head>
-<body>
+<?php
+
+/**
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package ValeApp
+ */
+
+get_header();
+?>
     <section class="section2 messages">
         <div class="container">
             <div class="row">
@@ -34,13 +41,13 @@
                 <span class="Messages-count-number">2</span>
             </div>
             <button class="Messages-action">
-                <img src="img/valeapp-message-edit-icon.png" alt="valeapp" class="Messages-action-edit">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-message-edit-icon.png" alt="valeapp" class="Messages-action-edit">
                 <p class="Messages-action-label">Editar</p>
             </button>
         </div>
         <ul class="Message-list">
             <li class="Message-item new">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Clases de tenis</p>
@@ -57,7 +64,7 @@
                 </div>
             </li>
             <li class="Message-item new">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Natacion</p>
@@ -74,7 +81,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -91,7 +98,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -108,7 +115,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -125,7 +132,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -142,7 +149,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -159,7 +166,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -176,7 +183,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -193,7 +200,7 @@
                 </div>
             </li>
             <li class="Message-item">
-                <img src="img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="valeapp" class="Message-item-image">
                 <div class="Message-item-content">
                     <div class="Message-item-row">
                         <p class="Message-item-subject">Psicología</p>
@@ -211,5 +218,5 @@
             </li>
         </ul>
     </section>
-</body>
-</html>
+<?php
+get_footer();
