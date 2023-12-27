@@ -68,6 +68,7 @@ body {
   font-family: 'Century Gothic';
   font-weight: 700;
   font-size: 1.3rem;
+  margin-bottom: 0;
 }
 
 .Messages-count-number {
@@ -109,6 +110,7 @@ body {
   font-family: 'Open Sans';
   font-weight: 300;
   margin-top: 0.3rem;
+  margin-bottom: 0;
 }
 
 .Message-list {
@@ -124,6 +126,10 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+}
+
+.Message-item:last-child{
+  padding-bottom: 0;
 }
 
 .Message-item-content {
@@ -181,7 +187,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0;
 }
 
 .Message-item-name {
@@ -200,6 +206,7 @@ body {
     font-family: 'Open Sans';
     font-size: 1.07rem;
     line-height: 1.1rem;
+    margin-bottom: 0;
 }
 
 .Message-item-subject {
@@ -207,6 +214,7 @@ body {
   font-family: 'Open Sans';
   color: #5aab9f;
   font-size: 1.3rem;
+  margin-bottom: 0;
 }
 
 .Message-item-date {
@@ -214,4 +222,5 @@ body {
   font-weight: 300;
   font-family: 'Open Sans';
   font-size: 0.95rem;
+  margin-bottom: 0;
 }
