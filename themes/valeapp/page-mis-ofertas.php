@@ -86,18 +86,22 @@ get_header();
                                 <img class="cards-item-imgIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
                             <?php endif ?>
                         </div>
-                        <div class="cards-item-texts">
-                            <p class="name">
-                                <?php echo $myOffersItem->name ?>
-                            </p>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
-                            <p class="rate">
-                                <?php echo $myOffersItem->stars ?>
-                            </p>
+                       <div class="cards-item-description">
+                            <div class="cards-item-texts">
+                                <p class="name">
+                                    <?php echo $myOffersItem->name ?>
+                                </p>
+                                <div class="cards-item-rate">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
+                                    <p class="rate">
+                                        <?php echo $myOffersItem->stars ?>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="duration">
+                                <?php echo $myOffersItem->duration ?>
+                            </span>
                         </div>
-                        <span class="duration">
-                            <?php echo $myOffersItem->duration ?>
-                        </span>
                         <p class="price">
                             <?php echo $myOffersItem->price ?><span>€/h</span>
                         </p>
@@ -106,7 +110,7 @@ get_header();
             <?php }?>
         </div>
     </div>
-    <div class="cards pt-0">
+    <div class="cards myOffers pt-0">
         <div class="cards-header">
             <div class="cards-header-text">
                 <p class="cards-header-title">
@@ -131,21 +135,24 @@ get_header();
                                 <img class="cards-item-imgIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
                             <?php endif ?>
                         </div>
-                        <div class="cards-item-texts">
-                            <p class="name">
-                                <?php echo $myOffersItem->name ?>
-                            </p>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
-                            <p class="rate">
-                                <?php echo $myOffersItem->stars ?>
-                            </p>
+                       <div class="cards-item-description">
+                            <div class="cards-item-texts">
+                                <p class="name">
+                                    <?php echo $myOffersItem->name ?>
+                                </p>
+                                <div class="cards-item-rate">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
+                                    <p class="rate">
+                                        <?php echo $myOffersItem->stars ?>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="duration">
+                                <?php echo $myOffersItem->duration ?>
+                            </span>
                         </div>
-                        <span class="duration">
-                            <?php echo $myOffersItem->duration ?>
-                        </span>
                         <p class="price">
-                            <?php echo $myOffersItem->price ?>
-                            <span>€/h</span>
+                            <?php echo $myOffersItem->price ?><span>€/h</span>
                         </p>
                     </div>
                 </div>

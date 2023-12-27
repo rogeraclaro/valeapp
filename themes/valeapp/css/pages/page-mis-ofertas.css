@@ -1,5 +1,20 @@
+.myOffers .cards-items{
+    flex-direction: column;
+    gap: 35px;
+}
+.myOffers .cards-item{
+    width: 100%;
+}
 .myOffers .cards-item-content{
-    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+}
+.myOffers .cards-item-content:nth-child(n){
+    margin: 0;
+}
+.myOffers .cards-item-description{
+    padding: 0.5rem 1rem 0;
+    width: 50%;
 }
 .myOffers .cards-title{
     font-weight: 600;
@@ -14,19 +29,40 @@
 .myOffers .cards-header-time{
     font-family: 'Open Sans';
 }
+.myOffers .cards-item-texts{
+    display: flex;
+    flex-direction: column;
+}
 .myOffers .cards-item-texts .name{
     font-size: 1.3rem;
+    margin-bottom: 0.1rem;
 }
 .myOffers .cards-item-content .duration{
-    margin-bottom: 0.6rem;
+    margin-top: 0.3rem;
+}
+.myOffers .cards-item-img{
+    width: 30%;
 }
 .myOffers .cards-item-imgIcon{
     height: 25px;
     width: 25px;
 }
+.myOffers .cards-item-rate{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.1rem;
+    width: 100%;
+}
+.myOffers .cards-item-rate .star{
+   object-fit: contain;
+}
 .myOffers .cards-item-texts .rate{
     font-size: 1.1rem;
     font-weight: 600;
+}
+.myOffers .cards-item-content .price{
+    line-height: normal;
+    width: 20%;
 }
 .myOffers .cards-item-content .price span{
     letter-spacing: normal;
