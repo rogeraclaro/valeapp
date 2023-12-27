@@ -1,25 +1,12 @@
-html {
-  /* background-image: url("../../img/sinOfertas.jpg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body {
-  /* opacity: 0.6; */
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .servicio-generica {
-  /* margin-top: 4.9rem; */
   padding-top: 1.2rem;
-  padding-bottom: 2.8rem;
+  padding-bottom: 2.4rem;
+}
+.servicio-generica.breadcrumb{
+  margin-bottom: 0.7rem;
+}
+.servicio-generica.title{
+  line-height: 2.3rem;
 }
 .SinOferta {
   padding-top: 2rem;
@@ -44,12 +31,14 @@ body {
   font-size: 1.53rem;
   margin-top: 2.5rem;
   color: #575550;
+  font-family: 'Century Gothic';
+  font-weight: 700;
 }
 .SinOferta-text {
   color: #575550;
   font-family: "Open Sans";
   font-size: 1.19rem;
-  font-weight: 700;
+  font-weight: 600;
   width: 22.1rem;
   margin: 0 auto;
   margin-top: 1.4rem;
@@ -63,7 +52,9 @@ body {
     padding: 1.1rem 1rem 1.5rem 1rem;
     color: #fff;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.4rem;
     margin-top: 2.6rem;
+  font-family: 'Century Gothic';
+
 }

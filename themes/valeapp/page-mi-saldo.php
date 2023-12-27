@@ -56,9 +56,7 @@ get_header();
                     TARJETA VISA <span class="MiSaldo-icon1">?</span>
                 </p>
                 <p class="MiSaldo-cardNum">
-                    <span class="MiSaldo-icon2">
-                      visa
-                    </span>
+                <img class="MiSaldo-icon2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-visalogo-mi-saldo.png">
                     494019******5587
                 </p>
             </div>
