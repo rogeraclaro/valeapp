@@ -5,6 +5,10 @@
 .myOffers .cards-item{
     width: 100%;
 }
+.myOffers .cards-item .img-fluid{
+    height: 24vw;
+    width: 24vw;
+}
 .myOffers .cards-item-content{
     display: flex;
     flex-direction: row;
