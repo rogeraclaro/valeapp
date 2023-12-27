@@ -214,6 +214,8 @@ function load_script_js() {
 	wp_enqueue_script('placeholder', get_theme_file_uri('/js/placeholder.js'), array(), '1.0', true);
 	wp_enqueue_script('radioAsStars', get_theme_file_uri('/js/forms-default/radioAsStars.js'), array(), '1.0', true);
 	wp_enqueue_script('defaultRange', get_theme_file_uri('/js/forms-default/defaultRange.js'), array(), '1.0', true);
+	wp_enqueue_script('send_emails', get_theme_file_uri('/js/message/send_emails.js'), array(), '1.0', true);
+	wp_localize_script( 'send_emails', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
 }
 
 // require_once plugin_dir_path(__FILE__) . 'inc/roles/clientevaleapp.php';
@@ -230,3 +232,25 @@ require_once plugin_dir_path(__FILE__) . 'inc/delete-user.php';
 require_once plugin_dir_path(__FILE__) . 'inc/menu-reuse.php';
 
 
+// function obtener_datos_usuario_actual() {
+//     // Verificar si el usuario está autenticado
+//     if (is_user_logged_in()) {
+//         // Obtener datos del usuario actual
+//         $usuario_actual = wp_get_current_user();
+        
+//         // Obtener nombre y correo del usuario
+//         $nombre = $usuario_actual->display_name;
+//         $correo = $usuario_actual->user_email;
+
+//         // Enviar una respuesta a JavaScript
+//         echo json_encode(array('success' => true, 'mensaje' => '¡Datos del usuario obtenidos con éxito!', 'nombre' => $nombre, 'correo' => $correo));
+//     } else {
+//         // Enviar una respuesta de error si el usuario no está autenticado
+//         echo json_encode(array('success' => false, 'mensaje' => 'Error: Usuario no autenticado.'));
+//     }
+
+//     die(); // Importante: asegúrate de terminar la ejecución para evitar errores Ajax
+// }
+
+// add_action('wp_ajax_obtener_datos_usuario', 'obtener_datos_usuario_actual');
+// add_action('wp_ajax_nopriv_obtener_datos_usuario', 'obtener_datos_usuario_actual');
