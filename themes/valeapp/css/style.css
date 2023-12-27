@@ -1,6 +1,11 @@
 @import url("./pages/page-presupuesto.css");
 @import url("./pages/page-crear-cuenta-profesional-o-usuario.css");
 @import url("./pages/page-confirmar-y-pagar.css");
+@import url("./pages/page-mis-ofertas.css");
+@import url("./pages/page-tareas-contratadas.css");
+@import url("./pages/page-agregar-tokens.css");
+@import url("./pages/page-sin-ofertas.css");
+@import url("./pages/page-mi-saldo.css");
 @import url("./navMenu.css");
 @font-face {
   font-family: 'Century Gothic';
@@ -4746,7 +4751,7 @@ footer .footer-logos.carte-logos .footer-separator {
 }
 
 .tokens-btn{
-  width: 12.7rem;
+    width: 12.7rem;
     height: 3.4rem;
     border-radius: 30px;
     background-color: #5aab9f;
@@ -4755,6 +4760,17 @@ footer .footer-logos.carte-logos .footer-separator {
     font-size: 1.4rem;
     border: 0;
     margin-left: -0.5rem;
+}
+a.tokens-btn{
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+}
+a.tokens-btn:hover,
+a.tokens-btn:active,
+a.tokens-btn:focus{
+    color: #fff;
 }
 
 .professionalDashboard-options{
@@ -5897,14 +5913,13 @@ a.HomeOffer-btn {
 }
 
 .servicio-generica {
-  padding-top: 1.6rem;
-  padding-bottom: 4.1rem;
+  padding: 1.2rem 0 2.4rem;
 }
 
 .servicio-generica .breadcrumb{
  list-style: none;
  padding-left: 0;
- margin-bottom: 1.3rem;
+ margin-bottom: 0.7rem;
 }
 
 .servicio-generica .breadcrumb a {
@@ -5920,7 +5935,7 @@ a.HomeOffer-btn {
   font-family: 'Century Gothic';
   font-weight: 700;
   margin-bottom: 0;
-  line-height: 1rem;
+  line-height: 2.3rem;
   margin-top: 0;
 }
 

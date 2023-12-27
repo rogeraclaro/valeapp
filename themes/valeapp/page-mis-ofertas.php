@@ -58,7 +58,7 @@ get_header();
 			</div>
 		</div>
     </section>
-    <div class="cards">
+    <div class="cards myOffers">
         <div class="cards-title">
             A continuación encontrarás los profesionales<br /> que mejor se adaptan a tus búsquedas. 
         </div>
@@ -99,8 +99,7 @@ get_header();
                             <?php echo $myOffersItem->duration ?>
                         </span>
                         <p class="price">
-                            <?php echo $myOffersItem->price ?>
-                            <span>€/h</span>
+                            <?php echo $myOffersItem->price ?><span>€/h</span>
                         </p>
                     </div>
                 </div>
