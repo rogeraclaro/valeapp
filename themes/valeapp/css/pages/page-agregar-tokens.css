@@ -1,12 +1,14 @@
 .AddTokens{
     font-size: 1.2rem;
     padding: 1.5rem 1rem 0;
+    font-family: 'Open Sans';
 }
 .AddTokens-title{
     display: flex;
     font-weight: bold;
     flex-direction: row;
     justify-content: flex-start;
+    font-size: 1.1rem;
 }
 .AddTokens-titleActions{
     margin-left: auto;
@@ -18,12 +20,17 @@
     background-color: transparent;
     outline: none;
 }
+.AddTokens-titleActions button img{
+   height: 24px;
+   width: 24px;
+}
 .AddTokens-paymentMethod-selectedMethod{
     border: 1px solid #e4e5e7;
     border-right: none;
     border-left: none;
     display: flex;
     font-weight: 500;
+    font-size: 1.06rem;
     padding: 0.5rem 0;
     margin-top: 0.5rem;
 }
@@ -35,7 +42,7 @@
     width: 1.6rem;
 }
 .AddTokens-paymentMethod-optionIcon{
-    margin-right: 0.5rem;
+    margin-right: 1.3rem;
 }
 .AddTokens-paymentMethod-btn{
     margin-left: auto;
@@ -65,11 +72,14 @@
     padding: .5rem 0;
 }
 .AddTokens-info{
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1.5rem;
+}
+.AddTokens-info .AddTokens-title{
+    margin-bottom: 0.2rem;
 }
 .AddTokens-description{
     color: #a5acb4;
-    font-size: .8rem;
+    font-size: .84rem;
 }
 .AddTokens-detailsImg{
     margin-top: 1rem;
@@ -78,12 +88,13 @@
 .AddTokens-input{
     color: #a5acb4;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 .AddTokens-input input{
-    border: 1px solid #e4e5e7;
+    border: 2px solid #e4e5e7;
     border-radius: 2px;
     display: block;
     margin-top: .5rem;
     padding: 0.5rem 0.2rem;
-    width: 13rem;
+    width: 12rem;
 }
