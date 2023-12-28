@@ -49,7 +49,8 @@
 .myOffers .cards-item-content .duration{
     margin-top: 0.3rem;
 }
-.myOffers .cards-item-img{
+.myOffers .cards-item-img ,
+.myOffers .cards-item-img .img-fluid{
     height: 110px;
     width: 110px;
 }
