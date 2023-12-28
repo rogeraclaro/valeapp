@@ -59,19 +59,19 @@ $rate = '';
                              <span class="option-text">Mis ofertas</span>
                          </li>
                      </a>
-                     <a class="link" href="">
+                     <a class="link" href="/tareas-contratadas">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-balance-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Tareas Contratadas</span>
                          </li>
                      </a>
-                     <a class="link" href="">
+                     <a class="link" href="/mi-saldo">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-balance-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Mi saldo</span>
                          </li>
                      </a>
-                     <a class="link" href="">
+                     <a class="link" href="/mensajeria">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-messages-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="count">1</span>
