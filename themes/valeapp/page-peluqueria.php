@@ -35,8 +35,11 @@ get_header();
 			</div>
 		</div>
     </section>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#HairSalonModal">
+    <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#HairSalonModal">
         Abrir Modal
+    </button>
+    <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#HairSalonModalSearch">
+        Abrir Modal Busqueda
     </button>
     <div class="modal fade HairSalon-modal" id="HairSalonModal" tabindex="-1" aria-labelledby="HairSalonModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
@@ -78,6 +81,35 @@ get_header();
             <div class="modal-footer">
                 <a href="/registro-proveedores" class="CreateAccountUserOrProfessional-cardBtn">Confirmar</a>
             </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade HairSalon-searchModal" id="HairSalonModalSearch" tabindex="-1" aria-labelledby="HairSalonModalSearchLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="home-menu-card w-100">
+                        <form autocomplete="off">
+                            <div class="home-menu-cardContent">
+                            <div class="card-searcher">
+                                <img class="card-searcher-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-searcher-img.png" alt="lupa" />
+                                <div class="card-searcher-text">
+                                <input type="text" placeholder="Servicio" name="s" />
+                                </div>
+                            </div>
+                            <div class="card-searcher">
+                                <img class="card-searcher-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-ubication.png" alt="lupa" />
+                                <div class="card-searcher-text">
+                                Busca en tu zona
+                                </div>
+                            </div>
+                            </div>
+                            <button class="home-menu-cardBtn" id="search_button" type="submit">
+                            Buscar
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
