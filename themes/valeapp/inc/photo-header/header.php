@@ -22,7 +22,7 @@ function add_photo_profile_header() {
             $rol = "proveedor";
             $field_photo = "field_64dcf553615dc";
         break;
-        case 'ProveedorValeApp':
+        case 'proveedorvaleapp':
             $rol = "proveedor";
             $field_photo = "field_64dcf553615dc";
         break;
@@ -30,7 +30,7 @@ function add_photo_profile_header() {
             $rol = "cliente";
             $field_photo = "field_64dcf7f7e9ebb";
         break;
-        case 'ClienteValeApp':
+        case 'clientevaleapp':
             $rol = "cliente";
             $field_photo = "field_64dcf7f7e9ebb";
         break;
