@@ -4715,8 +4715,8 @@ footer .footer-logos.carte-logos .footer-separator {
 }
 
 .image-profile-header{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;

@@ -19,8 +19,7 @@ if (isset($_POST['register_provider_submit'])) {
             'user_login' => $username,
             'user_pass' => $password,
             'user_email' => $email,
-            // 'role' => 'ProveedorValeApp',
-            'role' => 'contributor',
+            'role' => 'proveedorvaleapp',
             'first_name' => $first_name,
             'last_name' => $last_name,
         ]);

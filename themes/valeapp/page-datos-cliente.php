@@ -15,6 +15,9 @@
 acf_form_head();
 
 get_header();
+
+if (current_user_can('clientevaleapp') || current_user_can('administrator') ) {
+
 ?>
 
 <div class="container login mt-5">
@@ -45,5 +48,9 @@ get_header();
 </div>
 
 <?php
+}
+    else {
+        echo do_shortcode('[no_authorization_page]');
+    }
 
 get_footer();

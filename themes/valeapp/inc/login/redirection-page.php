@@ -11,20 +11,11 @@ function custom_login_redirect($user_login, $user) {
             case in_array('administrator', $user_roles):
                 wp_redirect(admin_url());
                 break;
-            case in_array('ClienteValeApp', $user_roles):
+            case in_array('clientevaleapp', $user_roles):
                 wp_redirect('/datos-cliente');
                 break;
-            case in_array('ProveedorValeApp', $user_roles):
+            case in_array('proveedorvaleapp', $user_roles):
                 wp_redirect('/datos-proveedor');
-                break;
-            case in_array('subscriber', $user_roles):
-                wp_redirect('/datos-cliente');
-                break;
-            case in_array('contributor', $user_roles):
-                wp_redirect('/datos-proveedor');
-                break;
-            case in_array('customer', $user_roles):
-                wp_redirect('/datos-cliente');
                 break;
             default:
                 wp_redirect(home_url());
