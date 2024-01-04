@@ -67,7 +67,6 @@ include_once plugin_dir_path(__FILE__) . 'inc/button-menu.php';
 				<i class="bi bi-search"></i>
 			</div>
 			<div class="userlogin">
-				<!-- <i class="bi bi-person-circle"></i> -->
 				<?php
 					add_photo_profile_header();
 				?>

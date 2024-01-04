@@ -16,36 +16,32 @@ acf_form_head();
 
 get_header();
 
-if($current_user_can('proveedorvaleapp') || $current_user_can('administrator')) {
+if(current_user_can('clientevaleapp') || current_user_can('administrator')) {
 
 ?>
-<div class="Providers-form">
-    <div class="container login mt-5">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12">
-                <h2 class="title">Mi cuenta</h2>
-                <?php
-                    acf_form([
-                        'post_id'       => 'new_post',
-                        'field_groups'  => ['group_64dcf1b40cfd3'],
-                        'new_post'      => [
-                            'post_type'     => 'proveedor',
-                            'post_status'   => 'publish'
-                        ],
-                        'form' => true,
-                        'fields' => [
-                            'field_64dcf553615dc',
-                            'field_655e768e7108f',
-                            'field_655e77ad71090',
-                            'field_655e783771091'
-                        ],
-                        'uploader' => 'wp',
-                        'submit_value'  => 'Continuar',
-                        'updated_message' => '¡Formulario actualizado!',
-                        'return' => '/home',
-                    ]);
-                ?>
-            </div>
+<div class="container login mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+            <h2 class="title">Mi cuenta</h2>
+            <?php
+                acf_form([
+                    'post_id'       => 'new_post',
+                    'field_groups'  => ['group_64dcf6cf78620'],
+                    'new_post'      => [
+                        'post_type'     => 'cliente',
+                        'post_status'   => 'publish'
+                    ],
+                    'form' => true,
+                    'fields' => [
+                        'field_64dcf7f7e9ebb',
+                        'field_6557a1351db96'
+                    ],
+                    'uploader' => 'wp',
+                    'submit_value'  => 'Continuar',
+                    'updated_message' => '¡Formulario actualizado!',
+                    'return' => '/home',
+                ]);    
+            ?>
         </div>
     </div>
 </div>

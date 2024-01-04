@@ -12,7 +12,7 @@
  * @package ValeApp
  */
 
- require_once plugin_dir_path(__FILE__) . 'inc/register/provider.php';
+require_once plugin_dir_path(__FILE__) . 'inc/register/provider.php';
 get_header();
 
 ?>
