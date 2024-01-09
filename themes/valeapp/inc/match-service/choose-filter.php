@@ -1,7 +1,7 @@
 <?php
 
-if($subcategory) {
-    switch($subcategory){
+if($subcategory_provider) {
+    switch($subcategory_provider){
         case "Idiomas":
             $filter = $group_category['idiomas'];
             $filter_search = 'idiomas';

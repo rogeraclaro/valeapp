@@ -1,24 +1,24 @@
 <?php
 //Post page (Solicitar Servicio)
-$post_id = get_the_ID();
+$post_id_provider = $post;
 
 //Solicitar variables
 
     //Groups - Solicitar
-$group_category = get_field('field_656f483c90876', $post_id);
-$group_ubication = get_field('field_656f507890877', $post_id);
-$group_option = get_field('field_656f517290878', $post_id);
-$group_task = get_field('field_656f51d690879', $post_id);
-$group_profesional = get_field('field_656f52929087a', $post_id);
-$group_detail = get_field('field_656f53019087b', $post_id);
+$group_category = get_field('field_656f483c90876', $post_id_provider);
+$group_ubication = get_field('field_656f507890877', $post_id_provider);
+$group_option = get_field('field_656f517290878', $post_id_provider);
+$group_task = get_field('field_656f51d690879', $post_id_provider);
+$group_profesional = get_field('field_656f52929087a', $post_id_provider);
+$group_detail = get_field('field_656f53019087b', $post_id_provider);
 
     //Groups - Publicar
 $group_category_publisher = get_field('field_656e44bf5bcb9');
 $group_detail_publisher = get_field('field_656e52af35d62');
 
     //Variables - Solicitar
-$category = $group_category['categoria'];
-$subcategory = "";
+$category_provider = $group_category['categoria'];
+$subcategory_provider = "";
 $filter = "";
 $modality = $group_category['modalidad'];
 $come = $group_ubication['vienes_o_vengo'];
@@ -82,5 +82,6 @@ $come_query = [];
 
 //Array Query
 $array = [];
+$args_provider = [];
 
 ?>

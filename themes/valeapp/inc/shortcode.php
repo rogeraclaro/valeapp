@@ -48,4 +48,28 @@ function posts_service_limits() {
     <?php
 }
 
+add_shortcode("no_request", "no_posts_in_request");
+function no_posts_in_request() {
+    ?>
+        <section class="SinOferta">
+           <div class="SinOferta-container">
+            <div class="SinOferta-content">
+                <div class="SinOferta-icon">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-sin-oferta-icon.png" alt="valeApp" class="SinOferta-img"/>
+                </div>
+                <h4 class="SinOferta-title">
+                    No se han encontrado ofertas
+                </h4>
+                <p class="SinOferta-text">
+                    Publica una oferta y encuentra el servicio que necesitas con los profesionales que mejor se adaptan a tu búsqueda.
+                </p>
+                <button class="SinOferta-btn" onclick="wp_redirect('/mi-pagina', 301);">
+                    Publicar oferta
+                </button>
+            </div>
+           </div>
+        </section>
+    <?php
+}
+
 ?>

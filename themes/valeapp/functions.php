@@ -229,3 +229,16 @@ require_once plugin_dir_path(__FILE__) . 'inc/custom-post-title/service.php';
 require_once plugin_dir_path(__FILE__) . 'inc/login/redirection-page.php';
 require_once plugin_dir_path(__FILE__) . 'inc/delete-user.php';
 require_once plugin_dir_path(__FILE__) . 'inc/menu-reuse.php';
+require_once plugin_dir_path(__FILE__) . 'inc/functions-reuse/subcategory-search.php';
+
+function mostrar_alerta($id_boton) {
+	echo "
+	  <script>
+		document.getElementById('$id_boton').addEventListener('click', function() {
+		  alert('¡Alerta!');
+		});
+	  </script>
+	";
+  }
+  
+  add_action('wp_footer', 'mostrar_alerta');

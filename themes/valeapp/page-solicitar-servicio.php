@@ -17,7 +17,7 @@ acf_form_head();
 
 get_header();
 
-if (current_user_can('customer') || current_user_can('administrator')) {
+if (current_user_can('clientevaleapp') || current_user_can('administrator')) {
 
 ?>
 <div class="service-request-form forms-default container mt-5">
@@ -41,7 +41,7 @@ if (current_user_can('customer') || current_user_can('administrator')) {
                     ],
                     'submit_value'  => 'Continuar',
                     'updated_message' => '¡Formulario actualizado!',
-                    'return' => '/home',
+                    'return' => '/mis-ofertas',
                 ]);
             ?>
         </div>

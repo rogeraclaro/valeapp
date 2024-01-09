@@ -47,7 +47,7 @@ $rate = '';
                             <span class="option-text">Cuenta y datos personales</span>
                         </li>
                     </a>
-                     <a class="link" href="">
+                     <a class="link" href="/solicitar-servicio">
                          <li class="option">
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-catalogue-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Publicar Ofertas</span>

@@ -12,33 +12,11 @@
  *
  * @package ValeApp
  */
-class offersItem {
-    public $photo;
-    public $isCheck;
-    public $name;
-    public $stars;
-    public $duration;
-    public $price;
-
-    function __construct($photo, $isCheck, $name, $stars, $duration, $price)
-    {
-        $this-> photo = $photo;
-        $this-> isCheck = $isCheck;
-        $this-> name = $name;
-        $this-> stars = $stars;
-        $this-> duration = $duration;
-        $this-> price = $price;
-    }
-}
-
-$myOffersItems = [
-    new offersItem("/img/valeapp-providers-ervice-user.png",true,"María","4,9","3 meses en Vale","20"),
-    new offersItem("/img/valeapp-providers-ervice-user-2.jpg",true,"Juan","4,6","2 meses en Vale","19"),
-    new offersItem("/img/valeapp-providers-ervice-user-3.jpg",true,"Andrea","4,6","3 meses en Vale","18")
-];
-
+include 'inc/match-service/index.php';
+ 
 get_header();
 ?>
+
     <section class="section2 servicio-generica">
         <div class="container">
 			<div class="row">
@@ -62,102 +40,72 @@ get_header();
         <div class="cards-title">
             A continuación encontrarás los profesionales<br /> que mejor se adaptan a tus búsquedas. 
         </div>
-        <div class="cards-header">
-            <div class="cards-header-text">
-                <p class="cards-header-title">
-                    Clases de tenis
-                    <span class="cards-header-qty">3</span>
-                </p>
-                <p class="cards-header-time">
-                    8 febrero
-                </p>
-            </div>
-            <button type="button">
-                <img class="cards-header-deleteIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/delete-icon.svg" alt="ValeApp-TrashIcon">
-            </button>
-        </div>
-        <div class="cards-items">
-            <?php foreach ($myOffersItems as $myOffersItem){ ?>
-                <div class="cards-item">
-                    <div class="cards-item-content">
-                        <div class="cards-item-img">
-                            <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri().($myOffersItem -> photo); ?>" alt="ValeApp">
-                            <?php if($myOffersItem -> isCheck == true): ?>
-                                <img class="cards-item-imgIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
-                            <?php endif ?>
-                        </div>
-                       <div class="cards-item-description">
-                            <div class="cards-item-texts">
-                                <p class="name">
-                                    <?php echo $myOffersItem->name ?>
-                                </p>
-                                <div class="cards-item-rate">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
-                                    <p class="rate">
-                                        <?php echo $myOffersItem->stars ?>
-                                    </p>
-                                </div>
-                            </div>
-                            <span class="duration">
-                                <?php echo $myOffersItem->duration ?>
-                            </span>
-                        </div>
-                        <p class="price">
-                            <?php echo $myOffersItem->price ?><span>€/h</span>
-                        </p>
-                    </div>
-                </div>
-            <?php }?>
-        </div>
     </div>
-    <div class="cards myOffers pt-0">
-        <div class="cards-header">
-            <div class="cards-header-text">
-                <p class="cards-header-title">
-                    Mechas
-                    <!-- <span class="cards-header-qty">3</span> -->
-                </p>
-                <p class="cards-header-time">
-                    1 enero
-                </p>
-            </div>
-            <button type="button">
-                <img class="cards-header-deleteIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/delete-icon.svg" alt="ValeApp-TrashIcon">
-            </button>
-        </div>
-        <div class="cards-items">
-            <?php foreach ($myOffersItems as $myOffersItem){ ?>
-                <div class="cards-item">
-                    <div class="cards-item-content">
-                        <div class="cards-item-img">
-                            <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri().($myOffersItem -> photo); ?>" alt="ValeApp">
-                            <?php if($myOffersItem -> isCheck == true): ?>
-                                <img class="cards-item-imgIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
-                            <?php endif ?>
-                        </div>
-                       <div class="cards-item-description">
-                            <div class="cards-item-texts">
-                                <p class="name">
-                                    <?php echo $myOffersItem->name ?>
-                                </p>
-                                <div class="cards-item-rate">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-star-image.png" alt="ValeApp" class="star">
-                                    <p class="rate">
-                                        <?php echo $myOffersItem->stars ?>
-                                    </p>
-                                </div>
-                            </div>
-                            <span class="duration">
-                                <?php echo $myOffersItem->duration ?>
-                            </span>
-                        </div>
-                        <p class="price">
-                            <?php echo $myOffersItem->price ?><span>€/h</span>
-                        </p>
-                    </div>
+
+<?php
+
+$author_id = get_current_user_id();
+
+if ($author_id) {
+    $custom_post_type = 'solicitar-servicio';
+
+    $args = [
+        'post_type' => $custom_post_type,
+        'author' => $author_id,
+        'posts_per_page' => -1,
+        'post_status' => 'publish',
+    ];
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) {
+        while ($query->have_posts()) : $query->the_post();
+        $post_id = get_the_ID();
+        $group_category = get_field('field_656f483c90876', $post_id);
+        $category = $group_category['categoria'];
+        $subcategory = '';
+        category_search_filter($category, $group_category, $subcategory);
+
+
+        // Prueba
+        ?>
+        <div class="cards myOffers pt-0">
+            <!-- Datos del cliente -->
+            <div class="cards-header">
+                <div class="cards-header-text">
+                    <p class="cards-header-title">
+                        <?php echo($category . ', ' . $subcategory); ?>
+                    </p>
+                    <p class="cards-header-time">
+                        1 enero
+                    </p>
                 </div>
-            <?php }?>
+                <button type="button">
+                    <img class="cards-header-deleteIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/delete-icon.svg" alt="ValeApp-TrashIcon">
+                </button>
+            </div>
+
+            <!-- Datos del proveedor -->
+            <div class="cards-items">
+                <?php match_service($post_id); ?>
+            </div>
         </div>
-    </div>
+
+        <?php
+        endwhile;
+    } else {
+        echo do_shortcode('[no_request]');
+    }
+
+    wp_reset_query();
+} else {
+  echo 'No se encuentra logueado';
+}
+
+
+?>
+
+
+
 <?php
 get_footer();

@@ -2,11 +2,13 @@
 /**
  * @package ValeApp
  */
+
+function match_service($post) {
 include 'variables.php';
 include 'choose-day.php';
 include 'choose-subcategory.php';
 include 'choose-filter.php';
-include 'choose-query.php';
+// include 'choose-query.php';
 
 
 
@@ -29,21 +31,21 @@ if($come) {
     ];
 }
 
-$args = [
+$args_provider = [
     'post_type' => 'publicar-servicio',
     'posts_per_page' => -1,
     'meta_query' => [
         //Filtro de Categoria
         [
             'key' => 'categorias_categoria',
-            'value'=> $category,
+            'value'=> $category_provider,
             'compare' => '=',
         ],
 
         //Filtro de Subcategoria
         [
             'key' => 'categorias_'.$subcategory_search,
-            'value'=> $subcategory,
+            'value'=> $subcategory_provider,
             'compare' => '=',
         ],
 
@@ -119,50 +121,18 @@ $args = [
 
 include 'search_author.php';
 
-$query = new WP_Query($args);
-// var_dump($query);
+$query = new WP_Query($args_provider);
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
 
-// Verificar si hay posts
-if ($query->have_posts()) {
-    // Iterar sobre los posts
-    while ($query->have_posts()) {
-        $query->the_post();
-        //Data de Publicar Servicio
-        // Obtener datos del primer grupo
-        // $grupo_1 = get_field('field_656e44bf5bcb9');
-        // $grupo_2 = get_field('field_656e52af35d62');
-
-        // // Hacer algo con los datos, por ejemplo, imprimirlos
-        // echo 'Categoria: ' . $grupo_1['categoria'];
-        // echo ' Subcategoria: ' . $grupo_1[$subcategory_search];
-        // if($filter_boolean){
-        //     echo ' Filtro: '. $grupo_1[$filter_search];
-        // }
-        // if($level_boolean){
-        //     echo ' Nivel: '. $grupo_1['nivel'];
-        // }
-        // if($gender){
-        //     echo ' Sexo: '. $grupo_1['sexo'];
-        // }
-        // if($hair_removal){
-        //     echo ' Depilacion con: '. $grupo_1['depilacion_con'];
-        // }
-        // if($subcategory == 'Uñas'){
-        //     echo ' Unhas: '. $grupo_1['unas'];
-        // }
-        // if($modality){
-        //     echo ' Modalidad: ' . $grupo_1['modalidad'];
-        // }
-        // echo ' Ubicacion: ' . $grupo_2['zonas_de_trabajo'];
-        // echo ' Come: ' . $grupo_2['vienes_o_vengo'];
-        // echo ' Dia: ' . $grupo_2[$day_search];
-        // echo ' Hora inicial: ' . $grupo_2[$schedule][$start_time];
-        // echo ' Hora final: ' . $grupo_2[$schedule][$end_time];
-        // echo ' ' . $price_search . ': ' . $grupo_2[$price_search];
-        
+            $user = get_post_field( 'post_author');
+            // echo("El Usuario es = " . $user . '<br/>');
+            search_user($user);
+        }
+        wp_reset_postdata();
     }
-
-    wp_reset_postdata();
-} else {
-    echo 'No se encontraron resultados.';
+    else {
+        echo("No hay datos");
+    }
 }
