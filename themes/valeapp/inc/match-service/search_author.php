@@ -50,11 +50,13 @@ function search_user($user_author) {
                             2 meses en Vale
                         </span>
                     </div>
-                    <p class="price">
-                        <?php echo("50"); ?><span>€/h</span>
-                    </p>
+                    <div class="contentButton">
+                        <p class="price">
+                            <?php echo("50"); ?><span>€/h</span>
+                        </p>
+                        <button class="button" id="mi_boton" type="submit">Contactar</button>
+                    </div>
                 </div>
-                <button class="button" id="mi_boton" type="submit">Contactar</button>
             </div>
 
             <?php

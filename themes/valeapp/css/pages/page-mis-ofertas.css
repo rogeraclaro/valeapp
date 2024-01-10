@@ -16,7 +16,7 @@
     border-radius: 21px;
     display: flex;
     flex-direction: row;
-    padding: 1rem 1.3rem;
+    padding: 1rem 1rem;
 }
 .myOffers .cards-item-content:nth-child(n){
     margin: 0;
@@ -52,12 +52,17 @@
 }
 .myOffers .cards-item-img ,
 .myOffers .cards-item-img .img-fluid{
-    height: 110px;
+    height: auto;
     width: 110px;
 }
 .myOffers .cards-item-imgIcon{
     height: 25px;
-    width: 25px;
+    width: 25px;   
+}
+@media (max-width: 375px){
+    .myOffers .cards-item-imgIcon{
+        bottom: 23%;
+    }
 }
 .myOffers .cards-item-rate{
     display: flex;
@@ -91,10 +96,16 @@
     width: 8rem;
     border: 0;
     border-radius: 2rem;
-    padding: 0.4rem 0.2rem 0.6rem 0.2rem;
+    padding: 0.3rem 0.1rem 0.3rem 0.1rem;
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.4rem;
     text-decoration: none;
+}
+.myOffers .contentButton{
+    display: flex;
+    flex-direction: column;
+    height: 6.3rem;
+    justify-content: space-between;
 }
