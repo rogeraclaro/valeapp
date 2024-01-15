@@ -175,7 +175,7 @@ get_header();
                         20
                         <span>€/h</span>
                     </div>
-                    <div class="contracted-tasks-item-body-itemState">Cancelada</div>
+                    <div class="contracted-tasks-item-body-itemState-cancel">Cancelada</div>
                 </div>
                 <div class="contracted-tasks-item-footer">
                     <button type="button" class="contracted-tasks-item-footerBtn">
