@@ -4826,8 +4826,9 @@ a.tokens-btn:focus{
   width: 2rem;
 }
 .professionalDashboard-options .option .img-fluid.option-icon.promotions{
-  width: 4.5rem;
-  margin-left: -1.2rem;
+  width: auto;
+  margin-left: -0.5rem;
+  height: 40px;
 }
 
 .professionalDashboard-options .option:nth-child(4) .img-fluid.option-icon{
@@ -4852,7 +4853,7 @@ a.tokens-btn:focus{
     padding-bottom: 1.4rem;
 }
 .professionalDashboard-options .option-text.promotionsText{
-  margin-left: 0;
+  margin-left: 0.5rem;
 }
 
 .professionalDashboard-options .subtitle{
