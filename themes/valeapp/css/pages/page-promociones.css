@@ -44,6 +44,7 @@ html {
     background-color: #e1edeb;
     border-radius: 1.7rem;
     margin-bottom: 2rem;
+    text-decoration: none;
 }
 
 .promociones-title{
@@ -52,12 +53,14 @@ html {
     font-weight: 600;
     font-size: 1.25rem;
     padding-left: 0.4rem;
+    color: #575550;
 }
 .promociones-subtitle{
     margin: 0;
     padding-left: 0.4rem;
     font-weight: 600;
     font-size: 1.03rem;
+    color: #575550;
 }
 .promociones-cardContent{
     display: flex;

@@ -37,7 +37,7 @@ get_header();
     </section>
     <section class="promociones">
         <div class="promociones-content">
-            <div class="promociones-card">
+            <a class="promociones-card" href="#">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png" alt="valeapp" class="promociones-arrow">
                 <div class="promociones-cardContent">
                     <h4 class="promociones-title">
@@ -48,8 +48,8 @@ get_header();
                     </p>
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promociones-icon.png" alt="valeapp" class="promociones-icon">
-            </div>
-            <div class="promociones-card">
+            </a>
+            <a class="promociones-card" href="#">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png" alt="valeapp" class="promociones-arrow">
                 <div class="promociones-cardContent">
                     <h4 class="promociones-title">
@@ -60,8 +60,8 @@ get_header();
                     </p>
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promociones-icon.png" alt="valeapp" class="promociones-icon">
-            </div>
-            <div class="promociones-card">
+            </a>
+            <a class="promociones-card" href="#">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png" alt="valeapp" class="promociones-arrow">
                 <div class="promociones-cardContent">
                     <h4 class="promociones-title">
@@ -72,8 +72,8 @@ get_header();
                     </p>
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promociones-icon.png" alt="valeapp" class="promociones-icon">
-            </div>
-            <div class="promociones-card">
+            </a>
+            <a class="promociones-card" href="#">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png" alt="valeapp" class="promociones-arrow">
                 <div class="promociones-cardContent">
                     <h4 class="promociones-title">
@@ -84,8 +84,8 @@ get_header();
                     </p>
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promociones-icon.png" alt="valeapp" class="promociones-icon">
-            </div>
-            <div class="promociones-card">
+            </a>
+            <a class="promociones-card" href="#">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png" alt="valeapp" class="promociones-arrow">
                 <div class="promociones-cardContent">
                     <h4 class="promociones-title">
@@ -96,7 +96,7 @@ get_header();
                     </p>
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promociones-icon.png" alt="valeapp" class="promociones-icon">
-            </div>
+            </a>
         </div>
     </section>
 
