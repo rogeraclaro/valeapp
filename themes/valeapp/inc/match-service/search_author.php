@@ -2,9 +2,11 @@
 
 if(!function_exists('search_user')){
 
-function search_user($user_author) {
+function search_user($user_author, $id_publish, $id_request) {
     // $author = get_user_by('login', $user_author);
     // $author_id = $author->ID;
+    $id_service_publish = $id_publish;
+    $id_service_request = $id_request;
     $author_id = $user_author;
     $args_user = [
         'post_type' => 'proveedor',
@@ -14,7 +16,8 @@ function search_user($user_author) {
     $custom_query = new WP_Query($args_user);
     if ($custom_query->have_posts()) :
         while ($custom_query->have_posts()) : $custom_query->the_post();
-
+            $provider_id = get_the_ID();
+            load_script_email($id_service_publish, $id_service_request);
             ?>
             <div class="cards-item">
                 <div class="cards-item-content">
@@ -54,7 +57,7 @@ function search_user($user_author) {
                         <p class="price">
                             <?php echo("50"); ?><span>€/h</span>
                         </p>
-                        <button class="button" id="mi_boton" type="submit">Contactar</button>
+                        <button class="button" id="btn_<?php echo($provider_id); ?>" type="submit" data-id="<?php echo($provider_id); ?>" >Contactar</button>
                     </div>
                 </div>
             </div>
@@ -68,4 +71,5 @@ function search_user($user_author) {
 }
 
 }
+
 ?>

@@ -215,8 +215,25 @@ function load_script_js() {
 	wp_enqueue_script('radioAsStars', get_theme_file_uri('/js/forms-default/radioAsStars.js'), array(), '1.0', true);
 	wp_enqueue_script('defaultRange', get_theme_file_uri('/js/forms-default/defaultRange.js'), array(), '1.0', true);
 	wp_enqueue_script('multiCheck', get_theme_file_uri('/js/forms-default/multiCheck.js'), array(), '1.0', true);
+
+	// wp_enqueue_script('send_emails', get_theme_file_uri('/js/message/send_emails.js'), array(), '1.0', true);
+	// $correo = obtener_valor_de_correo();
+	// $name = obtener_valor_de_name();
+	// $array_email = ['correo' => $correo, 'name' => $name];
+	// wp_localize_script('send_emails', 'datos_php', $array_email);
+
+	// $array_email = [];
+
+	// wp_localize_script('send_emails', 'datos_php', $array_email);
+}
+
+function load_script_email($publish_data, $request_data){
 	wp_enqueue_script('send_emails', get_theme_file_uri('/js/message/send_emails.js'), array(), '1.0', true);
-	wp_localize_script( 'send_emails', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
+	$publish = $publish_data;
+	$request = $request_data;
+	$array_data = ['publish' => $publish, 'request' => $request];
+
+	wp_localize_script('send_emails', 'datos_php', $array_data);
 }
 
 require_once plugin_dir_path(__FILE__) . 'inc/home-redirection.php';
@@ -230,15 +247,19 @@ require_once plugin_dir_path(__FILE__) . 'inc/login/redirection-page.php';
 require_once plugin_dir_path(__FILE__) . 'inc/delete-user.php';
 require_once plugin_dir_path(__FILE__) . 'inc/menu-reuse.php';
 require_once plugin_dir_path(__FILE__) . 'inc/functions-reuse/subcategory-search.php';
+require_once plugin_dir_path(__FILE__) . 'inc/redirections-breadcrumbs/my-account.php';
+require_once plugin_dir_path(__FILE__) . 'inc/match-service/search_author.php';
+require_once plugin_dir_path(__FILE__) . 'inc/send-message-match/send_email.php';
 
-function mostrar_alerta($id_boton) {
-	echo "
-	  <script>
-		document.getElementById('$id_boton').addEventListener('click', function() {
-		  alert('¡Alerta!');
-		});
-	  </script>
-	";
-  }
-  
-  add_action('wp_footer', 'mostrar_alerta');
+// function obtener_valor_de_correo() {
+//     if (is_user_logged_in()) {
+//         $current_user = wp_get_current_user();
+//         return $current_user->user_email;
+//     }
+//     return '';
+// }
+
+// function obtener_valor_de_name() {
+//     return 'Que onda prix';
+// }
+

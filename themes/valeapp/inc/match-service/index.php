@@ -119,16 +119,14 @@ $args_provider = [
     ],
 ];
 
-include 'search_author.php';
-
 $query = new WP_Query($args_provider);
     if ($query->have_posts()) {
         while ($query->have_posts()) {
             $query->the_post();
-
+            $id_request = $post_id_provider;
+            $id_publish = get_the_ID();
             $user = get_post_field( 'post_author');
-            // echo("El Usuario es = " . $user . '<br/>');
-            search_user($user);
+            search_user($user, $id_publish, $id_request);
         }
         wp_reset_postdata();
     }

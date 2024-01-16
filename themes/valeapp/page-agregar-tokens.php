@@ -20,7 +20,7 @@ get_header();
             <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Mi cuenta</a></li>
+                        <li class="breadcrumb-item"><?php breadcrumb_my_account(); ?></li>
                         <li class="breadcrumb-item"><a href="#">Mi saldo</a></li>
                     </ol>
                 </nav>
