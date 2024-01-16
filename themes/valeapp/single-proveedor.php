@@ -86,7 +86,7 @@ $rate = get_field('field_64dcf621615e0', $post_id);
                      </a>
                      <a class="link" href="/promociones">
                          <li class="option">
-                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promotions-icon.png" alt="ValeApp" class="img-fluid option-icon promotions">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promotion-icon.png" alt="ValeApp" class="img-fluid option-icon promotions">
                              <span class="option-text promotionsText">Promociones</span>
                          </li>
                      </a>
