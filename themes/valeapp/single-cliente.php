@@ -61,7 +61,7 @@ $rate = '';
                      </a>
                      <a class="link" href="/tareas-contratadas">
                          <li class="option">
-                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-balance-icon.png" alt="ValeApp" class="img-fluid option-icon">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-contracted-tasks-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="option-text">Tareas Contratadas</span>
                          </li>
                      </a>
@@ -76,6 +76,12 @@ $rate = '';
                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-messages-icon.png" alt="ValeApp" class="img-fluid option-icon">
                              <span class="count">1</span>
                              <span class="option-text">Mensajes</span>
+                         </li>
+                     </a>
+                     <a class="link" href="/promociones">
+                         <li class="option">
+                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promotion-icon.png" alt="ValeApp" class="img-fluid option-icon promotions">
+                             <span class="option-text promotionsText">Promociones</span>
                          </li>
                      </a>
                     <div class="subtitle">Centro de soporte</div>
