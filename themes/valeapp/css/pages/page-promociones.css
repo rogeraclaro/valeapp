@@ -19,32 +19,34 @@ html {
   
 .section2.promociones {
     margin-top: 0rem;
-    padding-bottom: 2.6rem;
-    padding-top: 1.2rem;
+    padding-bottom: 2.125rem;
+    padding-top: 2.125rem;
 }
 .section2.promociones .title{
     font-size: 2.3rem;
 }
 
 .promociones{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 2.4rem;
+    padding: 2.4rem 1rem 0;
 }
 .promociones-card{
     position: relative;
     overflow: hidden;
-    padding: 1rem 1rem;
+    padding: 1rem 1.125rem;
     padding-top: 1.2rem;
     padding-bottom: 4.1rem;
+
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    background-color: #e1edeb;
+    background-color: #e2eeec;
     border-radius: 1.7rem;
     margin-bottom: 2rem;
     text-decoration: none;
+}
+.promociones-card:last-child{
+    margin-bottom: 0;
 }
 
 .promociones-title{
@@ -52,15 +54,16 @@ html {
     margin: 0;
     font-weight: 600;
     font-size: 1.25rem;
-    padding-left: 0.4rem;
     color: #575550;
+    margin-bottom: 0.4rem;
 }
 .promociones-subtitle{
     margin: 0;
-    padding-left: 0.4rem;
     font-weight: 600;
-    font-size: 1.03rem;
+    font-size: 0.95rem;
+    line-height: 1rem;
     color: #575550;
+    font-family: 'Open Sans';
 }
 .promociones-cardContent{
     display: flex;

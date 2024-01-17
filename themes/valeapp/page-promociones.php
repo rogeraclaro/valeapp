@@ -44,7 +44,7 @@ get_header();
                     Oferta de lanzamiento
                     </h4>
                     <p class="promociones-subtitle">
-                        Primer mes de comisiones
+                        Primer mes sin comisiones
                     </p>
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-promociones-icon.png" alt="valeapp" class="promociones-icon">
