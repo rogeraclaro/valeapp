@@ -27,7 +27,7 @@ get_header();
             </div>
             <div class="col-12">
                 <h2 class="title">
-                    Añadir Tokens
+                    Añadir Saldo
                 </h2>
             </div>
         </div>
@@ -90,6 +90,17 @@ get_header();
     <div class="AddTokens-input">
         <span>Cantidad del depósito:</span>
         <input type="number" />
+    </div>
+    <div class="AddTokens-mentions">
+        <p class="AddTokens-titleMention">
+            1€ = 1 Vale.
+        </p>
+        <p class="AddTokens-text">
+        En esta plataforma, la equivalencia es directa: 1 euro es igual a 1 Vale. En la sección "Mi Saldo," tendrás una visualización clara de la cantidad de vales disponibles para utilizar en diversos servicios después de realizar tu depósito.        
+        </p>
+        <button class="AddTokens-btn">
+           Confirmar
+        </button>
     </div>
 </div>
 

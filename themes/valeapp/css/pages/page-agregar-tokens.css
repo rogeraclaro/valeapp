@@ -98,3 +98,33 @@
     padding: 0.5rem 0.2rem;
     width: 12rem;
 }
+.AddTokens-text{
+    color: #575550;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 00;
+}
+.AddTokens-mentions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.AddTokens-titleMention{
+    color: #575550;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.AddTokens-btn{
+    background-color: #5aab9f;
+    width: 11rem;
+    border: 0;
+    border-radius: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    margin-top: 2.6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
