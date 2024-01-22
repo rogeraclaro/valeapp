@@ -36,10 +36,12 @@ get_header();
       <div class="MiSaldo-container">
         <div class="MiSaldo-content">
           <p class="MiSaldo-saldoText">Tu saldo actual es de:</p>
-          <p class="MiSaldo-saldoNum">0,00€</p>
+          <div class=MiSaldo-saldoNum>
+            <p class="MiSaldo-saldoNumText">0,00</p>
+            <img class="MiSaldo-arrowIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png">
+          </div>
           <div class="MiSaldo-tokens">
             <button class="MiSaldo-addBtn">Añadir Tokens</button>
-            <button class="MiSaldo-removeBtn">Retirar Tokens</button>
           </div>
           <div class="MiSaldo-payment">
             <div class="MiSaldo-paymentHead">

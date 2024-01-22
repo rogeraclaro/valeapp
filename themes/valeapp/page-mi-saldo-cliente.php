@@ -32,33 +32,33 @@ get_header();
         </div>
       </div>
     </section>
-    <section class="miSaldoProveedor">
-      <div class="miSaldoProveedor-container">
-        <div class="miSaldoProveedor-content">
-          <p class="miSaldoProveedor-saldoText">Tu saldo actual es de:</p>
-          <div class="miSaldoProveedor-saldoNum">
-            <p class="miSaldoProveedor-saldoNumText">0,00</p>
-          <img class="miSaldoProveedor-arrowIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png">
+    <section class="miSaldoCliente">
+      <div class="miSaldoCliente-container">
+        <div class="miSaldoCliente-content">
+          <p class="miSaldoCliente-saldoText">Tu saldo actual es de:</p>
+          <div class="miSaldoCliente-saldoNum">
+            <p class="miSaldoCliente-saldoNumText">0,00</p>
+          <img class="miSaldoCliente-arrowIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png">
           </div>
-          <div class="miSaldoProveedor-tokens">
-            <button class="miSaldoProveedor-addBtn">Añadir Saldo</button>
+          <div class="miSaldoCliente-tokens">
+            <button class="miSaldoCliente-addBtn">Añadir Saldo</button>
           </div>
-          <div class="miSaldoProveedor-payment">
-            <div class="miSaldoProveedor-paymentHead">
-                <p class="miSaldoProveedor-title">
+          <div class="miSaldoCliente-payment">
+            <div class="miSaldoCliente-paymentHead">
+                <p class="miSaldoCliente-title">
                     Metodo de pago registrado
                 </p>
-                <button class="miSaldoProveedor-editBtn">
-                    <img class="miSaldoProveedor-editIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-editIcon-miSaldo.png">
+                <button class="miSaldoCliente-editBtn">
+                    <img class="miSaldoCliente-editIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-editIcon-miSaldo.png">
                     Editar
                 </button>
             </div>
-            <div class="miSaldoProveedor-card">
-                <p class="miSaldoProveedor-cardType">
-                    TARJETA VISA <span class="miSaldoProveedor-icon1">?</span>
+            <div class="miSaldoCliente-card">
+                <p class="miSaldoCliente-cardType">
+                    TARJETA VISA <span class="miSaldoCliente-icon1">?</span>
                 </p>
-                <p class="miSaldoProveedor-cardNum">
-                <img class="miSaldoProveedor-icon2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-visalogo-mi-saldo.png">
+                <p class="miSaldoCliente-cardNum">
+                <img class="miSaldoCliente-icon2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-visalogo-mi-saldo.png">
                     494019******5587
                 </p>
             </div>
