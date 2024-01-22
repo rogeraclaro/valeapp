@@ -41,7 +41,7 @@ get_header();
             <img class="MiSaldo-arrowIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png">
           </div>
           <div class="MiSaldo-tokens">
-            <button class="MiSaldo-addBtn">Añadir Tokens</button>
+            <button class="MiSaldo-addBtn">Añadir Saldo</button>
           </div>
           <div class="MiSaldo-payment">
             <div class="MiSaldo-paymentHead">
