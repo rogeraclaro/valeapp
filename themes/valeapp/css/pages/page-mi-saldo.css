@@ -22,6 +22,15 @@
   margin-bottom: 0.5rem;
 }
 .MiSaldo-saldoNum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MiSaldo-arrowIcon{
+  width: 2rem;
+  margin-left: 0.3rem;
+}
+.MiSaldo-saldoNumText {
   margin-top: 0.7rem;
   color: #5aab9f;
   font-weight: 700;
@@ -35,7 +44,7 @@
   display: flex;
   width: 100%;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
 }
 .MiSaldo-addBtn {
   background-color: #5aab9f;

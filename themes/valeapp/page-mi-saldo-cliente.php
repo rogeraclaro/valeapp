@@ -36,7 +36,10 @@ get_header();
       <div class="miSaldoProveedor-container">
         <div class="miSaldoProveedor-content">
           <p class="miSaldoProveedor-saldoText">Tu saldo actual es de:</p>
-          <p class="miSaldoProveedor-saldoNum">0,00€</p>
+          <div class="miSaldoProveedor-saldoNum">
+            <p class="miSaldoProveedor-saldoNumText">0,00</p>
+          <img class="miSaldoProveedor-arrowIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png">
+          </div>
           <div class="miSaldoProveedor-tokens">
             <button class="miSaldoProveedor-addBtn">Añadir Saldo</button>
           </div>
