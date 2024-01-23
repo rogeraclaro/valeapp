@@ -64,6 +64,45 @@ get_header();
             </div>
           </div>
         </div>
+        <div class="miSaldoCliente-contentModal">
+          <button type="button" class="miSaldoCliente-filter" data-bs-toggle="modal" data-bs-target="#clientFilter">
+          <img class="miSaldoCliente-filterIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-filter-icon.png">
+            Filtrar
+        </button>
+          <div class="modal fade miSaldoCliente-modal" id="clientFilter" tabindex="-1" aria-labelledby="CustomeFilterLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content miSaldoCliente-content">
+            <div class="modal-header miSaldoCliente-header">
+                <h5 class="modal-title" id="CustomeFilterLabel">Filtrar por fecha</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label class="miSaldoCliente-item">
+                <input type="checkbox" id="opcion1" class="miSaldoCliente-input">
+                <span class="miSaldoCliente-itemLabel">
+                  Últimos 30 días
+                </span>
+              </label>
+              <label class="miSaldoCliente-item">
+                <input type="checkbox" id="opcion2"  class="miSaldoCliente-input">
+                <span class="miSaldoCliente-itemLabel">
+                  Últimos 3 meses
+                </span>
+              </label>
+              <label class="miSaldoCliente-item">
+                <input type="checkbox" id="opcion3"  class="miSaldoCliente-input">
+                <span class="miSaldoCliente-itemLabel">
+                  2024
+                </span>
+              </label>
+            </div>
+            <div class="modal-footer miSaldoCliente-footer">
+                <a href="#" class="miSaldoCliente-cardBtn">Confirmar</a>
+            </div>
+            </div>
+        </div>
+    </div>
+        </div>
       </div>
     </section>
 <?php
