@@ -1,20 +1,20 @@
-.MultiCheck {
+.peluqueria {
   color: #575550;
   font-family: 'Open Sans';
 }
-.MultiCheck::after {
-  content: attr(data-multicheck-qtymsg);
+.peluqueria::after {
+  content: attr(data-peluqueria-qtymsg);
   display: block;
   font-weight: 600;
   text-align: center;
 }
-.MultiCheck-body {
+.peluqueria-body {
   display: flex;
   flex-direction: column;
   max-height: 400px;
   overflow: scroll;
 }
-.MultiCheck-item {
+.peluqueria-item {
   display: block;
   position: relative;
   cursor: pointer;
@@ -23,10 +23,10 @@
   -ms-user-select: none;
   user-select: none;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-.MultiCheck-item input {
+.peluqueria-item input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -34,7 +34,7 @@
   width: 0;
 }
 
-.MultiCheck-itemLabel {
+.peluqueria-itemLabel {
   background-color: transparent;
   border-radius: 2rem;
   display: block;
@@ -42,10 +42,10 @@
   transition: background 0.2s ease;
   width: 100%;
 }
-.MultiCheck-item:hover input ~ .MultiCheck-itemLabel {
+.peluqueria-item:hover input ~ .peluqueria-itemLabel {
   background-color: transparent;
 }
-.MultiCheck-item input:checked ~ .MultiCheck-itemLabel {
+.peluqueria-item input:checked ~ .peluqueria-itemLabel {
   background-color: #e2eeec;
   font-weight: bold;
 }
@@ -73,4 +73,70 @@
 .HairSalon-searchModal .modal-body,
 .HairSalon-searchModal .home-menu-card{
   padding: 0;
+}
+
+.peluqueria {
+  font-family: Arial, sans-serif;
+  margin: 0rem 0.5rem;
+}
+
+.peluqueria-item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+#contador {
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+}
+.gender {
+  color: #575550;
+  
+  font-family: 'Open Sans';
+}
+
+.gender-body {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow: scroll;
+}
+.gender-item {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.gender-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.gender-itemLabel {
+  background-color: transparent;
+  border-radius: 2rem;
+  display: block;
+  padding: 1.1rem 1.1rem;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+.gender-item:hover input ~ .gender-itemLabel {
+  background-color: transparent;
+}
+.gender-item input:checked ~ .gender-itemLabel {
+  background-color: #e2eeec;
+  font-weight: bold;
 }

@@ -36,54 +36,83 @@ get_header();
 		</div>
     </section>
     <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#HairSalonModal">
-        Abrir Modal
+    Abrir Modal
     </button>
     <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#HairSalonModalSearch">
         Abrir Modal Busqueda
     </button>
     <div class="modal fade HairSalon-modal" id="HairSalonModal" tabindex="-1" aria-labelledby="HairSalonModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="HairSalonModalLabel">Servicios</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="MultiCheck" data-multicheck-id="HairSalonModal">
-                    <div class="MultiCheck-body">
-                        <label class="MultiCheck-item">
-                            <input type="checkbox" data-multicheck-selectAll="true">
-                            <span class="MultiCheck-itemLabel">
-                                Todos
-                            </span>
-                        </label>
-                        <label class="MultiCheck-item">
-                            <input type="checkbox">
-                            <span class="MultiCheck-itemLabel">
-                                Cortar + Lavar
-                            </span>
-                        </label>
-                        <label class="MultiCheck-item">
-                            <input type="checkbox">
-                            <span class="MultiCheck-itemLabel">
-                                Mechas / Tinte
-                            </span>
-                        </label>
-                        <label class="MultiCheck-item">
-                            <input type="checkbox">
-                            <span class="MultiCheck-itemLabel">
-                                Cejas
-                            </span>
-                        </label>
-                    </div>
+                <div class="peluqueria">
+                    <label class="peluqueria-item">
+                        <input type="checkbox" data-peluqueria-selectAll="true" data-tipo="todos">
+                        <span class="peluqueria-itemLabel">
+                            Todos
+                        </span>
+                    </label>
+                    <label class="peluqueria-item">
+                        <input type="checkbox" data-tipo="cortar-lavar">
+                        <span class="peluqueria-itemLabel">
+                            Cortar + Lavar
+                        </span>
+                    </label>
+                    <label class="peluqueria-item">
+                        <input type="checkbox" data-tipo="mechas-tinte">
+                        <span class="peluqueria-itemLabel">
+                            Mechas / Tinte
+                        </span>
+                    </label>
+                    <label class="peluqueria-item">
+                        <input type="checkbox" data-tipo="cejas">
+                        <span class="peluqueria-itemLabel">
+                            Cejas
+                        </span>
+                    </label>
+                    <div id="contador">Opciones seleccionadas: 0</div>
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="/registro-proveedores" class="CreateAccountUserOrProfessional-cardBtn">Confirmar</a>
-            </div>
+                <button class="CreateAccountUserOrProfessional-cardBtn" id="btnSubmit" disabled data-bs-toggle="modal" data-bs-target="#gender">Seleccionar</button>
             </div>
         </div>
     </div>
+</div>
+
+<div class="modal fade HairSalon-modal" id="gender" tabindex="-1" aria-labelledby="HairSalongender" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="HairSalongender">Soy</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gender">
+                    <label class="gender-item">
+                        <input type="radio" name="gender" data-tipo="male">
+                        <span class="gender-itemLabel">
+                            Hombre
+                        </span>
+                    </label>
+                    <label class="gender-item">
+                        <input type="radio" name="gender" data-tipo="female">
+                        <span class="gender-itemLabel">
+                            Mujer
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="CreateAccountUserOrProfessional-cardBtn" id="btnSubmitGender" disabled>Seleccionar</button>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="modal fade HairSalon-searchModal" id="HairSalonModalSearch" tabindex="-1" aria-labelledby="HairSalonModalSearchLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
@@ -115,3 +144,4 @@ get_header();
     </div>
 <?php
 get_footer();
+
