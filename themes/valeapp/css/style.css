@@ -5099,6 +5099,26 @@ a.tokens-btn:focus{
 .Popular {
   padding: 2rem 1rem 1rem 1rem;
 }
+.Popular .imgContent{
+  position: relative;
+}
+  
+.Popular .textImg{
+    background-color: #5aab9f;
+    padding: 0.3rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Open Sans";
+    line-height: 1.6rem;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 7.38rem;
+    text-align: center;
+    transform: translateX(-50%);
+}
 
 .Popular .title{
   text-align: center;

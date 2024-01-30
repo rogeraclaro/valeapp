@@ -118,12 +118,42 @@ get_header();
   <div class="Popular">
     <h2 class="title">Servcios mas populares</h2>
     <div class="content">
-      <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular1.png" alt="valeapp">
-      <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular2.png" alt="valeapp">
-      <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular3.png" alt="valeapp">
-      <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular4.png" alt="valeapp">
-      <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular5.png" alt="valeapp">
-      <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular6.png" alt="valeapp">
+      <div class=imgContent>
+        <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular1.png" alt="valeapp">
+        <span class="textImg">
+          Limpieza
+        </span>
+      </div>
+      <div class=imgContent>
+        <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular2.png" alt="valeapp">
+        <span class="textImg">
+        Mascotas
+        </span>
+      </div>
+      <div class=imgContent>
+        <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular3.png" alt="valeapp">
+        <span class="textImg">
+        Uñas
+        </span>
+      </div>
+      <div class=imgContent>
+        <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular4.png" alt="valeapp">
+        <span class="textImg">
+        Pintura
+        </span>
+      </div>
+      <div class=imgContent>
+        <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular5.png" alt="valeapp">
+        <span class="textImg">
+        Meditación
+        </span>
+      </div>
+      <div class=imgContent>
+        <img class="img-fluid popular" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular6.png" alt="valeapp">
+        <span class="textImg">
+        Mudanza
+        </span>
+      </div>
     </div>
   </div>
   <div class="WhyVale">
