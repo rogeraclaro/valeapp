@@ -78,7 +78,7 @@ get_header();
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="CreateAccountUserOrProfessional-cardBtn" id="btnSubmit" disabled data-bs-toggle="modal" data-bs-target="#gender">Seleccionar</button>
+                <button class="HairSalon-btn" id="btnSubmit" disabled data-bs-toggle="modal" data-bs-target="#gender">Seleccionar</button>
             </div>
         </div>
     </div>
@@ -87,12 +87,12 @@ get_header();
 <div class="modal fade HairSalon-modal" id="gender" tabindex="-1" aria-labelledby="HairSalongender" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="gender modal-header">
                 <h5 class="modal-title" id="HairSalongender">Soy</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <div class="gender">
+            <div class="gender modal-body">
+                <div>
                     <label class="gender-item">
                         <input type="radio" name="gender" data-tipo="male">
                         <span class="gender-itemLabel">
@@ -107,8 +107,8 @@ get_header();
                     </label>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button class="CreateAccountUserOrProfessional-cardBtn" id="btnSubmitGender" disabled>Seleccionar</button>
+            <div class="gender modal-footer">
+                <button class="HairSalon-btn" id="btnSubmitGender" disabled>Seleccionar</button>
             </div>
         </div>
     </div>
