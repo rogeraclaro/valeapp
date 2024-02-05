@@ -108,7 +108,7 @@ get_header();
                 </div>
             </div>
             <div class="gender modal-footer">
-                <button class="HairSalon-btn" id="btnSubmitGender" disabled>Seleccionar</button>
+                <button class="HairSalon-btn" id="btnSubmitGender" disabled>Confirmar</button>
             </div>
         </div>
     </div>

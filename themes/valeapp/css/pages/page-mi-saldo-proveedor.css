@@ -2,17 +2,17 @@
   padding-top: 1.2rem;
   padding-bottom: 2.8rem;
 }
-.miSaldoCliente {
+.miSaldoProveedor {
   padding-top: 1rem;
   color: #575550;
 }
-.miSaldoCliente-container {
+.miSaldoProveedor-container {
   max-width: 91%;
   width: 100%;
   margin: 0 auto;
   color: #575550;
 }
-.miSaldoCliente-saldoText {
+.miSaldoProveedor-saldoText {
   font-weight: 600;
   font-size: 1.06rem;
   color: #575550;
@@ -21,16 +21,16 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.miSaldoCliente-saldoNum {
+.miSaldoProveedor-saldoNum {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.miSaldoCliente-arrowIcon{
+.miSaldoProveedor-arrowIcon{
   width: 2rem;
   margin-left: 0.3rem;
 }
-.miSaldoCliente-saldoNumText {
+.miSaldoProveedor-saldoNumText {
   margin-top: 0.7rem;
   color: #5aab9f;
   font-weight: 700;
@@ -40,13 +40,13 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.miSaldoCliente-tokens {
+.miSaldoProveedor-tokens {
   display: flex;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
 }
-.miSaldoCliente-addBtn {
+.miSaldoProveedor-addBtn {
   background-color: #5aab9f;
   width: 13.4rem;
   border: 0;
@@ -59,7 +59,7 @@
   margin-top: 0.6rem;
   font-family: "Century Gothic";
 }
-.miSaldoCliente-removeBtn {
+.miSaldoProveedor-removeBtn {
   background-color: transparent;
   width: 13.4rem;
   border: 0;
@@ -72,16 +72,16 @@
   padding-left: 1.1rem;
   font-family: "Century Gothic";
 }
-.miSaldoCliente-payment {
+.miSaldoProveedor-payment {
   margin-top: 1rem;
 }
-.miSaldoCliente-paymentHead {
+.miSaldoProveedor-paymentHead {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
 }
-.miSaldoCliente-title {
+.miSaldoProveedor-title {
   text-align: left;
   font-weight: 700;
   color: #575550;
@@ -90,7 +90,7 @@
   margin-bottom: 0 !important;
   font-family: "Century Gothic";
 }
-.miSaldoCliente-editBtn {
+.miSaldoProveedor-editBtn {
   background-color: transparent;
   border: none;
   width: 4rem;
@@ -104,49 +104,49 @@
   font-family: "Open Sans";
 
 }
-.miSaldoCliente-editIcon {
+.miSaldoProveedor-editIcon {
   width: 1.4rem;
 }
-.miSaldoCliente-card {
+.miSaldoProveedor-card {
   text-align: left;
   margin-top: 1rem;
   padding-left: 0.3rem;
 }
-.miSaldoCliente-cardType {
+.miSaldoProveedor-cardType {
   font-weight: 500;
   font-size: 0.9rem;
   color: #bec7ce;
   font-family: "Open Sans";
 }
-.miSaldoCliente-cardNum {
-  margin-top: 1.5rem;
+.miSaldoProveedor-cardNum {
+  margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   font-weight: 500;
   font-size: 1.1rem;
   color: #bec7ce;
   font-family: "Open Sans";
 }
-.miSaldoCliente-icon1 {
+.miSaldoProveedor-icon1 {
   background-color: #bec7ce;
   padding: 0rem 0.4rem;
   font-size: 0.9rem;
   border-radius: 3rem;
   color: #fff;
 }
-.miSaldoCliente-icon2 {
+.miSaldoProveedor-icon2 {
   width: 1.9rem;
   opacity: 0.6;
   margin-right: 1.5rem;
 }
-.miSaldoCliente-filter{
+.miSaldoProveedor-filter{
   border: none;
   background-color: #5aab9f;
   border-radius: 1.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8.5rem;
-  padding: 0.4rem 1rem;
+  width: auto;
+  padding: 0.5rem 1.4rem;
   color: #fff;
   font-weight: 700;
   font-size: 1.4rem;
@@ -154,11 +154,11 @@
   margin-top: 0.6rem;
   font-family: "Century Gothic";
 }
-.miSaldoCliente-filterIcon{
+.miSaldoProveedor-filterIcon{
   width: 2rem;
   margin-right: 0.7rem;
 }
-.miSaldoCliente .MultiCheck::after{
+.miSaldoProveedor .MultiCheck::after{
   display: none;
 }
 .modal-body {
@@ -167,10 +167,10 @@
   max-height: 400px;
   overflow: scroll;
 }
-.miSaldoCliente-input{
+.miSaldoProveedor-input{
   opacity: 0;
 }
-.miSaldoCliente-item{
+.miSaldoProveedor-item{
   display: block;
   position: relative;
   cursor: pointer;
@@ -183,11 +183,11 @@
   padding: 1rem;
 
 }
-.miSaldoCliente-item.selected {
+.miSaldoProveedor-item.selected {
   background-color: #e2eeec ;
   font-weight: bold ;
 }
-.miSaldoCliente-cardBtn{
+.miSaldoProveedor-cardBtn{
   background-color: #5aab9f;
   border-radius: 20px;
   color: #ffffff;
@@ -200,16 +200,23 @@
   margin-bottom: 0.5rem;
   width: 50%;
 }
-.miSaldoCliente-cardBtn:hover{
+.miSaldoProveedor-cardBtn:hover{
   color: #fff;
 }
-.modal-footer.miSaldoCliente-footer{
+.modal-footer.miSaldoProveedor-footer{
   justify-content: center;
   border-top: 0px;
 }
-.modal-header.miSaldoCliente-header{
+.modal-header.miSaldoProveedor-header{
  border-bottom: 0px;
+ padding: 1.3rem;
+ font-family: 'Century Gothic';
+ font-weight: 700 !important;
 }
-.modal-content.miSaldoCliente-content{
+.modal-content.miSaldoProveedor-content{
   border-radius: 1.5rem;
+}
+.modal-body.miSaldoProveedor-body{
+  padding-top: 0;
+  padding-bottom: 0;
 }

@@ -6,4 +6,9 @@ jQuery(document).ready(function ($) {
   }
 
   $('.miSaldoProveedor-item input[type="checkbox"]').change(handleMiSaldoProveedorChange);
+
+  $('#confirmarBtn').on('click', function () {
+      var selectedOption = $('.miSaldoProveedor-item.selected').find('input[type="checkbox"]').attr('id');
+      console.log('Opción seleccionada:', selectedOption);
+  });
 });
