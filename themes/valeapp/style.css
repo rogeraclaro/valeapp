@@ -84,11 +84,13 @@ header {
 }
 
 .userlogin {
-	padding-left: 1rem;
+	padding-left: 2rem;
+	display: flex;
+	align-items: center;
 }
 
 .logomobile {
-	padding-left: 1rem;
+    padding-left: 5rem;
 }
 
 i.bi.bi-person-circle,

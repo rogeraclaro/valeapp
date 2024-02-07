@@ -40,6 +40,17 @@ get_header();
             <h3 class=PreguntasFrecuentes-title>
                 Preguntas frecuentes
             </h3>
+            <div class="PreguntasFrecuentes-modal" id="questionTextBox">
+            <div class="PreguntasFrecuentes-close" id="questionCloseBtn">
+            <img class="img-fluid PreguntasFrecuentes-icon " src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-closeIcon.png">
+            </div>
+                <h5 class="">
+                1€ = 1 Vale.
+                </h5>
+                <p>
+                En esta plataforma,1 euro equivale a 1 Vale. En la sección "Mi Saldo," tendrás una visualización clara de la cantidad de vales disponibles.
+                </p>
+            </div>
             <div class="PreguntasFrecuentes-content">
                 <button class="PreguntasFrecuentes-btn">
                 <img class="img-fluid PreguntasFrecuentes-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-icon1-cards-help.png" alt="valeapp">

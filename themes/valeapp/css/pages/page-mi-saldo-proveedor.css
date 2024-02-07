@@ -180,6 +180,7 @@
   font-size: 1.2rem;
   border-radius: 2rem;
   text-align: left;
+  font-family: "Open Sans";
   padding: 1rem;
 
 }
@@ -206,12 +207,16 @@
 .modal-footer.miSaldoProveedor-footer{
   justify-content: center;
   border-top: 0px;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }
 .modal-header.miSaldoProveedor-header{
  border-bottom: 0px;
  padding: 1.3rem;
  font-family: 'Century Gothic';
  font-weight: 700 !important;
+ padding-left: 1.3rem;
+ padding-right: 1.3rem;
 }
 .modal-content.miSaldoProveedor-content{
   border-radius: 1.5rem;
@@ -219,4 +224,6 @@
 .modal-body.miSaldoProveedor-body{
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }

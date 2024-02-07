@@ -44,6 +44,17 @@ function add_photo_profile_header() {
                 $id = get_the_ID();
 
                 if($profile_photo){
+                    ?>
+                    <button class="PreguntasFrecuentes-headerBtn" id="questionShowBtn">
+                        0
+                    <div class="PreguntasFrecuentes-boxImg">
+                    <img class="img-fluid PreguntasFrecuentes-iconHead" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeap-arrow-promociones.png" alt="valeapp">
+                    <span class="PreguntasFrecuentes-question head">
+                        ?
+                    </span>
+                </div>
+                    </button>
+                    <?php
                     ?>  
                         <a href="/<?php echo($rol); ?>/<?php echo($id); ?>">
                             <img class="image-profile-header" src="<?php echo($profile_photo['url']);?>" alt="<?php echo($profile_photo['alt']); ?>">
