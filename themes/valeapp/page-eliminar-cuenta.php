@@ -57,8 +57,47 @@ get_header();
             Si eliminas tu cuenta, todos tus datos (valoraciones, mensajes, reservas...) serán eliminados y no podrás recuperarlos.
             </p>
             <button class="EliminarCuenta-btn">Mantener cuenta</button>
-            <button class="EliminarCuenta-delete ">Eliminar cuenta</button>
+            <button type="button" class="EliminarCuenta-delete " data-bs-toggle="modal" data-bs-target="#deleteAccount">Eliminar cuenta</button>
         </div>
+        <div class="modal fade" id="deleteAccount" tabindex="-1" aria-labelledby="CustomeFilterLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content EliminarCuenta-modal">
+          <div class="modal-header EliminarCuenta-head">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body EliminarCuenta-body">
+            <h4 class="EliminarCuenta-title">
+            Eliminar cuenta
+            </h4>
+            <p class="EliminarCuenta-textModal">
+            Por favor, indícanos el motivo o motivos por los que deseas darte de baja. Tus comentarios son importantes para nosotros:
+            </p>
+            <label class="EliminarCuenta-item">
+            <input type="checkbox" id="serviceSearch" class="EliminarCuenta-input">
+            <span class="EliminarCuenta-itemLabel">
+              Dificultad para encontrar el servicio que busco.
+            </span>
+          </label>
+          <label class="EliminarCuenta-item">
+            <input type="checkbox" id="dissatisfied" class="EliminarCuenta-input">
+            <span class="EliminarCuenta-itemLabel">
+              No estoy satisfecho/a con la calidad del servicio.
+            </span>
+          </label>
+          <label class="EliminarCuenta-item">
+            <input type="checkbox" id="tariff" class="EliminarCuenta-input">
+            <span class="EliminarCuenta-itemLabel">
+              No estoy satisfecho/a con la tarifa de los servicios. 
+            </span>
+          </label>
+          <p class="EliminarCuenta-count">
+            Motivos seleccionados: <span id="selectedCount">0</span>
+          </p>
+        </div>
+    <div class="modal-footer miSaldoProveedor-footer">
+    <button id="ConfirmDelete" class="miSaldoProveedor-addBtn" data-bs-dismiss="modal" aria-label="Close">Confirmar</button>
+    </div>
+          </div>
     </section>
 
 

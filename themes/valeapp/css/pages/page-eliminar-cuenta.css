@@ -18,6 +18,7 @@
     width: 15rem;
     margin: 0 auto;
     margin-bottom: 1.2rem;
+    color: #575550;
 }
 .EliminarCuenta-text{
     font-family: "Open Sans";
@@ -27,6 +28,22 @@
     width: 17rem;
     margin: 0 auto;
     margin-bottom: 1rem;
+}
+.EliminarCuenta-textModal{
+    font-family: "Open Sans";
+    color: #575550;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.EliminarCuenta-count{
+font-size: 0.9rem;
+color: #575550;
+font-weight: 400;
+font-family: "Open Sans";
+text-align: center;
 }
 .EliminarCuenta-btn{
     background-color: #5aab9f;
@@ -55,4 +72,58 @@
     font-family: "Century Gothic";
     margin: 0 auto;
     margin-top: 1rem;
+}
+
+.EliminarCuenta-item {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    color: #575550;
+  
+  }
+  
+  .EliminarCuenta-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .EliminarCuenta-itemLabel {
+    background-color: transparent;
+    border-radius: 2rem;
+    display: block;
+    padding: 1.1rem 1.2rem;
+    transition: background 0.2s ease;
+    width: 100%;
+    text-align: left;
+  }
+  .EliminarCuenta-item:hover input ~ .EliminarCuenta-itemLabel {
+    background-color: transparent;
+  }
+  .EliminarCuenta-item input:checked ~ .EliminarCuenta-itemLabel {
+    background-color: #e2eeec;
+    font-weight: bold;
+  }
+
+.modal-body.EliminarCuenta-body{
+    height: 100%;
+    max-height: 100%;
+    padding-left:  2.8rem;
+    padding-right: 2.8rem;
+}
+.modal-header.EliminarCuenta-head{
+border-bottom: none;
+padding-bottom: 0;
+}
+.modal-content.EliminarCuenta-modal{
+    border-radius: 1.7rem;
 }
