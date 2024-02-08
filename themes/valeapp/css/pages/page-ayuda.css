@@ -30,9 +30,9 @@ padding-top: 0;
   
 .Ayuda-link{
     text-decoration: none;
-    padding: 1.1rem 0rem;
-    font-size: 1.1rem;
-    font-weight: 5000;
+    padding: 1.3rem 0 ;
+    font-size: 1.2rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
 	font-family: "Open Sans";
@@ -43,6 +43,8 @@ padding-top: 0;
     font-weight: 700;
     flex-direction: row-reverse;
     justify-content: left;
+    font-family: 'Century Gothic';
+
 }
 .Ayuda-link:hover{
     color: #575550;

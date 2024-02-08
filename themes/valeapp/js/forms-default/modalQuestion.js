@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
         $('#questionTextBox').fadeIn();
         setTimeout(function () {
             $('#questionTextBox').fadeOut();
-        }, 2000);
+        },4000);
     }
 
     function hideQuestionTextBox() {
