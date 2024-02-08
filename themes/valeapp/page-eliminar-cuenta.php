@@ -43,10 +43,10 @@ get_header();
             <p class="EliminarCuenta-text">
             Sentimos que quieras dejarnos, pero si vuelves, te esperaremos con los brazos abiertos!
             </p>
-            <p class="EliminarCuenta-text">
+            <p class="EliminarCuenta-text mb-0">
             Antes de irte, asegúrate de:
             </p>
-            <p class="EliminarCuenta-text">
+            <p class="EliminarCuenta-text mb-0">
             •No tener transacciones pendientes
             de finalizar.
             </p>
