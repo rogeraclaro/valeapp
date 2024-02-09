@@ -18,6 +18,7 @@
   font-family: "Century Gothic";
   font-weight: 700;
   width: 15rem;
+  font-size: 1.5rem;
   margin: 0 auto;
   margin-bottom: 1.2rem;
   color: #575550;
@@ -39,15 +40,17 @@ margin-bottom: 2.2rem;
   line-height: 28px;
   font-weight: 500;
   margin: 0 auto;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  line-height: 30px;
 }
 .EliminarCuenta-count{
-font-size: 0.9rem;
+font-size: 1rem;
 color: #575550;
-font-weight: 400;
+font-weight: 500;
 font-family: "Open Sans";
 text-align: center;
+margin-bottom: 0;
 }
 .EliminarCuenta-btn{
   background-color: #5aab9f;
@@ -103,12 +106,14 @@ text-align: center;
 
 .EliminarCuenta-itemLabel {
   background-color: transparent;
-  border-radius: 2rem;
+  border-radius: 4rem;
+  font-size: 1.1rem;
   display: block;
-  padding: 1.1rem 1.2rem;
+  padding: 0.6rem 2.1rem;
   transition: background 0.2s ease;
   width: 100%;
   text-align: left;
+  margin-bottom: 0.6rem;
 }
 .EliminarCuenta-item:hover input ~ .EliminarCuenta-itemLabel {
   background-color: transparent;
@@ -121,8 +126,7 @@ text-align: center;
 .modal-body.EliminarCuenta-body{
   height: 100%;
   max-height: 100%;
-  padding-left:  2.8rem;
-  padding-right: 2.8rem;
+  padding: 0 1.3rem;
 }
 .modal-header.EliminarCuenta-head{
 border-bottom: none;
@@ -130,4 +134,9 @@ padding-bottom: 0;
 }
 .modal-content.EliminarCuenta-modal{
   border-radius: 1.7rem;
+  margin: 1rem;
+}
+.modal-footer.EliminarCuenta-footer{
+padding-bottom: 2.5rem;
+margin: 0 auto;
 }
