@@ -16,95 +16,73 @@ include 'inc/match-service/index.php';
  
 get_header();
 ?>
-  <section class="section2 JodRequests">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"="#">Mi cuenta</a></li>
-                            <li class="breadcrumb-item"><a href="#"="#"></a></li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="col-12">
-                    <h2 class="title">
+
+<section class="section2 servicio-generica">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><?php breadcrumb_my_account(); ?></li>
+                        <li class="breadcrumb-item"><a href="#"></a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-12">
+                <h2 class="title">
                     Solicitudes
-                    </h2>
-                </div>
+                </h2>
             </div>
         </div>
-    </section>
-    <section class="JodRequests">
-        <div class="JodRequests-container">
-            <nav class="JodRequests-header">
-                <ul class="JodRequests-options">
-                    <li class="JodRequests-item">
-                        <button class="JodRequests-btn">
-                            <span class="JodRequests-textBtn">
-                                Nuevas
-                            </span>
-                        </button>
-                    </li>
-                    <li class="JodRequests-item">
-                        <button class="JodRequests-btn">
-                            <span class="JodRequests-textBtn">
-                                Pasadas
-                            </span>
-                        </button>
-                    </li>
-                    <li class="JodRequests-item">
-                        <button class="JodRequests-btn">
-                            <span class="JodRequests-textBtn">
-                                Canceladas
-                            </span>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-            <div class="JodRequests-card">
-                <div class="JodRequests-cardHeader">
-                    <div class=JodRequests-cardProfile>
-                    <img class="JodRequests-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile.png" alt="valeapp">
-                    </div>
-                    <div class="JodRequests-info">
-                        <p class="JodRequests-service">
+    </div>
+</section>
+<div class="JodRequests">
+    <ul class="nav nav-pills JodRequests-pills mb-3" id="pills-tab-JodRequests" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="JodRequests-pill active" id="pills-JodRequests-tab-active" data-bs-toggle="pill" data-bs-target="#pills-JodRequests-active" type="button" role="tab" aria-controls="pills-JodRequests-active" aria-selected="true">Activas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="JodRequests-pill" id="pills-JodRequests-tab-passed" data-bs-toggle="pill" data-bs-target="#pills-JodRequests-passed" type="button" role="tab" aria-controls="pills-JodRequests-passed" aria-selected="false">Pasadas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="JodRequests-pill" id="pills-JodRequests-tab-canceled" data-bs-toggle="pill" data-bs-target="#pills-JodRequests-canceled" type="button" role="tab" aria-controls="pills-JodRequests-canceled" aria-selected="false">Canceladas</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tab-JodRequests">
+        <div class="JodRequests-pill-content tab-pane fade show active" id="pills-JodRequests-active" role="tabpanel" aria-labelledby="pills-JodRequests-tab-active">
+            <div class="JodRequests-item">
+                <div class="JodRequests-item-header">
+                    <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="ValeApp">
+                    <p class="JodRequests-item-header-text">
                         Clases de tenis
-                        </p>
-                        <p class="JodRequests-name">
-                            Claudia
-                        </p>
-                    </div>
+                        <span>María</span>
+                    </p>
                 </div>
-                <div class="JodRequests-cardBody">
-                    <ul class=JodRequests-cardList>
-                        <li class="JodRequests-cardItem">
-                            <img class="JodRequests-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-JodRequests-icon1.png" alt="valeapp">
-                            <span>
-                            C/ Teodora Lamadrid, Local 
-                            </span>
-                        </li>
-                        <li class="JodRequests-cardItem">
-                            <img class="JodRequests-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-JodRequests-icon2.png" alt="valeapp">
-                            <span>
-                            Mie, 29 marzo a las 19:30h
-                            </span>
-                        </li>
-                        <li class="JodRequests-cardItem">
-                            <img class="JodRequests-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-JodRequests-icon3.png" alt="valeapp">
-                            <span>
-                            1h 
-                            </span>
-                        </li>
-                        <li class="JodRequests-balance">
-                            20<span class="JodRequests-sing">€/h</span>
-                        </li>
-                    </ul>
-                    <div class="JodRequests-cardFooter">
-                        <p class="JodRequests-titleBtn">
-                        Pendiente
-                        </p>
-                        <div class="JodRequests-btnContent">
+                <div class="JodRequests-item-body">
+                    <div class="JodRequests-item-body-item">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/ubication-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            C/ Teodora Lamadrid, Local
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-item">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/calendar-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            Mie, 29 marzo a las 19:30
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-item p-0">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/clock-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            1h
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-itemPrice">
+                        20
+                        <span>€/h</span>
+                    </div>
+                    <div class="JodRequests-item-body-itemState">Pendiente</div>
+                    <div class="JodRequests-btnContent">
                             <button class="JodRequests-deny">
                                 <span>
                                     Denegar
@@ -116,24 +94,119 @@ get_header();
                                 </span>
                             </button>
                         </div>
-                        <div class="JodRequests-about">
-                            <a class="JodRequests-details">
-                            <span>
-                            Ver detalles
-                            </span>
-                            <img class="JodRequests-iconArrow img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png" alt="valeapp">
-                            </a>
-                            <a class="JodRequests-help">
-                                <span>
-                                    ¿Necesitas ayuda?
-                                </span>
-                            <img class="JodRequests-iconArrow img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png" alt="valeapp">
-                            </a>
-                        </div>
-                    </div>
+                </div>
+                <div class="JodRequests-item-footer">
+                    <button type="button" class="JodRequests-item-footerBtn">
+                        Editar reserva <img class="img-fluid"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
+							alt="ValeApp">
+                    </button>
+                    <button type="button" class="JodRequests-item-footerBtn">
+                    ¿Necesitas ayuda? <img class="img-fluid"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
+							alt="ValeApp">
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
-<?php
-get_footer();
+        <div class="JodRequests-pill-content tab-pane fade" id="pills-JodRequests-passed" role="tabpanel" aria-labelledby="pills-JodRequests-tab-passed">
+            <div class="JodRequests-item">
+                <div class="JodRequests-item-header">
+                    <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="ValeApp">
+                    <p class="JodRequests-item-header-text">
+                        Clases de tenis
+                        <span>María</span>
+                    </p>
+                    <button type="button" class="JodRequests-item-headerBtn">
+                        <img class="cards-header-deleteIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/delete-icon.svg" alt="ValeApp-TrashIcon">
+                    </button>
+                </div>
+                <div class="JodRequests-item-body">
+                    <div class="JodRequests-item-body-item">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/ubication-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            C/ Teodora Lamadrid, Local
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-item">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/calendar-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            Mie, 29 marzo a las 19:30h
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-item p-0">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/clock-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            1h
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-itemPrice">
+                        20
+                        <span>€/h</span>
+                    </div>
+                    <div class="JodRequests-item-body-itemState">Completadas</div>
+                </div>
+                <div class="JodRequests-item-footer">
+                    <button type="button" class="JodRequests-item-footerBtn">
+                        Valorar <img class="img-fluid"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
+							alt="ValeApp">
+                    </button>
+                    <button type="button" class="JodRequests-item-footerBtn JodRequests-item-footerBtn-border">
+                        Volver a reservar <img class="img-fluid"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
+							alt="ValeApp">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="JodRequests-pill-content tab-pane fade" id="pills-JodRequests-canceled" role="tabpanel" aria-labelledby="pills-JodRequests-tab-canceled">
+            <div class="JodRequests-item">
+                <div class="JodRequests-item-header">
+                    <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-ervice-user.png" alt="ValeApp">
+                    <p class="JodRequests-item-header-text">
+                        Clases de tenis
+                        <span>María</span>
+                    </p>
+                    <button type="button" class="JodRequests-item-headerBtn">
+                        <img class="cards-header-deleteIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/delete-icon.svg" alt="ValeApp-TrashIcon">
+                    </button>
+                </div>
+                <div class="JodRequests-item-body">
+                    <div class="JodRequests-item-body-item">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/ubication-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            C/ Teodora Lamadrid, Local
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-item">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/calendar-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            Mie, 29 marzo a las 19:30
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-item p-0">
+                        <img class="JodRequests-item-body-itemIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-confirmar-y-pagar/clock-icon.svg" alt="JodRequests-item-body-itemIcon">
+                        <span class="JodRequests-item-body-itemName">
+                            1h
+                        </span>
+                    </div>
+                    <div class="JodRequests-item-body-itemPrice">
+                        20
+                        <span>€/h</span>
+                    </div>
+                    <div class="JodRequests-item-body-itemState-cancel">Cancelada</div>
+                </div>
+                <div class="JodRequests-item-footer">
+                    <button type="button" class="JodRequests-item-footerBtn">
+                        Reservar <img class="img-fluid"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
+							alt="ValeApp">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <?php

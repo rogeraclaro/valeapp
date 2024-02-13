@@ -20,7 +20,7 @@ get_header();
             <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Mi cuenta</a></li>
+                        <li class="breadcrumb-item"><?php breadcrumb_my_account(); ?></li>
                         <li class="breadcrumb-item"><a href="#"></a></li>
                     </ol>
                 </nav>
@@ -83,6 +83,11 @@ get_header();
                 <div class="contracted-tasks-item-footer">
                     <button type="button" class="contracted-tasks-item-footerBtn">
                         Editar reserva <img class="img-fluid"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
+							alt="ValeApp">
+                    </button>
+                    <button type="button" class="contracted-tasks-item-footerBtn">
+                    ¿Necesitas ayuda?  <img class="img-fluid"
 							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
 							alt="ValeApp">
                     </button>
