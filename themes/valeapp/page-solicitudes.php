@@ -37,9 +37,9 @@ get_header();
     </div>
 </section>
 <div class="JodRequests">
-    <ul class="nav nav-pills JodRequests-pills mb-3" id="pills-tab-JodRequests" role="tablist">
+    <ul class="nav nav-pills JodRequests-pills " id="pills-tab-JodRequests" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="JodRequests-pill active" id="pills-JodRequests-tab-active" data-bs-toggle="pill" data-bs-target="#pills-JodRequests-active" type="button" role="tab" aria-controls="pills-JodRequests-active" aria-selected="true">Activas</button>
+            <button class="JodRequests-pill active" id="pills-JodRequests-tab-active" data-bs-toggle="pill" data-bs-target="#pills-JodRequests-active" type="button" role="tab" aria-controls="pills-JodRequests-active" aria-selected="true">Nuevas</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="JodRequests-pill" id="pills-JodRequests-tab-passed" data-bs-toggle="pill" data-bs-target="#pills-JodRequests-passed" type="button" role="tab" aria-controls="pills-JodRequests-passed" aria-selected="false">Pasadas</button>
@@ -97,15 +97,15 @@ get_header();
                 </div>
                 <div class="JodRequests-item-footer">
                     <button type="button" class="JodRequests-item-footerBtn">
-                        Editar reserva <img class="img-fluid"
+                        Ver detalles <img class="img-fluid"
 							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
 							alt="ValeApp">
                     </button>
-                    <button type="button" class="JodRequests-item-footerBtn">
+                    <a type="button" href="https://valeapp.com/ayuda/" class="JodRequests-item-footerBtn">
                     ¿Necesitas ayuda? <img class="img-fluid"
 							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
 							alt="ValeApp">
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -209,5 +209,5 @@ get_header();
     </div>
 </div>
 
-<?php
+    <?php
 get_footer();
