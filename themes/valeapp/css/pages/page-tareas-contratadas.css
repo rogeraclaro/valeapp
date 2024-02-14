@@ -124,6 +124,7 @@
     padding: .7rem 1rem;
     text-align: center;
     width: 100%;
+    text-decoration: none;
 }
 .contracted-tasks-item-footerBtn .img-fluid{    
     bottom: 0;

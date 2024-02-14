@@ -94,7 +94,7 @@ get_header();
             Motivos seleccionados: <span id="selectedCount">0</span>
           </p>
         </div>
-    <div class="modal-footer miSaldoProveedor-footer">
+    <div class="modal-footer EliminarCuenta-footer">
     <button id="ConfirmDelete" class="miSaldoProveedor-addBtn" data-bs-dismiss="modal" aria-label="Close">Confirmar</button>
     </div>
           </div>

@@ -86,11 +86,11 @@ get_header();
 							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
 							alt="ValeApp">
                     </button>
-                    <button type="button" class="contracted-tasks-item-footerBtn">
+                    <a href="https://valeapp.com/ayuda/" type="button" class="contracted-tasks-item-footerBtn">
                     ¿Necesitas ayuda?  <img class="img-fluid"
 							src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-chevron-faq.png"
 							alt="ValeApp">
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
