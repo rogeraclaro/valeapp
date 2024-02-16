@@ -12,7 +12,7 @@
  *
  * @package ValeApp
  */
-include 'inc/match-service/index.php'; 
+include 'inc/match-service/index.php';
  
 get_header();
 ?>
@@ -112,7 +112,7 @@ get_header();
             <div class="RequestsDetail-sectionHeader">
                 <span class="RequestsDetail-sectionHeader-title">Detalles del precio</span>
             </div>
-            <div class="RequestsDetail-sectionBody">
+            <div class="RequestsDetail-sectionBody details">
                 <div class="RequestsDetail-sectionBody-item RequestsDetail-sectionBody-item-list">
                     <span class="RequestsDetail-sectionBody-itemName">
                         Clases de tenis
@@ -135,7 +135,7 @@ get_header();
                         1h
                     </span>
                 </div>
-                <hr />
+                <hr/>
                 <div class="RequestsDetail-sectionBody-item RequestsDetail-sectionBody-item-list RequestsDetail-sectionBody-item-total">
                     <span class="RequestsDetail-sectionBody-itemName">
                         Total
@@ -216,7 +216,10 @@ get_header();
 							<span>Español/Inglés</span>
 						</p>
 					</div>
-					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-card-image-v3.png" alt="ValeApp">
+                    <div class="profile">
+                        <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-card-image-v3.png" alt="ValeApp">
+                        <img class="profile-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-profile-check.png" alt="ValeApp-Check">
+                     </div>
 				</div>
 				<button class="RequestsDetail-showMore">
 					<img class="img-fluid message" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-providers-message-icon.png" alt="ValeApp">
@@ -234,7 +237,7 @@ get_header();
 					</thead>
 					<tbody>
 					  <tr>
-						<td>No show</td>
+						<td >No show</td>
 						<td>100% del importe</td>
 					  </tr>
 					  <tr>
