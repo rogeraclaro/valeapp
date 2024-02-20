@@ -32,10 +32,10 @@ if($subcategory_provider) {
             $filter_result = $group_category_publisher['gim'];
             $filter_boolean = true;
         break;
-        case "Ski o tabla":
-            $filter = $group_category['ski_o_tabla'];
-            $filter_search = 'ski_o_tabla';
-            $filter_result = $group_category_publisher['ski_o_tabla'];
+        case "Artes marciales":
+            $filter = $group_category['artes_marciales'];
+            $filter_search = 'artes_marciales';
+            $filter_result = $group_category_publisher['artes_marciales'];
             $filter_boolean = true;
         break;
         case "De palo":
