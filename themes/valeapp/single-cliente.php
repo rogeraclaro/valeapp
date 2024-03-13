@@ -23,6 +23,7 @@ $country = get_field('field_64dcf7c5e9eb9', $post_id);
 $phone = get_field('field_64dcf760e9eb5', $post_id);
 $description = get_field('field_64dcf832e9ebd', $post_id);
 $rate = '';
+$balance = get_field('field_65f1677e65100', $post_id);
 
 ?>
 <section class="professionalDashboard">
@@ -34,7 +35,7 @@ $rate = '';
                 <span class="rating"><?php echo($rate); ?></span>
                 <span class="opinions">(30 opiniones)</span>
             </div>
-            <p class="price">20,00€</p>
+            <p class="price"><?php echo $balance; ?></p>
             <a class="tokens-btn" href="/agregar-tokens">Añadir Tokens</a>
        </div>
        <div class="professionalDashboard-options">

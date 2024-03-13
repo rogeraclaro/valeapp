@@ -81,10 +81,10 @@ get_header();
                 </li>
             </ul>
             <div class="Ayuda-footer">
-                <a class="Ayuda-help" href="/necesitas-ayuda">
+                <a class="Ayuda-help" href="/contacto">
                     ¿Necesitas ayuda?
                 </a>
-                <a class="Ayuda-delete">
+                <a class="Ayuda-delete" href="eliminar-cuenta">
                     Eliminar cuenta
                 </a>
         </div>

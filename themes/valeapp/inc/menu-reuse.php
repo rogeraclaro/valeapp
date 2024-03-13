@@ -36,31 +36,31 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Fontanería</a>
+                                            <a class="event" href="/categoria/fontaneria">Fontanería</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Limpieza</a>
+                                            <a class="event" href="/categoria/limpieza">Limpieza</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Pintura</a>
+                                            <a class="event" href="/categoria/pintura">Pintura</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Mudanza</a>
+                                            <a class="event" href="/categoria/mudanza">Mudanza</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Obras</a>
+                                            <a class="event" href="/categoria/obras">Obras</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Electricidad</a>
+                                            <a class="event" href="/categoria/electricidad">Electricidad</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Montaje muebles</a>
+                                            <a class="event" href="/categoria/montaje-muebles">Montaje muebles</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Mecánico</a>
+                                            <a class="event" href="/categoria/mecanico">Mecánico</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Soluciones ECO</a>
+                                            <a class="event" href="/categoria/soluciones-eco">Soluciones ECO</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -81,31 +81,34 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Idiomas</a>
+                                            <a class="event" href="/categoria/idiomas">Idiomas</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Instrumentos</a>
+                                            <a class="event" href="/categoria/instrumentos">Instrumentos</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Clases de repaso</a>
+                                            <a class="event" href="/categoria/clases-de-repaso">Clases de repaso</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Baile</a>
+                                            <a class="event" href="/categoria/baile">Baile</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Inversiones</a>
+                                            <a class="event" href="/categoria/inversiones">Inversiones</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Pintura</a>
+                                            <a class="event" href="/categoria/pintura">Pintura</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Fotografía</a>
+                                            <a class="event" href="/categoria/fotografia">Fotografía</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Gaming</a>
+                                            <a class="event" href="/categoria/gaming">Gaming</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Cocina</a>
+                                            <a class="event" href="/categoria/poker">Póker</a>
+                                        </li>
+                                        <li class="item">
+                                            <a class="event" href="/categoria/cocina">Cocina</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -126,28 +129,28 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Gim</a>
+                                            <a class="event" href="/categoria/gim">Gim</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Ski o tabla</a>
+                                            <a class="event" href="/categoria/artes-marciales">Artes marciales</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">De palo</a>
+                                            <a class="event" href="/categoria/de-palo">De palo</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Con balón</a>
+                                            <a class="event" href="/categoria/con-balón">Con balón</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Con raqueta</a>
+                                            <a class="event" href="/categoria/con-raqueta">Con raqueta</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Al agua</a>
+                                            <a class="event" href="/categoria/al-agua">Al agua</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Al aire</a>
+                                            <a class="event" href="/categoria/al-aire">Al aire</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Sobre ruedas</a>
+                                            <a class="event" href="/categoria/sobre-ruedas">Sobre ruedas</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -168,25 +171,25 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Coach</a>
+                                            <a class="event" href="/categoria/coach">Coach</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Psicología</a>
+                                            <a class="event" href="/categoria/psicologia">Psicología</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Tarot</a>
+                                            <a class="event" href="/categoria/tarot">Tarot</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Terapias de pareja</a>
+                                            <a class="event" href="/categoria/terapias-de-pareja">Terapias de pareja</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Meditación</a>
+                                            <a class="event" href="/categoria/meditacion">Meditación</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Yoga</a>
+                                            <a class="event" href="/categoria/yoga">Yoga</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Terapias alternativas</a>
+                                            <a class="event" href="/categoria/terapias-alternativas">Terapias alternativas</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -207,25 +210,25 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Mascotas</a>
+                                            <a class="event" href="/categoria/mascotas">Mascotas</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Niños</a>
+                                            <a class="event" href="/categoria/ninos">Niños</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Personas mayores</a>
+                                            <a class="event" href="/categoria/personas-mayores">Personas mayores</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Au pair</a>
+                                            <a class="event" href="/categoria/au-pair">Au pair</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Seguridad</a>
+                                            <a class="event" href="/categoria/seguridad">Seguridad</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Masajes</a>
+                                            <a class="event" href="/categoria/masajes">Masajes</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Dietas</a>
+                                            <a class="event" href="/categoria/dietas">Dietas</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -246,22 +249,22 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Peluquería</a>
+                                            <a class="event" href="/categoria/peluqueria">Peluquería</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Tratamientos</a>
+                                            <a class="event" href="/categoria/tratamientos">Tratamientos</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Uñas</a>
+                                            <a class="event" href="/categoria/unas">Uñas</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Maquillaje</a>
+                                            <a class="event" href="/categoria/maquillaje">Maquillaje</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Depilación</a>
+                                            <a class="event" href="/categoria/depilacion">Depilación</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Dental</a>
+                                            <a class="event" href="/categoria/dental">Dental</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -282,37 +285,37 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Publicidad</a>
+                                            <a class="event" href="/categoria/publicidad">Publicidad</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Desarrollo y app</a>
+                                            <a class="event" href="/categoria/desarrollo-y-app">Desarrollo y app</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Análisis de datos</a>
+                                            <a class="event" href="/categoria/analisis-de-datos">Análisis de datos</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Legal</a>
+                                            <a class="event" href="/categoria/legal">Legal</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Traducciones</a>
+                                            <a class="event" href="/categoria/traducciones">Traducciones</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Redes sociales</a>
+                                            <a class="event" href="/categoria/redes-sociales">Redes sociales</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Foto/Video</a>
+                                            <a class="event" href="/categoria/foto-video">Foto/Video</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Hostelería</a>
+                                            <a class="event" href="/categoria/hosteleria">Hostelería</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Guía Turístico</a>
+                                            <a class="event" href="/categoria/guia-turistico">Guía Turístico</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Agente de Viajes</a>
+                                            <a class="event" href="/categoria/agente-viajes">Agente de Viajes</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Influencers</a>
+                                            <a class="event" href="/categoria/influencers">Influencers</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -333,22 +336,22 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Espacio</a>
+                                            <a class="event" href="/categoria/espacio">Espacio</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Estudio</a>
+                                            <a class="event" href="/categoria/estudio">Estudio</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Consulta</a>
+                                            <a class="event" href="/categoria/consulta">Consulta</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Equipo</a>
+                                            <a class="event" href="/categoria/equipos">Equipo</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Material</a>
+                                            <a class="event" href="/categoria/material">Material</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Pista</a>
+                                            <a class="event" href="/categoria/pista">Pista</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -369,22 +372,22 @@ function menu_reuse(){
                                 <div class="accordion-body">
                                     <ul class="list">
                                         <li class="item">
-                                            <a class="event" href="#">Empresas</a>
+                                            <a class="event" href="/categoria/empresas">Empresas</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Bodas</a>
+                                            <a class="event" href="/categoria/bodas">Bodas</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Despedidas / cumpleaños</a>
+                                            <a class="event" href="/categoria/despedidas-o-cumpleaños">Despedidas / cumpleaños</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">DJ / Musica en vivo</a>
+                                            <a class="event" href="/categoria/dj-o-musica-en-vivo">DJ / Musica en vivo</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Promocionales</a>
+                                            <a class="event" href="/categoria/promocionales">Promocionales</a>
                                         </li>
                                         <li class="item">
-                                            <a class="event" href="#">Sin ánimo de lucro</a>
+                                            <a class="event" href="/categoria/sin-animo-de-lucro">Sin ánimo de lucro</a>
                                         </li>
                                     </ul>
                                 </div>

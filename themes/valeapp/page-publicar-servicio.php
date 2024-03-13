@@ -32,7 +32,7 @@ if (current_user_can('administrator') || current_user_can('proveedorvaleapp')) {
                         'post_id'       => 'new_post',
                         'field_groups'  => ['group_64e3cd0b38f67'],
                         'new_post'      => [
-                            'post_type'     => 'publicar-servicio',
+                            'post_type'     => 'publicar-servicio', //Cambiar por "products"
                             'post_status'   => 'publish'
                         ],
                         'uploader' => 'wp',

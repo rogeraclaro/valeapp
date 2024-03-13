@@ -80,10 +80,11 @@ include_once plugin_dir_path(__FILE__) . 'inc/button-menu.php';
 		</div>
 		<div class="offcanvas-body">
 		<div class="NavMenu-section">
-				<a class="NavMenu-link" href="/">
-					Home
-				</a>
-			</div>
+			<a class="NavMenu-link" href="/">
+				Home
+			</a>
+		</div>
+		<?php button_for_user(); ?>
 			<div class="NavMenu-section">
 				<button class="NavMenu-collapse collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" aria-expanded="false" aria-controls="servicesCollapse">
 					Servicios

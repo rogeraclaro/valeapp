@@ -23,6 +23,7 @@ $country = get_field('field_64dcf2fc615d6', $post_id);
 $membership = get_field('field_64e9299d5c1e9', $post_id);
 $membership_type = get_field('field_64de4979b1040', $post_id);
 $rate = get_field('field_64dcf621615e0', $post_id);
+$balance = get_field('field_65f167b6d716e', $post_id);
 
 ?>
 <section class="professionalDashboard">
@@ -34,7 +35,7 @@ $rate = get_field('field_64dcf621615e0', $post_id);
                 <span class="rating"><?php echo($rate); ?></span>
                 <span class="opinions">(30 opiniones)</span>
             </div>
-            <p class="price">20,00€</p>
+            <p class="price"><?php echo $balance; ?></p>
             <button class="tokens-btn">Retirar Tokens</button>
        </div>
        <div class="professionalDashboard-options">

@@ -254,6 +254,7 @@ require_once plugin_dir_path(__FILE__) . 'inc/functions-reuse/subcategory-search
 require_once plugin_dir_path(__FILE__) . 'inc/redirections-breadcrumbs/my-account.php';
 require_once plugin_dir_path(__FILE__) . 'inc/match-service/search_author.php';
 require_once plugin_dir_path(__FILE__) . 'inc/send-message-match/send_email.php';
+require_once plugin_dir_path(__FILE__) . 'inc/search-task/search.php';
 
 // function obtener_valor_de_correo() {
 //     if (is_user_logged_in()) {

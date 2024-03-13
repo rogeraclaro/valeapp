@@ -70,7 +70,6 @@ if ($author_id) {
         // Prueba
         ?>
         <div class="cards myOffers pt-0">
-            <!-- Datos del cliente -->
             <div class="cards-header">
                 <div class="cards-header-text">
                     <p class="cards-header-title">

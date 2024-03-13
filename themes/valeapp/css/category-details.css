@@ -49,6 +49,11 @@
     width: 100%;
     height: 15.1rem;
     object-fit: contain;
+    position: relative;
+}
+
+.CategoryDetail-image .img-fluid{
+    width: 100%;
 }
 
 .CategoryDetail-offer {
@@ -150,6 +155,28 @@
     font-size: 1.4rem;
     font-family: 'Century Gothic';
 }
+
+.CategoryDetail-textImg {
+    background-color: #5aab9f;
+    padding: 0.3rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Open Sans";
+    line-height: 1.6rem;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    width: 9rem;
+    text-align: center;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.CategoryDetail-imgContent{
+    position: relative;
+  }
 
 .section7.servicio-generica.CategoryDetail-categories {
     margin-top: 1rem;

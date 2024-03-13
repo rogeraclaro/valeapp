@@ -13,6 +13,7 @@
  * @package ValeApp
  */
 include 'inc/blog-categories-home.php';
+include 'inc/home-content/home-data.php';
 
 get_header();
 ?>
@@ -20,100 +21,82 @@ get_header();
 <div class="Home">
   <div class="Homecategories">
     <h1 class="title">
-      La tarea que necesites, <br class="xs-br" /> de la manera mas fácil.
+      <?php echo $title_hero; ?>
     </h1>
     <div class="Homecategories-content">
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category1-white.png" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Hogar</p>
+        <p class="category-name"><?php echo $cat1; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category2-white.png" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Aprende</p>
+        <p class="category-name"><?php echo $cat2; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category3-white.png" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Deporte</p>
+        <p class="category-name"><?php echo $cat3; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category4-white.png" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Mente</p>
+        <p class="category-name"><?php echo $cat4; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category5-white.png" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Cuidados</p>
+        <p class="category-name"><?php echo $cat5; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category6-white.png" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Belleza</p>
+        <p class="category-name"><?php echo $cat6; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category7-white.png" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Contrata</p>
+        <p class="category-name"><?php echo $cat7; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon icon8" />
-        <p class="category-name">Comparte</p>
+        <p class="category-name"><?php echo $cat8; ?></p>
       </div>
       <div class="category">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category9.svg" alt="valeapp" class="img-fluid category-icon" />
-        <p class="category-name">Eventos</p>
+        <p class="category-name"><?php echo $cat9; ?></p>
       </div>
     </div>
     <div class="home-menu-card w-100">
-      <form autocomplete="off">
-        <div class="home-menu-cardContent">
-          <div class="card-searcher">
-            <img class="card-searcher-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-searcher-img.png" alt="lupa" />
-            <div class="card-searcher-text">
-              <input type="text" placeholder="Servicio" name="s" />
-            </div>
-          </div>
-          <div class="card-searcher">
-            <img class="card-searcher-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/card-ubication.png" alt="lupa" />
-            <div class="card-searcher-text">
-              Busca en tu zona
-            </div>
-          </div>
-        </div>
-        <button class="home-menu-cardBtn" id="search_button" type="submit">
-          Buscar
-        </button>
-      </form>
+      <?php search_task(); ?>
     </div>
   </div>
   <div class="HomeOffer">
     <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-HomeOffer.png" alt="valeapp" />
-    <h2 class="title">¿Quieres ofrecer tus servicios en Vale?</h2>
+    <h2 class="title"> <?php echo($titleS1); ?></h2>
     <p class="text">
-      Ofrece tus servicios a una amplia gama de clientes potenciales que buscan ayuda con tareas cotidianas y proyectos especializados. ¡Expande tu negocio hoy mismo!
+      <?php echo($descriptionS1); ?>
     </p>
-    <a class="HomeOffer-btn" href="/servicios-generica">Ofrecer servicios</a>
+    <a class="HomeOffer-btn" href="/servicios-generica"><?php echo($buttonS1); ?></a>
   </div>
   <div class="HomeDoesWork">
-    <h2 class="title">¿Como funciona?</h2>
+    <h2 class="title"><?php echo($titleS2); ?></h2>
     <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image1.png" alt="valeapp" />
-    <h3 class="subtitle">Amplia variedad de servicios a tu alcance</h3>
+    <h3 class="subtitle"><?php echo($subtitle1S2); ?></h3>
     <p class="text">
-      Busca el servicio que necesitas (limpieza, reparación, clases, deporte, belleza, etc.) y bríndanos algunos detalles básicos sobre tu tarea. ¡No importa qué necesites, encontraremos un profesional adecuado para ti!
+      <?php echo($description1S2); ?>
     </p>
     <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image2.png" alt="valeapp" />
-    <h3 class="subtitle">Elige a tu profesional</h3>
+    <h3 class="subtitle"><?php echo($subtitle2S2); ?></h3>
     <p class="text">
-      Encuentra a profesionales de confianza cerca de ti, te mostramos sus perfiles, calificaciones y precios para que ¡escojas el que más te guste!
+      <?php echo($description2S2); ?>
     </p>
     <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image3.png" alt="valeapp" />
-    <h3 class="subtitle">¡Dicho y hecho!</h3>
+    <h3 class="subtitle"><?php echo($subtitle3S2); ?></h3>
     <p class="text">
-      Programa el servicio en línea y realiza el pago de manera segura y fácil. ¡Así de simple, en 2 clicks!
+      <?php echo($description3S2); ?>
     </p>
   </div>
   <div class="FindService">
-    <h2 class="title">¡Simplificamos tu día a día!</h2>
+    <h2 class="title"><?php echo($titleS3); ?></h2>
     <p class="text">
-      Conectamos contigo a profesionales verificados que brindan servicios en diversas áreas. Nuestra plataforma engloba todas las necesidades que puedas tener en cualquier momento, de manera fácil, segura y sencilla.
+      <?php echo($description3); ?>
     </p>
-    <a class="button" href="/servicios-generica">Encuentra tu servicio</a>
+    <a class="button" href="/servicios-generica"><?php echo($buttonS3); ?></a>
   </div>
   <div class="Popular">
     <h2 class="title">Servcios mas populares</h2>
@@ -157,26 +140,26 @@ get_header();
     </div>
   </div>
   <div class="WhyVale">
-    <h2 class="title">¿Por que Vale ?</h2>
+    <h2 class="title"><?php echo($titleS4); ?></h2>
     <div class="item">
-      <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why1.png" alt="valeapp">
-      <h3 class="title2">Compromiso</h3>
+      <img class="img-fluid" src=<?php echo($icon1S4['url']); ?> alt="valeapp">
+      <h3 class="title2"><?php echo $subtitle1S4; ?></h3>
       <p class="text">
-        Garantizamos que los profesionales cumplan con nuestras condiciones y proporcionen un servicio de calidad en el plazo acordado.
+        <?php echo $description1S4; ?>
       </p>
     </div>
     <div class="item">
-      <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why2.png" alt="valeapp">
-      <h3 class="title2">Tranquilidad</h3>
+      <img class="img-fluid" src=<?php echo $icon2S4['url']; ?> alt="valeapp">
+      <h3 class="title2"><?php echo $subtitle2S4; ?></h3>
       <p class="text">
-        Tu pago estará seguro y protegido hasta que se complete el trabajo satisfactoriamente con el profesional.
+        <?php echo $description2S4; ?>
       </p>
     </div>
     <div class="item">
-      <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-why3.png" alt="valeapp">
-      <h3 class="title2">Atención personalizada</h3>
+      <img class="img-fluid" src=<?php echo $icon3S4['url']; ?> alt="valeapp">
+      <h3 class="title2"><?php echo $subtitle3S4; ?></h3>
       <p class="text">
-        Soporte 365 días para resolver cualquier duda o problema que puedas tener.
+        <?php echo $description3S4; ?>
       </p>
     </div>
   </div>
@@ -361,6 +344,5 @@ get_header();
     </div>
   </div>
 </div>
-
 <?php
 get_footer();

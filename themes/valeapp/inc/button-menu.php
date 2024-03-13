@@ -88,4 +88,33 @@ function change_button_menu_header() {
     endif;
     }
 }
+
+
+function button_for_user() {
+        if ( current_user_can( 'proveedorvaleapp' ) ) {
+            ?>
+            <div class="NavMenu-section">
+                <a class="NavMenu-link" href="/publicar-servicio">
+            <?php
+                echo 'Publicar servicio';
+            ?>
+                    </a>
+	        </div>
+            <?php
+        } elseif ( current_user_can( 'clientevaleapp' ) ) {
+            ?>
+            <div class="NavMenu-section">
+                <a class="NavMenu-link" href="/solicitar-servicio">
+            <?php
+                echo 'Solicitar servicio';
+            ?>
+                    </a>
+	        </div>
+            <?php
+        
+      }
+            ?>
+		
+    <?php
+}
 ?>

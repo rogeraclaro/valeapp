@@ -38,6 +38,12 @@ get_header();
     </section>
     <section class="CategoryDetail-content">
         <div class="CategoryDetail-images">
+            <div class="CategoryDetail-image">
+                <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-popular1.png" alt="valeapp">
+                <span class="CategoryDetail-textImg">
+                    Limpieza
+                </span>
+            </div>
             <img class="CategoryDetail-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/category-detail1.png" alt="valeapp">
             <img class="CategoryDetail-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/category-detail2.png" alt="valeapp">
             <img class="CategoryDetail-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/category-detail3.png" alt="valeapp">

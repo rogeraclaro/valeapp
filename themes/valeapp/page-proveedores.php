@@ -15,7 +15,7 @@
 get_header();
 
 $users = get_users([
-    'role' => 'contributor',
+    'role' => 'proveedorvaleapp',
 ]);
 
 if ($users) {

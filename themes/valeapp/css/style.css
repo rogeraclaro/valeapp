@@ -2472,6 +2472,7 @@ header .overlay {
 }
 
 .section3 .card .img-fluid {
+  border-radius: 50%;
   height: 108px;
   margin-bottom: 0.4rem;
   width: 108px;
@@ -4941,7 +4942,8 @@ a.tokens-btn:focus{
   color: #fff;
   text-align: center;
   font-size: 1.65rem;
-  margin-bottom: 1.8rem;
+  width: 75%;
+  margin: 0 auto 1.8rem;
 }
 
 .Homecategories-content{
