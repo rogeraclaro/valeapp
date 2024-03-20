@@ -18,3 +18,10 @@ themes/twentytwentytwo
 themes/index.php
 classic-editor
 duplicate-post
+.DS_Store
+/themes/.DS_Store
+/plugins/all-in-one-wp-migration/.DS_Store
+/plugins/all-in-one-wp-migration-unlimited-extension/.DS_Store
+/plugins/.DS_Store
+/.gitignore
+/.DS_Store
