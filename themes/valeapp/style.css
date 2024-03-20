@@ -383,6 +383,105 @@ footer .xxss a:hover {
 	color: #ccc;
 }
 
+footer .accordion-links{
+	font-size: 1rem;
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+	text-align: left;
+}
+footer .accordion-links li{
+	margin-bottom: 0.5rem;
+}
+footer .accordion-links a{
+	color: #575550;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	footer {
+		background-color: #E4FCEF;
+		padding-top: 3rem;
+		padding-bottom: 0 !important;
+	}
+	footer .accordion {
+		display: grid;
+		grid-template-columns: 22vw 20vw 1fr 1fr;
+		grid-template-rows: auto;
+		column-gap: 0.5rem;
+		margin-bottom: 0 !important;
+	}
+	footer .accordion-item{
+		padding-top: 0;
+	}
+	footer .accordion-item:last-child{
+		border: none !important;
+	}
+	footer .accordion-item,
+	footer .accordion-button.event{
+		background: transparent;
+	}
+	footer .accordion-collapse.collapse {
+		display: block !important;
+	}
+	footer .accordion-button.event{
+		color: #58dfa2;
+		font-size: clamp(0.7rem, 1.1vw, 1rem);
+		padding: 2rem 0 0;
+	}
+	footer .accordion-body{
+		padding-top: 0;
+	}
+	footer .accordion-links{
+		font-size:clamp(0.5rem , 0.9vw, 0.8rem);
+	}
+	footer .accordion-button.event .img-fluid{
+		display: none;
+	}
+	footer .footer-logo-img{
+		height: 9vw;
+		margin: 0 auto 2rem 0;
+		display: block;
+	}
+	footer .footer-logo-img,
+	footer .accordion-button.event{
+		height: 9vw;
+		margin-bottom: clamp(0.1rem,1.1vw,1rem);
+	}
+	footer .footer-logo-text{
+		color: #575550;
+		font-size: clamp(0.5rem , 0.9vw, 0.8rem);
+		text-align: left;
+	}
+	footer .footlast{
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 0 !important;
+
+		padding-right: var(--bs-gutter-x, 0.75rem);
+		padding-left: var(--bs-gutter-x, 0.75rem);
+		padding-bottom: 1rem;
+	}
+	footer .footlast img{
+		display: none;
+	}
+	footer .footlast .copyright{
+		color: #575550;
+		font-size: clamp(0.3rem , 0.8vw, 0.7rem);
+		margin: 0 auto 0 0;
+	}
+	footer .footlast .xxss{
+		column-gap: clamp(0.5rem, 1.7vw, 2rem);
+		margin: 0 0 0 auto;
+	}
+}
+@media (min-width: 992px) {
+	footer .accordion {
+		grid-template-columns: 20vw 20vw 1fr 1fr;
+	}
+}
+
 .acf-fields > .acf-field {
 	border-top-width: 0px !important;
 	padding: 0px !important;
