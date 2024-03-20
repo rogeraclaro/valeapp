@@ -400,7 +400,7 @@ footer .accordion-links a{
 
 @media (min-width: 768px) {
 	footer {
-		background-color: #E4FCEF;
+		background-color: #E0EEED;
 		padding-top: 3rem;
 		padding-bottom: 0 !important;
 	}
@@ -425,7 +425,7 @@ footer .accordion-links a{
 		display: block !important;
 	}
 	footer .accordion-button.event{
-		color: #58dfa2;
+		color: #5AAA9F;
 		font-size: clamp(0.7rem, 1.1vw, 1rem);
 		padding: 2rem 0 0;
 	}
