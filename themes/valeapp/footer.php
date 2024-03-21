@@ -40,31 +40,31 @@
 						</p> -->
 						<ul class="accordion-links row">
 							<li class="col-12 col-md-5">
-								<a href="#">llar</a>
+								<a href="/categoria/hogar">llar</a>
 							</li>
 							<li class="col-12 col-md-7">
-								<a href="#">Bellesa</a>
+								<a href="/categoria/belleza">Bellesa</a>
 							</li>
 							<li class="col-12 col-md-5">
-								<a href="#">Aprén</a>
+								<a href="/categoria/aprende">Aprén</a>
 							</li>
 							<li class="col-12 col-md-7">
-								<a href="#">Contracta</a>
+								<a href="/categoria/contrata">Contracta</a>
 							</li>
 							<li class="col-12 col-md-5">
-								<a href="#">Esport</a>
+								<a href="/categoria/deporte">Esport</a>
 							</li>
 							<li class="col-12 col-md-7">
-								<a href="#">Lloga</a>
+								<a href="/categoria/alquila">Lloga</a>
 							</li>
 							<li class="col-12 col-md-5">
-								<a href="#">Ment</a>
+								<a href="/categoria/mente">Ment</a>
 							</li>
 							<li class="col-12 col-md-7">
-								<a href="#">Esdeveniments</a>
+								<a href="/categoria/eventos">Esdeveniments</a>
 							</li>
 							<li class="col-12">
-								<a href="#">Cuida els teus</a>
+								<a href="/categoria/cuida-los-tuyos">Cuida els teus</a>
 							</li>
 						</ul>
 					</div>
