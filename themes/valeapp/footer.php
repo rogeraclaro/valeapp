@@ -15,7 +15,7 @@
 	<div class="container">
 		<div id="accordionfooter" class="accordion accordion-buttons">
 			<div class="d-none d-md-block footer-logo">
-				<img class="image-fluid image footer-logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-footer-logo.png" alt="ValeApp">
+				<img class="image-fluid image footer-logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-desktop-logo.png" alt="ValeApp">
 				<div class="footer-logo-text">
 					La tasca que necessitis, de la manera<br />
 					més fácile. Vale connecta professionals<br />
