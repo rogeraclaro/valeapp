@@ -88,19 +88,19 @@
 						</p> -->
 						<ul class="accordion-links row">
 							<li class="col-12">
-								<a href="#">Preguntes freqúents</a>
+								<a href="/preguntas-frecuentes">Preguntes freqúents</a>
 							</li>
 							<li class="col-12">
 								<a href="#">Professionals</a>
 							</li>
 							<li class="col-12">
-								<a href="#">Registrar-se/Iniciar sessió</a>
+								<a href="/iniciar-sesion-profesional-o-usuario">Registrar-se/Iniciar sessió</a>
 							</li>
 							<li class="col-12">
 								<a href="#">Blog</a>
 							</li>
 							<li class="col-12">
-								<a href="#">Ajuda</a>
+								<a href="/ayuda">Ajuda</a>
 							</li>
 						</ul>
 					</div>

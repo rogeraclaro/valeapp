@@ -399,6 +399,9 @@ footer .accordion-links a{
 }
 
 @media (min-width: 768px) {
+	footer .container {
+		margin-bottom: 0;
+	}
 	footer {
 		background-color: #E0EEED;
 		padding-top: 3rem;
