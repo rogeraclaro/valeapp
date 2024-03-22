@@ -403,6 +403,9 @@ footer .accordion-links a{
 }
 
 @media (min-width: 768px) {
+	header.header-desktop{
+		overflow: visible;
+	}
 	header.header-desktop .row{
 		align-items: center;
 	}
@@ -442,6 +445,10 @@ footer .accordion-links a{
 		color: #575550;
 		font-size: clamp(0.8rem , 1.1vw, 1rem);
 	}
+	.header-lang-wrapper{
+		position: relative;
+		padding: 0.2rem clamp(0.5rem, 1.6vw, 1.5rem);;
+	}
 	.header-lang{
 		border: none;
 		background-color: transparent;
@@ -451,6 +458,24 @@ footer .accordion-links a{
 
 		align-items: center;
 		display: flex;
+	}
+	.header-lang.dropdown-toggle::after{
+		display: none;
+	}
+	.header-lang-option{
+		padding: 0.5rem ;
+	}
+	.header-lang-option:hover{
+		background-color: #5aab9f;
+	}
+	.header-lang-content.dropdown-menu{
+		background-color: #fff;
+		left: 0;
+		min-width: fit-content;
+		position: absolute;
+		padding: 0;
+		right: 0;
+		top: 100%;
 	}
 	footer .container {
 		margin-bottom: 0;
