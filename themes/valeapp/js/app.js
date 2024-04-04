@@ -454,6 +454,7 @@
         slidesPerGroup: 1,
         centeredSlides: true,
         allowTouchMove: true,
+        loop: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -465,10 +466,11 @@
         mousewheel: true,
         breakpoints: {
           768: {
-            slidesPerView: 1,
-            spaceBetween: 50,
+            slidesPerView: 3,
+            spaceBetween: 30,
             centeredSlides: true,
             mousewheel: true,
+            loop: true,
           },
         },
       };

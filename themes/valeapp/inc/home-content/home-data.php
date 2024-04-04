@@ -37,6 +37,22 @@ $titleS3 = $section3['title'];
 $descriptionS3 = $section3['description'];
 $buttonS3 = $section3['button'];
 
+//Serveis populars *-*-*-*-*-*-*-*-*-*-*-*-*-*-
+$servpop = get_field('servpop', $page_id); // 'servpop' is parent group
+
+// Assignem els serveis a les variables $servpop_N
+for ($x = 1; $x <= 6; $x++) {
+    ${"servpop_" . $x} = $servpop['servei' . $x];
+}
+
+// Utilitzem un bucle per assignar les propietats de cada servei a les variables $popularS_N
+for ($x = 1; $x <= 6; $x++) {
+    ${"popularS" . $x . "mob"} = ${"servpop_" . $x}['image_mob'];
+    ${"popularS" . $x . "desk"} = ${"servpop_" . $x}['image_desk'];
+    ${"popularS" . $x . "name"} = ${"servpop_" . $x}['name'];
+    ${"popularS" . $x . "url"} = ${"servpop_" . $x}['url'];
+}
+
 //Section 4 *-*-*-*-*-*-*-*-*-*-*-*-*-*-
 $section4 = get_field('field_65e0a6781b5c8', $page_id);
 $titleS4 = $section4['title'];
@@ -49,4 +65,5 @@ $description2S4 = $section4['description2'];
 $icon3S4 = $section4['icon3'];
 $subtitle3S4 = $section4['subtitle3'];
 $description3S4 = $section4['description3'];
+
 ?>

@@ -88,13 +88,13 @@ header.header-desktop{
 }
 
 .userlogin {
-	padding-left: 2rem;
+	padding-left: 1rem;
 	display: flex;
 	align-items: center;
 }
 
 .logomobile {
-    padding-left: 5rem;
+    padding-left: 1rem;
 }
 
 i.bi.bi-person-circle,

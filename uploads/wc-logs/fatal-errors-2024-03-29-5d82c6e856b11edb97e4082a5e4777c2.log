@@ -1,0 +1,16 @@
+2024-03-29T18:43:56+00:00 CRITICAL Uncaught Error: Call to undefined function render() in /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/taxonomy-categoria.php:36
+Stack trace:
+#0 /Users/rogermasellas/Local Sites/valeapp/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/rogermasellas/Local Sites/valeapp/app/public/wp-blog-header.php(19): require_once('/Users/rogermas...')
+#2 /Users/rogermasellas/Local Sites/valeapp/app/public/index.php(17): require('/Users/rogermas...')
+#3 {main}
+  thrown en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/taxonomy-categoria.php en la línea 36
+
+2024-03-29T18:44:03+00:00 CRITICAL Uncaught Error: Call to undefined function render() in /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/taxonomy-categoria.php:36
+Stack trace:
+#0 /Users/rogermasellas/Local Sites/valeapp/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/rogermasellas/Local Sites/valeapp/app/public/wp-blog-header.php(19): require_once('/Users/rogermas...')
+#2 /Users/rogermasellas/Local Sites/valeapp/app/public/index.php(17): require('/Users/rogermas...')
+#3 {main}
+  thrown en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/taxonomy-categoria.php en la línea 36
+

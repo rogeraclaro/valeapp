@@ -19,6 +19,7 @@
 @import url("./pages/page-solicitudes-detalle.css");
 @import url("./messages.css");
 @import url("./navMenu.css");
+
 @font-face {
   font-family: 'Century Gothic';
   src: url('fonts/CenturyGothic.woff2') format('woff2'),
@@ -5107,8 +5108,8 @@ a.tokens-btn:focus{
   position: relative;
 }
   
-.Popular .textImg{
-  background-color: #5aab9f;
+.Popular .textImg a{
+  /* background-color: #5aab9f;
   padding: 0.3rem 1.2rem;
   border-radius: 2rem;
   font-size: 1.1rem;
@@ -5121,7 +5122,21 @@ a.tokens-btn:focus{
   top: 43%;
   width: 8.5rem;
   text-align: center;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  background-color: #5aab9f;
+  padding: 0.3rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Open Sans";
+  line-height: 1.6rem;
+  position: absolute;
+  width: 8.5rem;
+  text-align: center;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .Popular .title{
@@ -6541,6 +6556,386 @@ a.HomeOffer-btn {
   }
 }
 
+/* Roger */
+
+@media (min-width: 768px) {
+	.Homecategories-content {
+    width: auto;
+    max-width: 1080px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+	}
+
+  .Homecategories .category {
+    width: auto;
+    text-align: center;
+    margin-bottom: 1.1rem;
+  }
+
+  .firstrow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 80% !important;
+  }
+
+  .secondrow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .Homecategories {
+    position: relative;
+  }
+
+  .home-menu-card {
+    position: absolute;
+    bottom: -1rem;
+  }
+
+  .home-menu-cardContent {
+    background-color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-radius: 50px;
+    outline: none;
+    width: 100%;
+    max-width: 680px;
+    padding: 5px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    -webkit-box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.3); 
+    box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.3);
+  }
+
+  .card-searcher-text, .card-searcher-text input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .home-menu-cardBtn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 50px;
+    height: 3rem;
+    margin-top: 0rem;
+    outline: none;
+    width: 30%;
+    margin-right: 5px;
+    transition: all 0.3s;
+  }
+
+  .home-menu-cardBtn:hover {
+    border: 2px solid #E2EEEC;
+    background-color: #fff;
+  }
+
+  .card-searcher {
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+  .card-searcher:first-of-type {
+    border-bottom: none;
+    border-right: 1px solid #000;
+    width: 22%;
+    margin-left: 2rem;
+    height: 2.5rem;
+  }
+
+  .card-searcher:last-of-type {
+    margin: 0;
+    width: 39%;
+    margin-left: 1rem;
+}
+
+  .card-searcher-img {
+    height: 1.1rem;
+    margin-right: 0.4rem;
+    object-fit: contain;
+    width: 1.1rem;
+  }
+
+  .HomeOffer .img-fluid.offer {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 15px;
+  }
+
+  .HomeOffer .title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    color: #575550;
+  }
+
+  .HomeOffer .text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #575550;
+    margin-bottom: 3rem;
+  }
+
+  a.HomeOffer-btn {
+    background-color: #5aab9f;
+    width: 14.4rem;
+    border: 0;
+    border-radius: 2rem;
+    padding: 0.9rem 2.5rem 1rem 2.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  a.HomeOffer-btn:hover {
+    border: 2px solid #5aab9f;
+    background-color: #fff;
+    color: #5aab9f;
+    transition: all 0.3s;
+  }
+
+  .HomeDoesWork .title {
+    font-size: 1.4rem;
+  }
+
+  .HomeDoesWork .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    height: 2.5rem;
+  }
+
+  .HomeDoesWork .text {
+    font-size: 0.95rem;
+    line-height: 1.3rem !important;
+    color: #575550;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2.9rem;
+  } 
+
+  .HomeDoesWork .text:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .FindService .title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .FindService .text {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .FindService a.button {
+    background-color: #5aab9f;
+    width: 14.4rem;
+    border: 0;
+    border-radius: 2rem;
+    padding: 0.9rem 2.5rem 1rem 2.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .FindService a.button:hover {
+    border: 2px solid #5aab9f;
+    background-color: #fff;
+    color: #5aab9f;
+    transition: all 0.3s;
+  }
+
+  .Popular .title {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .Popular .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.6rem;
+  }
+
+  .Popular .img-fluid.popular {
+    width: 100%;
+  }
+
+  .Popular .textImg {
+    top: 50%;
+    font-weight: 600;
+  }
+
+  .Popular .textImg a {
+    background-color: #5aab9f;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 0.7rem;
+    width: 9rem;
+  }
+
+  .Popular .textImg a:hover {
+    border: 2px solid #5aab9f;
+    background-color: #fff;
+    color: #5aab9f;
+    transition: all 0.3s;
+  }
+
+  .WhyVale .title {
+    font-size: 1.4rem;
+  }
+
+  .WhyVale .text {
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+  }
+
+  .WhyVale .title2 {
+    font-weight: 600;
+    font-family: 'Century Gothic';
+  }
+
+  .Reviews .title {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+
+  .Reviews .text {
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+  }
+
+  .Reviews .content {
+    background-color: #fff;
+    padding: 2.1rem 2rem 2.1rem 2rem;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.3);
+  }
+  
+  .Reviews .rate span {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .Home .Reviews .rate {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .Reviews .rate img {
+    width: 4rem !important;
+    margin-left: 0.6rem;
+  }
+
+  .Reviews .swiper {
+    min-height: 325px;
+  }
+
+  .Reviews .swiper-pagination-bullet {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+  }
+
+  .Reviews .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 0.7rem !important;
+    height: 0.7rem !important;
+    margin: 4px 6px !important;
+  }
+
+  .Blog .title {
+    font-size: 1.4rem;
+  }
+
+  .Blog img.attachment-thumbnail {
+    display: block;
+    max-width: 3rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 0.6rem;
+  }
+
+  .Blog .nav-tabs .nav-link {
+    width: max-content;
+    padding: 0.2rem 0rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #575550;
+    text-align: center;
+  }
+
+  .Blog .nav-tabs .nav-link.active {
+    color: #5aab9f;
+  }
+
+  .Blog .content .text {
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: #575550;
+  }
+
+  .Blog .content .subtitle {
+    font-weight: 600;
+    font-family: 'Century Gothic';
+    font-size: 1.15rem;
+  }
+
+  .Blog .button {
+    background-color: #5aab9f;
+    width: 15.5rem;
+    border: 0;
+    border-radius: 2rem;
+    padding: 0.9rem 2.5rem 1rem 2.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .Blog .button:hover {
+    border: 2px solid #5aab9f;
+    background-color: #fff;
+    color: #5aab9f;
+    transition: all 0.3s;
+  }
+}
 
 /* html {
   background-image: url("../img/Servicios-genérica.jpg");

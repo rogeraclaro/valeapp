@@ -1,0 +1,22 @@
+2024-04-01T11:45:38+00:00 CRITICAL syntax error, unexpected variable "$x" en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:45:57+00:00 CRITICAL syntax error, unexpected variable "$x" en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:47:17+00:00 CRITICAL Array and string offset access syntax with curly braces is no longer supported en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:47:20+00:00 CRITICAL Array and string offset access syntax with curly braces is no longer supported en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:48:30+00:00 CRITICAL syntax error, unexpected double-quote mark en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:49:08+00:00 CRITICAL syntax error, unexpected double-quote mark en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:49:14+00:00 CRITICAL syntax error, unexpected double-quote mark en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:49:25+00:00 CRITICAL syntax error, unexpected double-quote mark en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:49:26+00:00 CRITICAL syntax error, unexpected double-quote mark en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:51:16+00:00 CRITICAL syntax error, unexpected variable "$x" en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+
+2024-04-01T11:52:11+00:00 CRITICAL Array and string offset access syntax with curly braces is no longer supported en /Users/rogermasellas/Local Sites/valeapp/app/public/wp-content/themes/valeapp/inc/home-content/home-data.php en la línea 44
+

@@ -18,9 +18,9 @@
 				<img class="image-fluid image footer-logo-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-desktop-logo.png" alt="ValeApp">
 				<div class="footer-logo-text">
 					La tasca que necessitis, de la manera<br />
-					més fácile. Vale connecta professionals<br />
-					que ofereizen serveis en diverses<br />
-					árees, amb clients que necessiten<br />
+					més fàcil. Vale connecta professionals<br />
+					que ofereixen serveis en diverses<br />
+					àrees, amb clients que necessiten<br />
 					ajuda amb tasques quotidianes i<br />
 					projectes especialitzats, a prop teu.
 				</div>
@@ -31,22 +31,15 @@
 				</h2>
 				<div id="collapsefaq" class="accordion-collapse collapse" aria-labelledby="headingPoints" data-bs-parent="#accordionfqa">
 					<div class="accordion-body">
-						<!-- <p>
-							Lorem ipsum dolor sit amet, consectetur <br class="xs-br">
-							adipisicing elit, sed do eiusmod tempor <br class="xs-br">
-							incididunt ut labore et dolore magna aliqua. <br class="xs-br">
-							Ut enim ad minim veniam, quis nostrud <br class="xs-br">
-							exercitation ullamco laboris.
-						</p> -->
 						<ul class="accordion-links row">
 							<li class="col-12 col-md-5">
-								<a href="/categoria/hogar">llar</a>
+								<a href="/categoria/hogar">Llar</a>
 							</li>
 							<li class="col-12 col-md-7">
 								<a href="/categoria/belleza">Bellesa</a>
 							</li>
 							<li class="col-12 col-md-5">
-								<a href="/categoria/aprende">Aprén</a>
+								<a href="/categoria/aprende">Aprèn</a>
 							</li>
 							<li class="col-12 col-md-7">
 								<a href="/categoria/contrata">Contracta</a>
@@ -88,7 +81,7 @@
 						</p> -->
 						<ul class="accordion-links row">
 							<li class="col-12">
-								<a href="/preguntas-frecuentes">Preguntes freqúents</a>
+								<a href="/preguntas-frecuentes">Preguntes frequents</a>
 							</li>
 							<li class="col-12">
 								<a href="#">Professionals</a>
@@ -146,7 +139,7 @@
 								<a href="#">Política de cookies</a>
 							</li>
 							<li class="col-12">
-								<a href="#">Política de cancel-lació</a>
+								<a href="#">Política de cancel.lació</a>
 							</li>
 							<li class="col-12">
 								<a href="#">Avís Legal</a>
