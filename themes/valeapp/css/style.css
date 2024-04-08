@@ -4938,7 +4938,7 @@ a.tokens-btn:focus{
   color: #fff;
   text-align: center;
   font-size: 1.65rem;
-  width: 75%;
+  width: 90%;
   margin: 0 auto 1.8rem;
 }
 
@@ -4946,24 +4946,24 @@ a.tokens-btn:focus{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 390px;
+  max-width: 390px;
   margin: 0 auto;
   justify-content: space-between;
   padding: 0 1.7rem;
 }
 
 .Homecategories .category {
-  width: 30%;
+  width: 100%;
   text-align: center;
   margin-bottom: 1.1rem;
 }
 
-.Homecategories .category:nth-child(4) img {
+/* .Homecategories .category:nth-child(4) img {
   width: 3.5rem;
-}
+} */
 
 .Homecategories .category .img-fluid{
-  width: 2.4rem;
+  width: 3rem;
   margin-bottom: 1rem;
   &.icon8{
     width: 1.35rem;
@@ -5137,6 +5137,7 @@ a.tokens-btn:focus{
   top: 42%;
   left: 50%;
   transform: translate(-50%);
+  text-decoration: none;
 }
 
 .Popular .title{
@@ -5273,7 +5274,7 @@ a.tokens-btn:focus{
 }
 
 .Reviews .swiper {
-  min-height: 400px;
+  min-height: 320px;
 }
 
 .Blog{
@@ -6558,6 +6559,28 @@ a.HomeOffer-btn {
 
 /* Roger */
 
+.firstrow, .secondrow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.Blog .hidemob {
+  display: none;
+}
+
+.Blog .nav-tabs .nav-link.active {
+  color: #5aab9f;
+}
+
+footer .accordion-button {
+  padding: 0.6rem 0rem;
+}
+
 @media (min-width: 768px) {
 	.Homecategories-content {
     width: auto;
@@ -6570,6 +6593,10 @@ a.HomeOffer-btn {
     width: auto;
     text-align: center;
     margin-bottom: 1.1rem;
+  }
+
+  .Homecategories .category .img-fluid {
+    width: 2.4rem;
   }
 
   .firstrow {
@@ -6872,6 +6899,10 @@ a.HomeOffer-btn {
     width: 0.7rem !important;
     height: 0.7rem !important;
     margin: 4px 6px !important;
+  }
+
+  .Blog .hidemob {
+    display: block;
   }
 
   .Blog .title {

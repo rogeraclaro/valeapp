@@ -97,21 +97,21 @@ get_header();
     <div class="container">
       <h2 class="title"><?php echo($titleS2); ?></h2>
       <div class="row justify-content align-items-top">
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-4 mb-5">
           <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image1.png" alt="valeapp" />
           <h3 class="subtitle"><?php echo($subtitle1S2); ?></h3>
           <p class="text">
             <?php echo($description1S2); ?>
           </p>
         </div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-4 mb-5">
           <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image2.png" alt="valeapp" />
           <h3 class="subtitle"><?php echo($subtitle2S2); ?></h3>
           <p class="text">
             <?php echo($description2S2); ?>
           </p>
         </div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-4 mb-5">
           <img class="img-fluid offer" src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-homedoeswork-image3.png" alt="valeapp" />
           <h3 class="subtitle"><?php echo($subtitle3S2); ?></h3>
           <p class="text">

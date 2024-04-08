@@ -268,3 +268,11 @@ require_once plugin_dir_path(__FILE__) . 'inc/search-task/search.php';
 //     return 'Que onda prix';
 // }
 
+// Roger //
+
+function add_css_class_to_thumbnail($html, $post_id, $post_thumbnail_id, $size, $attr) {
+    // Afegeix la classe CSS que vulguis
+    $html = str_replace('<img', '<img class="hidemob"', $html);
+    return $html;
+}
+add_filter('post_thumbnail_html', 'add_css_class_to_thumbnail', 10, 5);
