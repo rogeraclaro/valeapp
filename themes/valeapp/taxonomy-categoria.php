@@ -18,8 +18,8 @@ get_header();
 			<div class="col-12">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
-					  <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-					  <li class="breadcrumb-item"><a href="#">Servicios</a></li>
+					  <li class="breadcrumb-item"><a href="#">Inici</a></li>
+					  <li class="breadcrumb-item"><a href="#">Serveis</a></li>
 					  <li class="breadcrumb-item"><a href="#"><?php echo $title; ?></a></li>
 					</ol>
 				  </nav>

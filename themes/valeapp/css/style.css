@@ -6903,6 +6903,7 @@ footer .accordion-button {
 
   .Blog .hidemob {
     display: block;
+    margin: 0 auto;
   }
 
   .Blog .title {

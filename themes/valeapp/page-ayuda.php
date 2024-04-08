@@ -37,7 +37,6 @@ get_header();
     </section>
     <section class="Ayuda">
         <div class="Ayuda-container">
-
             <ul>
                 <li class="Ayuda-item">
                 <a href="#" class="Ayuda-link head">
@@ -87,7 +86,7 @@ get_header();
                 <a class="Ayuda-delete" href="eliminar-cuenta">
                     Eliminar cuenta
                 </a>
-        </div>
+            </div>
         </div>
     </section>
 

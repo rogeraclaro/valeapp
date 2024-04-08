@@ -10,6 +10,9 @@ function filter_rename($filter) {
             case "Mecanico":
                 $variable = "Mecánico";
             break;
+            case "Mecanico":
+                $variable = "Hogar";
+            break;
         };
     };
     return $variable;

@@ -327,8 +327,8 @@ get_header();
               </div>
             </div>
           </div>
-    <button class="button">Veure tots els articles</button>
-</div>
+      <button class="button">Veure tots els articles</button>
+    </div>
         <?php
           }
           wp_reset_postdata();
@@ -337,6 +337,15 @@ get_header();
       </div>
     </div>
   </div>
+
+<script>
+  jQuery(document).ready(function($) {
+    var firstTab = $('.nav-tabs .nav-item:first-child .nav-link');
+    firstTab.addClass('active').attr('aria-selected', 'true');
+    var firstTabContent = $('.tab-content .tab-pane:first-child');
+    firstTabContent.addClass('show active');
+  });
+</script>
 
 </div>
 <?php
