@@ -1,8 +1,4 @@
 <?php 
-
-$users = get_users([
-    'role' => 'proveedorvaleapp',
-]);
 function render_providers($users){
     ?>
     <!-- BEGIN SECTION 3 -->

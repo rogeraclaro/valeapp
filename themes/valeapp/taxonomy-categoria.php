@@ -32,11 +32,11 @@ get_header();
 		</div>
 	</div>
 </section>
-<?php render_filter($field); ?>
-<?php render($items); ?>
-<?php render_providers($users); ?>
-
-
-<?php
+<?php 
+	if($field){
+		render_filter($field);
+	} else {
+		render_users($items, $users);
+	}
 get_sidebar();
 get_footer();

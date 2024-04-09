@@ -21,13 +21,13 @@ get_header();
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><?php breadcrumb_my_account(); ?></li>
-                        <li class="breadcrumb-item"><a href="#">Mi saldo</a></li>
+                        <li class="breadcrumb-item"><a href="#">El meu saldo</a></li>
                     </ol>
                 </nav>
             </div>
             <div class="col-12">
                 <h2 class="title">
-                    Añadir Saldo
+                    Afegir Saldo
                 </h2>
             </div>
         </div>
@@ -36,18 +36,18 @@ get_header();
 <div class="AddTokens">
     <div class="AddTokens-paymentMethod">
         <div class="AddTokens-title">
-            Método de Depósito
+            Mètode de Dipòsit
         </div>
         <div class="AddTokens-paymentMethod-selectedMethod">
             <span class="AddTokens-paymentMethod-optionIcon">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-agregar-tokens/visa-icon.png" alt="visa-icon">
             </span>
-            Tarjeta Visa
+            Targeta Visa
             <button class="AddTokens-paymentMethod-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 <span class="AddTokens-paymentMethod-btnIcon">
                     <img class="ConfirmAndPay-sectionHeader-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-agregar-tokens/paymentMethod-collapseIcon.jpg" alt="ConfirmAndPay-sectionHeader-icon">
                 </span>
-                Cambiar
+                Canviar
             </button>
         </div>
         <div class="collapse AddTokens-paymentMethod-options" id="collapseExample">
@@ -55,7 +55,7 @@ get_header();
                 <span class="AddTokens-paymentMethod-optionIcon">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-agregar-tokens/visa-icon.png" alt="visa-icon">
                 </span>
-                Tarjeta Visa
+                Targeta Visa
             </button>
             <button class="AddTokens-paymentMethod-option" type="button">
                 <span class="AddTokens-paymentMethod-optionIcon">
@@ -67,15 +67,15 @@ get_header();
     </div>
     <div class="AddTokens-info">
         <div class="AddTokens-title">
-            Introduce el importe y pulsa en "Depositar"
+            Introdueix l'import i fes clic a "Dipositar"
         </div>
         <div class="AddTokens-description">
-            Una vez introducido el importe, se te redirigirá a una página<br /> segura del sitio web para introducir la información bancaria.
+        Un cop introduït l'import, se us redirigirà a una pàgina<br/> segura del lloc web per introduir la informació bancària.
         </div>
     </div>
     <div class="AddTokens-details">
         <div class="AddTokens-title">
-            Detalles del pago
+            Detalls del pagament
             <div class="AddTokens-titleActions">
                 <button type="button">
                     <img class="ConfirmAndPay-sectionHeader-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-agregar-tokens/edit-icon-green.jpg" alt="ConfirmAndPay-sectionHeader-icon">
@@ -87,20 +87,21 @@ get_header();
         </div>
         <img class="AddTokens-detailsImg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-agregar-tokens/credit-card.jpg" alt="ValeApp-CreditCard" />
     </div>
-    <div class="AddTokens-input">
+    <!-- <div class="AddTokens-input">
         <span>Cantidad del depósito:</span>
         <input type="number" />
-    </div>
+    </div> -->
     <div class="AddTokens-mentions">
         <p class="AddTokens-titleMention">
             1€ = 1 Vale.
         </p>
         <p class="AddTokens-text">
-        En esta plataforma, la equivalencia es directa: 1 euro es igual a 1 Vale. En la sección "Mi Saldo," tendrás una visualización clara de la cantidad de vales disponibles para utilizar en diversos servicios después de realizar tu depósito.        
+        En aquesta plataforma, l'equivalència és directa: 1 euro és igual a 1 Vale. A la secció "El meu Saldo," tindràs una visualització clara de la quantitat de vales disponibles per utilitzar en diversos serveis després de realitzar el teu dipòsit.        
         </p>
-        <button class="AddTokens-btn">
+        <!-- <button class="AddTokens-btn">
            Confirmar
-        </button>
+        </button> -->
+        <?php echo do_shortcode('[asp_product id="1322"]') ?>
     </div>
 </div>
 

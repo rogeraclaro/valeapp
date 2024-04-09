@@ -28,44 +28,44 @@ get_header();
       <div class="container">
         <div class="row justify-content-center">
           <div class="firstrow">
-              <div class="category">
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category1-white.png" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat1; ?></p>
-              </div>
-              <div class="category">
+              </a>
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category2-white.png" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat2; ?></p>
-              </div>
-              <div class="category">
+              </a>
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category3-white.png" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat3; ?></p>
-              </div>
-              <div class="category">
+              </a>
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category4-white.png" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat4; ?></p>
-              </div>
+              </a>
           </div>
           <div class="secondrow">
-              <div class="category">
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category5-white.png" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat5; ?></p>
-              </div>
-              <div class="category">
+              </a>
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category6-white.png" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat6; ?></p>
-              </div>
-              <div class="category">
+              </a>
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category7-white.png" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat7; ?></p>
-              </div>
-              <div class="category">
+              </a>
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category8-white.png" alt="valeapp" class="img-fluid category-icon icon8" />
                 <p class="category-name"><?php echo $cat8; ?></p>
-              </div>
-              <div class="category">
+              </a>
+              <a class="category">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-home-category9.svg" alt="valeapp" class="img-fluid category-icon" />
                 <p class="category-name"><?php echo $cat9; ?></p>
-              </div>
+              </a>
           </div>
         </div>
       </div>
@@ -294,7 +294,7 @@ get_header();
             $description3 = get_field('description_3');
             ?>
     
-            <div class="tab-pane fade <?php if($title === "Alquila") {
+            <div class="tab-pane fade <?php if($title === "Comparte") {
               echo("active show");
             } ?>" id="<?php echo($title);?>" role="tabpanel" aria-labelledby="<?php echo($title);?>-tab">
 

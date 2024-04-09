@@ -7,11 +7,11 @@ function filter_rename($filter) {
             case "Fontaneria":
                 $variable = "Fontanería";
             break;
+            // case "Fontaneria":
+            //     $variable = "Fontanería";
+            // break;
             case "Mecanico":
                 $variable = "Mecánico";
-            break;
-            case "Mecanico":
-                $variable = "Hogar";
             break;
         };
     };

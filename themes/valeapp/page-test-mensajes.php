@@ -22,12 +22,16 @@ get_header();
 // echo do_shortcode('[sac_happens]');
 
 //Utilizando el plugin better message
-echo do_shortcode('[better_messages]');
-// echo do_shortcode('[better_messages_unread_counter hide_when_no_messages="1" preserve_space="1"]');
+// echo do_shortcode('[better_messages]');
+$current_user_id = get_current_user_id();
+echo do_shortcode('[better_messages_pm_button text="Contáctalo" user_id="' . $current_user_id . '" message="Este es un mensaje de prueba" target="_self" class="extra-class" fast_start="0" url_only="0"]');
 
 
-// $thread_id = 1; //Conversation ID to display
+echo do_shortcode('[better_messages_pm_button text="Contáctalo" user_id="74" message="Este es un mensaje de prueba" target="_self" class="button" fast_start="0" url_only="0"]');
 
-// echo Better_Messages()->functions->get_conversation_layout( $thread_id );
+?>
 
+
+
+<?php
 get_footer();

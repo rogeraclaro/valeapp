@@ -4956,6 +4956,7 @@ a.tokens-btn:focus{
   width: 100%;
   text-align: center;
   margin-bottom: 1.1rem;
+  text-decoration: none;
 }
 
 /* .Homecategories .category:nth-child(4) img {
@@ -6903,7 +6904,6 @@ footer .accordion-button {
 
   .Blog .hidemob {
     display: block;
-    margin: 0 auto;
   }
 
   .Blog .title {

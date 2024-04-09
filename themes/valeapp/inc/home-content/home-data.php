@@ -6,6 +6,7 @@ $hero = get_field('field_65e1fdf93f06d', $page_id);
 $title_hero = $hero['title'];
 $category_hero = $hero['category'];
 $cat1 = $category_hero['cat1'];
+$cat1_link = $category_hero['cat1_link'];
 $cat2 = $category_hero['cat2'];
 $cat3 = $category_hero['cat3'];
 $cat4 = $category_hero['cat4'];

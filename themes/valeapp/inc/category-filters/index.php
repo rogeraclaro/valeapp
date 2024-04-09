@@ -11,19 +11,22 @@ function obtener_ultimo_termino_url() {
 
     return $last_part;
 }
+$users = get_users([
+    'role' => 'proveedorvaleapp',
+]);
 
 // Uso de la función
 $last_part = obtener_ultimo_termino_url();
 $last_part = ucfirst($last_part);
 
 // Imprimir el último término
-function last_term($url) {
-    if ($url) {
-        echo 'Último Término: ' . esc_html($url);
-    } else {
-        echo 'No se encontró un término en la URL.';
-    }
-}
+// function last_term($url) {
+//     if ($url) {
+//         echo 'Último Término: ' . esc_html($url);
+//     } else {
+//         echo 'No se encontró un término en la URL.';
+//     }
+// }
 
 $category_search = [
     'key' => 'name',
@@ -137,11 +140,11 @@ if(!$posts) {
         'post_per_page' => -1,
         'meta_query' => $filter_search,
     ];
-
+    
     $items = get_posts($arg_url);
 
     $title = $filter_key;
-    function render($items){
+    function render_users($items, $users){
         if($items) {
             ?>
             <section class="section3 pages" id="page3">
@@ -168,6 +171,11 @@ if(!$posts) {
             </div>
         </section>
         <?php
+        } else {
+        ?>
+        <h1>No hay Proveedores por el momento (Data Dummie)</h1>
+        <?php
+        render_providers($users);
         }
     }
 }

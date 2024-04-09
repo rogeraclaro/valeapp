@@ -19,8 +19,8 @@ get_header();
 
 <section class="Membership">
       <h2 class="Membership-title">
-        Gana dinero haciendo <br class="xs-br" />
-        lo que mas te gusta.
+        Guanya diners fent allò<br class="xs-br" />
+        que més t'agrada.
       </h2>
       <img
         class="Membership-image"
@@ -31,7 +31,7 @@ get_header();
         <div class="Membership-item">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-item1.png" alt="valeapp" />
           <h3 class="Membership-item-title">
-            Registrate y ofrece tus servicios
+            Registra't i ofereix els teus serveis
           </h3>
           <p class="Membership-item-text">
             Lorem ipsum dolor sit amet <br class="xs-br" />
@@ -41,7 +41,7 @@ get_header();
         </div>
         <div class="Membership-item">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-item2.png" alt="valeapp" />
-          <h3 class="Membership-item-title">Empieza a recibir tareas</h3>
+          <h3 class="Membership-item-title">Comença a rebre tasques</h3>
           <p class="Membership-item-text">
             Lorem ipsum dolor sit amet <br class="xs-br" />
             consectetur adipisicing elit, sed do <br class="xs-br" />
@@ -50,7 +50,7 @@ get_header();
         </div>
         <div class="Membership-item">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-item3.png" alt="valeapp" />
-          <h3 class="Membership-item-title">Realiza los servicios</h3>
+          <h3 class="Membership-item-title">Realitza els serveis</h3>
           <p class="Membership-item-text">
             Lorem ipsum dolor sit amet <br class="xs-br" />
             consectetur adipisicing elit, sed do <br class="xs-br" />
@@ -59,7 +59,7 @@ get_header();
         </div>
         <div class="Membership-item">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-item4.png" alt="valeapp" />
-          <h3 class="Membership-item-title">Gana dinero</h3>
+          <h3 class="Membership-item-title">Guanya diners</h3>
           <p class="Membership-item-text">
             Lorem ipsum dolor sit amet <br class="xs-br" />
             consectetur adipisicing elit, sed do.
@@ -67,8 +67,8 @@ get_header();
         </div>
       </div>
       <div class="Membership-frequency">
-        <h2 class="Membership-frequency-title">¡Empieza ahora mismo!</h2>
-        <div class="Membership-frequency-options">
+        <h2 class="Membership-frequency-title">Comença ara mateix!</h2>
+        <!-- <div class="Membership-frequency-options">
           <p class="Membership-frequency-text">
             Elige la frecuencia de facturación:
           </p>
@@ -96,38 +96,39 @@ get_header();
               <label for="Anual">Anual</label><br />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="Membership-plans">
+        <!-- Silver -->
         <div class="Membership-plan">
-          <div class="Membership-plan-name">SILVER</div>
-          <div class="Membership-plan-price">0<span>€</span></div>
+          <div class="Membership-plan-name">Bàsic</div>
+          <div class="Membership-plan-price">10<span>€</span></div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Áreas</p>
+            <p class="Membership-plan-text">Àrees</p>
             <p class="Membership-plan-value">3</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Trabajos</p>
+            <p class="Membership-plan-text">Treballs</p>
             <p class="Membership-plan-value">25</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Comisión</p>
-            <p class="Membership-plan-value">10%</p>
+            <p class="Membership-plan-text">Comissió</p>
+            <p class="Membership-plan-value">15%</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Trabajos sin Comisión</p>
+            <p class="Membership-plan-text">Treballs sense Comissió</p>
             <p class="Membership-plan-value">3</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Notificación</p>
-            <p class="Membership-plan-value">10 minutos</p>
+            <p class="Membership-plan-text">Notificació</p>
+            <p class="Membership-plan-value">10 minuts</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Reporting</p>
-            <p class="Membership-plan-value">Mensualmente</p>
+            <p class="Membership-plan-text">Informes</p>
+            <p class="Membership-plan-value">Mensualment</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Newsletter patrocinada</p>
+            <p class="Membership-plan-text">Butlletí patrocinat</p>
             <p class="Membership-plan-cancel">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-cancel.png" alt="valeapp" />
             </p>
@@ -138,37 +139,39 @@ get_header();
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-success.png" alt="valeapp" />
             </p>
           </div>
-          <button class="Membership-plan-button">Continuar</button>
+          <?php echo do_shortcode('[asp_product id="1327"]'); ?>
+          <!-- <button class="Membership-plan-button">Continuar</button> -->
         </div>
+        <!-- Gold -->
         <div class="Membership-plan">
-          <div class="Membership-plan-name">GOLD</div>
+          <div class="Membership-plan-name">Premium</div>
           <div class="Membership-plan-price">25<span>€</span></div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Áreas</p>
+            <p class="Membership-plan-text">Àrees</p>
             <p class="Membership-plan-value">10</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Trabajos</p>
+            <p class="Membership-plan-text">Treballs</p>
             <p class="Membership-plan-value">50</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Comisión</p>
+            <p class="Membership-plan-text">Comissió</p>
             <p class="Membership-plan-value">8,5%</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Trabajos sin Comisión</p>
+            <p class="Membership-plan-text">Treballs sense Comissió</p>
             <p class="Membership-plan-value">5</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Notificación</p>
+            <p class="Membership-plan-text">Notificació</p>
             <p class="Membership-plan-value">5 minutos</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Reporting</p>
-            <p class="Membership-plan-value">Quincenal</p>
+            <p class="Membership-plan-text">Informes</p>
+            <p class="Membership-plan-value">Quinzenal</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Newsletter patrocinada</p>
+            <p class="Membership-plan-text">Butlletí patrocinat</p>
             <p class="Membership-plan-cancel">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-cancel.png" alt="valeapp" />
             </p>
@@ -179,37 +182,38 @@ get_header();
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-success.png" alt="valeapp" />
             </p>
           </div>
-          <button class="Membership-plan-button">Continuar</button>
+          <?php echo do_shortcode('[asp_product id="1328"]'); ?>
         </div>
+        <!-- Platinum -->
         <div class="Membership-plan">
-          <div class="Membership-plan-name">PLATINUM</div>
+          <div class="Membership-plan-name">VIP</div>
           <div class="Membership-plan-price">50<span>€</span></div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Áreas</p>
+            <p class="Membership-plan-text">Àrees</p>
             <p class="Membership-plan-value">Ilimitado</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Trabajos</p>
+            <p class="Membership-plan-text">Treballs</p>
             <p class="Membership-plan-value">Ilimitado</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Comisión</p>
+            <p class="Membership-plan-text">Comissió</p>
             <p class="Membership-plan-value">7%</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Trabajos sin Comisión</p>
+            <p class="Membership-plan-text">Treballs sense Comissió</p>
             <p class="Membership-plan-value">8</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Notificación</p>
+            <p class="Membership-plan-text">Notificació</p>
             <p class="Membership-plan-value">1 minuto</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Reporting</p>
-            <p class="Membership-plan-value">Semanal</p>
+            <p class="Membership-plan-text">Informes</p>
+            <p class="Membership-plan-value">Setmanal</p>
           </div>
           <div class="Membership-plan-row">
-            <p class="Membership-plan-text">Newsletter patrocinada</p>
+            <p class="Membership-plan-text">Butlletí patrocinat</p>
             <p class="Membership-plan-success">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-success.png" alt="valeapp" />
             </p>
@@ -220,7 +224,7 @@ get_header();
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/valeapp-membership-success.png" alt="valeapp" />
             </p>
           </div>
-          <button class="Membership-plan-button">Continuar</button>
+          <?php echo do_shortcode('[asp_product id="1329"]'); ?>
         </div>
       </div>
       <div class="Reviews membership">
